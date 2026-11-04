@@ -1,0 +1,22 @@
+# No app packages or copied third-party distributions
+*.apk
+*.aab
+*.apks
+*.xapk
+*.zip
+*.7z
+*.rar
+
+# Local working material / secrets
+.env
+.env.*
+*.pem
+*.key
+*.keystore
+*.jks
+*.log
+.claude/
+.DS_Store
+Thumbs.db
+
+# Keep audit source material outside the public repository unless reviewed.
