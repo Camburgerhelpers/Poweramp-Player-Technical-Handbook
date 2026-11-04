@@ -4,11 +4,11 @@ This is a planning document, not a release schedule. Work is ordered by evidence
 
 ## Gate 1 — First public alpha (APK build 1031)
 
-- [ ] Preserve the original manuscript and prepare a separate release copy.
-- [ ] Correct instructions that may cause accidental data loss (rescan, reset, import).
-- [ ] Qualify inferred preference defaults and unverified Android behavior.
-- [ ] Fix misleading audio-routing statements and documented inconsistencies.
-- [ ] Complete the public README, release notes, and navigation.
+- [x] Preserve the original manuscript and prepare a separate release copy.
+- [x] Correct instructions that may cause accidental data loss (rescan, reset, import).
+- [x] Qualify inferred preference defaults and unverified Android behavior.
+- [x] Fix misleading audio-routing statements and documented inconsistencies.
+- [x] Complete the public README, release notes, and navigation.
 - [ ] Resolve the publication license and third-party quotation review.
 - [ ] Validate all chapters, appendices, links, metadata, and release archive.
 - [ ] Publish **v0.1.0-alpha.1** only after an explicit final review.
