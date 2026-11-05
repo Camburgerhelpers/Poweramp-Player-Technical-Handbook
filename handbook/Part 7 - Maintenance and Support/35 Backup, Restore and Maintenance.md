@@ -33,7 +33,7 @@ settings_screens:
 | Operation | What it affects | Where | Reversible? |
 |---|---|---|---|
 | **Export / Import Settings/Data** | your configuration (scope not verified, see below) | Settings › Other | only for whatever the export actually contains; Import replaces current settings |
-| **Restore Defaults** | the settings on one screen (scope not verified) | the bottom of 31 individual screens | only through a prior export that covers those settings, or your own notes |
+| **Restore Defaults** | settings affected by this action (scope unverified) | the bottom of 31 individual screens | only through a prior export that covers those settings, or your own notes |
 | **Dedicated resets and rescans** | specific data: presets, statistics, caches, the tag database | various screens | mostly no |
 | **Restore purchases** | your licence or entitlement with a storefront | Already Purchased? and Feature Packages | does not touch settings or data |
 
@@ -50,7 +50,7 @@ settings_screens:
 These two actions on the main Settings menu are the only whole-configuration backup declared in build 1031. **RUNTIME VERIFICATION REQUIRED:** the XML declares no description, so the file format, the location, and whether the export includes equalizer presets, the library database, playlists, ratings, play statistics or per-output settings are not established by the evidence. Treat the export as a settings backup until you have confirmed more on your device.
 
 > [!WARNING]
-> **Import replaces, it does not merge.**
+> **Import may overwrite your current settings.**
 > Importing settings is expected to overwrite your current configuration with the contents of the file (**RUNTIME VERIFICATION REQUIRED:** whether any part is merged). Before importing, export the *current* state to a separate file so you can go back. An export made on a different build may not restore every setting.
 
 Recommended practice:
@@ -60,7 +60,7 @@ Recommended practice:
 3. Export playlists separately with **Export Poweramp Playlists** ([Chapter 20 — Playlists and the Queue](../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)).
 4. After importing, check a few key settings (output driver, DVC, ReplayGain) before you trust the result.
 
-## Restore Defaults works per screen
+## Restore Defaults
 
 Thirty-one screens have their own **Restore Defaults** action, always the last entry. **APK VERIFIED:** placement. **RUNTIME VERIFICATION REQUIRED:** that each resets only its own screen. That is the natural reading of the placement but is not declared.
 
@@ -123,7 +123,7 @@ The `space` screen groups three space-related actions that also exist on their h
 2. **One change:** alter one setting only.
 3. **Test:** use the same track, the same output and a safe volume.
 4. **Keep or revert:** revert immediately if the change didn't help. Don't stack unproven changes.
-5. **Escalate gradually:** individual setting → that screen's Restore Defaults → Import a known-good export (after exporting the current state, because Import replaces it).
+5. **Escalate gradually:** individual setting → that screen's Restore Defaults → Import a known-good export (after exporting the current state, because Import may override current settings).
 
 ## Evidence and limitations
 
