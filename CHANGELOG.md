@@ -2,7 +2,7 @@
 
 This file will track **published documentation releases**, not changes in Poweramp itself.
 
-## Unreleased — alpha preparation
+## v0.1.0-alpha.1 — initial community alpha
 
 - Community publication scaffolding drafted.
 - Build-1031 manuscript undergoing technical, safety, editorial, and licensing review.
