@@ -21,7 +21,7 @@ The version series restarts at `v0.1.0-alpha.1` to reflect alpha maturity. The 1
 5. **Outside the evidence:** the main Equalizer screen (band gains, preamp, limiter, balance, reverb parameters), the Block Size setting, the casting pipeline, network-stream protocols, the export file's scope and format, Feature Pack enforcement, and several runtime-generated screens (Audio Info, Last Processed Commands, Audio Outputs Detection Log).
 6. **Poweramp Equalizer** (the separate app) is outside the primary scope.
 7. **Android-version statements.** Several GENERAL PRINCIPLE notes about Android behaviour (audio focus on Android 12+, media notifications on Android 11/13+, lock-screen art on Android 11+, bit-perfect USB on Android 14+) are general platform knowledge, not tested with Poweramp.
-8. **Third-party text.** The handbook quotes Poweramp's own setting texts verbatim. Their treatment for redistribution is still under review, and no licence has been chosen.
+8. **Third-party text.** Original editorial writing is CC BY 4.0; bulk verbatim application hints have been omitted from the settings references and long chapter quotations paraphrased. Poweramp's proprietary resources are excluded from this license.
 9. **Rendering.** Alerts use GitHub alert syntax (`> [!WARNING]`), which Obsidian also renders. Tables use HTML `<sup>` markers. Other viewers may show these as plain text.
 
 ## Technical verification status
@@ -42,7 +42,7 @@ The version series restarts at `v0.1.0-alpha.1` to reflect alpha maturity. The 1
 - New [Quick Start](00%20Front%20Matter/03%20Quick%20Start.md) page.
 
 **Third-party text**
-- The Cover no longer says that application text is not reproduced. It now says that APK text is quoted verbatim and belongs to its owner.
+- The Cover explains that occasional application text may appear. The bulk 304 appendix hint lines were omitted and 75 long quoted passages in chapters paraphrased for the community alpha.
 
 **Data preservation**
 - Full Rescan: prominent caution, rated high risk until verified, backup steps and a “try Rescan first” rule (Ch. 18, 35, 38).
@@ -84,7 +84,7 @@ The version series restarts at `v0.1.0-alpha.1` to reflect alpha maturity. The 1
 ## Corrections planned after this alpha
 
 - Device testing for the Runtime Verification Register, starting with RV-040 (Full Rescan), RV-054 († defaults) and RV-056 (Import).
-- Decide the treatment of verbatim APK text and choose a licence.
+- Review any remaining limited, context-specific third-party excerpts when revising the handbook.
 - Reduce remaining generator artefacts: back-to-back APK quotations, raw format strings such as “%d ms”, untitled-entry rows, repeated value lists (Ch. 30).
 - Add the missing chapter mappings in the coverage manifest (`download_album_art`, `_counter_hint`, `buttons`, `list_3rdparty`, `vis_latency_ms`).
 - Further Android-version caveats where chapters describe platform behaviour.

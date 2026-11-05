@@ -2,7 +2,7 @@
 
 An **unofficial, community-maintained technical handbook** for [Poweramp Player](https://powerampapp.com/), focused on understanding its settings, audio-processing options, output paths, Android integration, and troubleshooting.
 
-> **Status: `v0.1.0-alpha.1` private preview.** Documentation baseline: **Poweramp Player APK build 1031**. Technical verification is ongoing, and this preview is **not approved for public distribution**: the licence and the treatment of quoted Poweramp text are still open (see below). Newer Poweramp builds may differ.
+> **Release: `v0.1.0-alpha.1` — community alpha.** Documentation baseline: **Poweramp Player APK build 1031**. Technical verification is ongoing, with 59 open runtime questions. Newer builds may differ.
 
 **Not affiliated with, endorsed by, or maintained by the Poweramp developer.** Poweramp and related trademarks belong to their respective owners. For product support and official downloads, use the [Poweramp website](https://powerampapp.com/) or [official forum](https://forum.powerampapp.com/).
 

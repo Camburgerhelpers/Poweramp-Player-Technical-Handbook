@@ -9,7 +9,7 @@ This is a planning document, not a release schedule. Work is ordered by evidence
 - [x] Qualify inferred preference defaults and unverified Android behavior.
 - [x] Fix misleading audio-routing statements and documented inconsistencies.
 - [x] Complete the public README, release notes, and navigation.
-- [ ] Resolve the publication license and third-party quotation review.
+- [x] Resolve the editorial licensing decision and reduce bulk verbatim application descriptions; review of any remaining short third-party references is ongoing.
 - [ ] Validate all chapters, appendices, links, metadata, and release archive.
 - [ ] Publish **v0.1.0-alpha.1** only after an explicit final review.
 

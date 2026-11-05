@@ -2,7 +2,7 @@
   "publication": "Poweramp Player Technical Handbook",
   "version": "v0.1.0-alpha.1",
   "status": "Unofficial community alpha — technical verification ongoing",
-  "distribution_status": "Community alpha release candidate; public visibility and release creation pending",
+  "distribution_status": "Unofficial community alpha v0.1.0-alpha.1 — public repository launch pending owner visibility change",
   "affiliation": "Unofficial; not affiliated with or endorsed by the Poweramp developer",
   "documentation_baseline": {
     "application": "Poweramp Player",
@@ -1092,21 +1092,21 @@
     {
       "path": "RELEASE-NOTES-v0.1.0-alpha.1.md",
       "category": "release-notes",
-      "bytes": 10391,
-      "sha256": "a56f849a67d27864c83f34e49d2c9737421961e33bb3e09bcf9fb5cfdd93eab6",
+      "bytes": 10550,
+      "sha256": "193d1199a94daa83373afe70575699b7b6c260250f990ec8e6c6d61d72377e21",
       "relative_links": 3,
       "broken_links": 0,
-      "words": 1458,
+      "words": 1474,
       "changed_since_export_candidate": true
     },
     {
       "path": "RUNTIME-VERIFICATION-REGISTER.md",
       "category": "verification-register",
-      "bytes": 15291,
-      "sha256": "48661e93113aa4d70e8205caf5e7a9aecba6c7eb34e8de8226adabe81793b69f",
+      "bytes": 15262,
+      "sha256": "a961e7ac952474a46cdd81e3c9bb94be868007a03e7efd610e8a3932ba699d36",
       "relative_links": 24,
       "broken_links": 0,
-      "words": 1497,
+      "words": 1493,
       "changed_since_export_candidate": true
     }
   ]
