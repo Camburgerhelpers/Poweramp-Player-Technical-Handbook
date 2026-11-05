@@ -32,9 +32,9 @@ There are two different lock-screen experiences. The **Android lock screen** sho
 *Source: APK build 1031 settings XML — reference: [Lock Screen Settings](../Appendices/Settings%20Reference/Lock%20Screen%20Settings.md).*
 
 
-- **Album Art** (on by default): “Show album art on Android lock screen. This option may also affect Android Auto covers. Not supported by some devices/ROMs”.
-- **Blur** (off by default; depends on Album Art): “Lock screen album art is blurred. The album art background isn't shown by some devices. This option is not recommended for smart watches or apps that use Poweramp album art”.
-- **Show Default Image:** “Send default placeholder image when no album art exists for the track. Also affects smart watches, other apps utilizing media APIs. Default image is defined by skin”.
+- **Album Art** (on by default): album art may appear on the Android lock screen and affect Android Auto, depending on firmware.
+- **Blur** (off by default; depends on Album Art): lock-screen artwork can be blurred; some devices hide the background, and watches or other media apps may be affected.
+- **Show Default Image:** a skin-defined placeholder may be sent to watches or Android media clients when a track has no artwork.
 - **Buttons** opens the media action buttons ([Chapter 30 — Notifications and Media Buttons](30%20Notifications%20and%20Media%20Buttons.md)).
 
 Related, on the Album Art screen: **Send High Resolution Album Art** sends high-resolution art to the lock screen, widgets and other media consumers, and “Lock Screen ➔ Blur has priority over this option” ([Chapter 27 — Album Art and Backgrounds](../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)).
@@ -52,7 +52,7 @@ Related, on the Album Art screen: **Send High Resolution Album Art** sends high-
 *Source: APK build 1031 settings XML — reference: [Lock Screen Settings](../Appendices/Settings%20Reference/Lock%20Screen%20Settings.md).*
 
 
-- **Show On Lock Screen** (off by default): “Poweramp shows itself on top of system lock screen if music is playing. Settings, deletion, edit tag, etc. actions trigger device lock screen”.
+- **Show On Lock Screen** (off by default): the player can overlay the system lock screen during playback, but sensitive actions invoke the device lock screen.
 - **Shorter Timeout** (on by default): “Apply shorter screen timeout when Poweramp is on lock screen”.
 - **Landscape Layout:** “Enable rotation to landscape layout”.
 - **Direct Unlock:** “Unlock directly to home screen (if possible) instead of Android lockscreen”.

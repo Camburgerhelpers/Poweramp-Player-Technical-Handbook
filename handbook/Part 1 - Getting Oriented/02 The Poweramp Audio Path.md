@@ -50,7 +50,7 @@ This chapter is a map, not a manual. It follows a track from the file to the lou
  DAC · Bluetooth codec · Chromecast receiver  →  amplifier  →  headphones or speakers
 ```
 
-**GENERAL PRINCIPLE** with **APK VERIFIED** labels. The stage names and the settings attached to them come from the APK. The order of the inner stages, especially where ReplayGain, EQ and transitions sit relative to one another, is a conventional player design and is **not declared** by the settings XML. Two APK descriptions do fix the end points. The 64-bit pipeline is described as running “from decoder to the output”, and Perfect Bit Perfect as “Direct decoder-to-output path. Enables DSD output for DSD tracks. No Equalizer, no DSP, no software volume control”.
+**GENERAL PRINCIPLE** with **APK VERIFIED** labels. The stage names and the settings attached to them come from the APK. The order of the inner stages, especially where ReplayGain, EQ and transitions sit relative to one another, is a conventional player design and is **not declared** by the settings XML. Two APK descriptions do fix the end points. The 64-bit pipeline is described as running “from decoder to the output”, and Perfect Bit Perfect as a direct decoder-to-output route can send DSD tracks without EQ, other DSP, or software volume.
 
 ## The Audio hub
 
@@ -58,7 +58,7 @@ This chapter is a map, not a manual. It follows a track from the file to the lou
 
 | Entry | In-app summary | Covered in |
 |---|---|---|
-| **Audio Info** | “Detailed info about the audio processing. Also available by long press on small meta info on the Main and Equalizer screens” | this chapter |
+| **Audio Info** | the Audio Info view reports processing details and can be opened by holding the small track-information display on the Player or Equalizer screen | this chapter |
 | **Crossfade, Fade, and Gapless** | “Crossfade options, fade type and length, gapless” | [Chapter 06](../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md) |
 | **Replay Gain (RG)** | “Enable RG, set source, preamp values” | [Chapter 05](../Part%202%20-%20Sound%20and%20Audio%20Processing/05%20ReplayGain%20and%20Loudness%20Normalization.md) |
 | **Audio Focus** | “Pause/Resume/Duck volume on calls/notifications/start” | [Chapter 16](../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md) |
@@ -84,7 +84,7 @@ Several APK texts warn that something outside Poweramp's own settings can overri
 |---|---|---|
 | “On your device, DVC may force standard definition audio (48 kHz/16 bit)” | per-output options | On affected devices DVC and high-resolution output exclude each other. See [Chapter 03](../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 11](../Part%202%20-%20Sound%20and%20Audio%20Processing/11%20Bit-Perfect%20Output.md). |
 | “Global sound effects, like Dolby, may force standard definition audio (48 kHz/16 bit)” | per-output options | System-wide effects can cap the output format whatever Poweramp is set to. |
-| “On most Android phones, choosing a Bluetooth codec sample rate can cause repeated resampling because the system enforces 48 kHz-based sample rates, even when the codec supports 44.1 kHz-based frequencies. The codec option is intended for DAPs” “The codec parameters may arrive late, requiring reconfiguration during a playback; or in some instances, may never arrive” | per-output options (Bluetooth) | A 44.1 kHz codec setting on a phone can cause extra resampling. See [Chapter 14](../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md). |
+| many Android phones use 48-kHz-family Bluetooth rates, so requesting another codec rate can add resampling; this option chiefly targets dedicated audio players codec parameters can arrive too late, cause mid-track reconfiguration, or fail to arrive | per-output options (Bluetooth) | A 44.1 kHz codec setting on a phone can cause extra resampling. See [Chapter 14](../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md). |
 | “Disable Direct Volume Control (DVC) for this output/device” “Disabling DVC may be required for Hi-Res and other advanced output options to work” | per-output options | Advanced output modes may need DVC switched off for that output. |
 | “Output driver can override this setting” | Resampler | The chosen dither may not be the dither actually used. |
 

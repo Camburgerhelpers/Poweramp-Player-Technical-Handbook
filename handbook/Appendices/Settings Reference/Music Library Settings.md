@@ -61,6 +61,8 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Rescan
 
 - **Key:** `rescan_folders`
@@ -74,7 +76,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 
 - **Key:** `erase_and_rescan`
 - **Control:** Action (`ProgressPreference`)
-- **APK text:** “Clear tag info database and rescan Library/Folders. Use when storage/SD card changed, on major ROM updates, or when folders are moved on storage”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -92,7 +93,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 
 - **Key:** `some_saf_folders_unavailable`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Android may not allow certain folders to be added, such as Download or a storage root. In this case please add their subfolders instead. This restriction is imposed by Google”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -101,7 +101,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `file_access_legacy`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Direct file access mode. Requires extra permission” “This mode makes all storages directly accessible for a selection in the Music Folders dialog. This option is not supported on Android 13+ for the Play app edition”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 
@@ -117,7 +116,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `scan_min_track_duration`
 - **Control:** List (`NumberListPreference`)
 - **Declared default:** 6 (`6`)
-- **APK text:** “Less than (seconds): %s”
 - **Options:**
   - Don't ignore - include all — `0`
   - 2 — `2`
@@ -135,7 +133,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `skip_video`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Tracks with video stream will be ignored”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -144,7 +141,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 
 - **Key:** `auto_find_button`
 - **Control:** Action (`Preference`)
-- **APK text:** “Use this option to find music folders automatically”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -154,7 +150,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** On
-- **APK text:** “Useful for podcasts, long sets”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -164,7 +159,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** On
-- **APK text:** “Change <<< >>> (category change) pro buttons to -10/+10s rewinding buttons for long tracks. Also applies to Long category” “Requires Pro Buttons skin option enabled”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -174,7 +168,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Control:** Slider (`SeekbarPreference`)
 - **Category:** Advanced
 - **Declared default:** 45 min (`45`)
-- **APK text:** “At least: %d min.”
 - **Range:** 0 min to 60 min, step not declared
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -185,7 +178,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Control:** Slider (`SeekbarPreference`)
 - **Category:** Advanced
 - **Declared default:** 50% (`50`)
-- **APK text:** “Count track as played after playing at least: %d%%”
 - **Range:** 0% to 100%, step not declared
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
@@ -195,7 +187,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `library_lists`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Advanced
-- **APK text:** “List click action, lists/categories options”
 - **Opens:** [Library Lists](Library%20Lists.md) (`library_lists`)
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 
@@ -204,7 +195,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `library_search`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Advanced
-- **APK text:** “Search results playback options”
 - **Opens:** [Search Settings](Search%20Settings.md) (`library_search`)
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 
@@ -213,7 +203,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `library_queue`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Advanced
-- **APK text:** “Queue options”
 - **Opens:** [Playback Queue](Playback%20Queue.md) (`library_queue`)
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 
@@ -222,7 +211,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `library_playlists`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Advanced
-- **APK text:** “User created playlists import/export and options”
 - **Opens:** [Playlist Settings](Playlist%20Settings.md) (`library_playlists`)
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 
@@ -231,7 +219,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `library_shuffle`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Advanced
-- **APK text:** “Shuffle options”
 - **Opens:** [Shuffle Settings](Shuffle%20Settings.md) (`library_shuffle`)
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 
@@ -240,7 +227,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 - **Key:** `library_scanner`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Advanced
-- **APK text:** “Poweramp folders and library scanner options”
 - **Opens:** [Music Scanner](Music%20Scanner.md) (`library_scanner`)
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 
@@ -248,7 +234,6 @@ Library maintenance and behaviour: rescans, music folders, legacy file access, t
 
 - **Key:** `reset_stats`
 - **Control:** Action (`Preference`)
-- **APK text:** “Reset tracks played times, last played, and related stats”
 - **Source:** `xml-v22/library.xml`, `xml/library.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
 

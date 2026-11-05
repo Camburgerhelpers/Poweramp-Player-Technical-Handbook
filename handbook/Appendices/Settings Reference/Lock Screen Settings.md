@@ -57,6 +57,8 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Android Lock Screen
 
 - **Key:** `ics_ls_cat`
@@ -70,7 +72,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Lock Screen
 - **Declared default:** On
-- **APK text:** “Show album art on Android lock screen. This option may also affect Android Auto covers. Not supported by some devices/ROMs”
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 
@@ -80,7 +81,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Lock Screen
 - **Declared default:** Off
-- **APK text:** “Lock screen album art is blurred. The album art background isn't shown by some devices. This option is not recommended for smart watches or apps that use Poweramp album art”
 - **Depends on:** Album Art (`ics_ls_aa`)
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md)
@@ -91,7 +91,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Lock Screen
 - **Declared default:** Off
-- **APK text:** “Send default placeholder image when no album art exists for the track. Also affects smart watches, other apps utilizing media APIs. Default image is defined by skin”
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 
@@ -100,7 +99,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Key:** `buttons`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Android Lock Screen
-- **APK text:** “Media action buttons”
 - **Opens:** [Media Buttons and Actions](Media%20Buttons%20and%20Actions.md) (`ui_mediaactions`)
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md)
@@ -118,7 +116,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Poweramp Lock Screen
 - **Declared default:** Off
-- **APK text:** “Poweramp shows itself on top of system lock screen if music is playing. Settings, deletion, edit tag, etc. actions trigger device lock screen”
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md)
 
@@ -128,7 +125,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Poweramp Lock Screen
 - **Declared default:** On
-- **APK text:** “Apply shorter screen timeout when Poweramp is on lock screen”
 - **Depends on:** Show On Lock Screen (`ls_enable`)
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md)
@@ -150,7 +146,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Poweramp Lock Screen
 - **Declared default:** Off
-- **APK text:** “Enable rotation to landscape layout”
 - **Depends on:** Show On Lock Screen (`ls_enable`)
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md)
@@ -161,7 +156,6 @@ Album art sent to the Android lock screen and the optional Poweramp lock screen.
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Poweramp Lock Screen
 - **Declared default:** Off
-- **APK text:** “Unlock directly to home screen (if possible) instead of Android lockscreen”
 - **Depends on:** Show On Lock Screen (`ls_enable`)
 - **Source:** `xml-v22/lockscreen.xml`, `xml/lockscreen.xml`
 - **Discussed in:** [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md)

@@ -47,9 +47,9 @@ The main Settings menu can show two runtime warnings, `manage_app_warn` and `per
 
 - **Keep Service:** “Poweramp player service won't be unloaded when in idle” “On Android 8+ this option works reliable only with the active notification”.
 - **Keep Notification:** “Notification stays even if Poweramp paused in its UI, when playback auto-ends, etc”.
-- **Keep Inactive Media Notification:** “Player can be resumed via Media Notification suggestion when inactive or unloaded (depending on firmware)” ([Chapter 30 — Notifications and Media Buttons](30%20Notifications%20and%20Media%20Buttons.md)).
+- **Keep Inactive Media Notification:** a firmware-dependent media suggestion may permit resuming the player while it is inactive ([Chapter 30 — Notifications and Media Buttons](30%20Notifications%20and%20Media%20Buttons.md)).
 - **Use Wakelock:** “Check this if audio stops when screen is off”.
-- **Play silence in background** (per output): “Helps keeping player uninterrupted in the background. Increases battery usage” “Prefer allowing Poweramp to work in the background in the system settings as an alternative to this option”.
+- **Play silence in background** (per output): “Helps keeping player uninterrupted in the background. Increases battery usage” Android's background permissions are preferable to continuous silent playback for keeping the player active.
 
 Apply them in that order and stop when the problem is solved. Each later step costs more battery.
 

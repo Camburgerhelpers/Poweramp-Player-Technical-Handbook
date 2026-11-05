@@ -45,6 +45,8 @@ Blurred album-art backgrounds and background gradients for the Player Screen, li
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Enable Blurred Backgrounds
 
 - **Key:** `aa_blur_enabled`
@@ -98,7 +100,6 @@ Blurred album-art backgrounds and background gradients for the Player Screen, li
 - **Key:** `aa_bg_gradient_for_list`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Also apply background gradient for list background”
 - **Source:** `xml-v22/aa_bg.xml`, `xml/aa_bg.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

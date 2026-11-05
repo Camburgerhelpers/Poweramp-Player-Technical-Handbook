@@ -44,6 +44,8 @@ Purchase options for the Full Version (Google Play, RuStore, website) with links
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. (untitled buy_play_fv)
 
 - **Key:** `buy_play_fv`
@@ -69,7 +71,6 @@ Purchase options for the Full Version (Google Play, RuStore, website) with links
 
 - **Key:** `already_purchased`
 - **Control:** Link (`AlreadyPurchasedRedirectPref`)
-- **APK text:** “Restore Purchase”
 - **Opens:** [Purchase Restoration](Purchase%20Restoration.md) (`already_purchased`)
 - **Source:** `xml/buy_methods.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)

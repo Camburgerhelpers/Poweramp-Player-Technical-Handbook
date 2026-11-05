@@ -51,12 +51,13 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Lyrics Swipe Up
 
 - **Key:** `main_lyrics_swipe`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Swipe action on the Player Screen/cover”
 - **Options:**
   - Disabled — `0`
   - When local lyrics available — `1`
@@ -70,7 +71,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `main_lyrics_button`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Button on the Player Screen/cover”
 - **Options:**
   - Disabled — `0`
   - When local lyrics available — `1`
@@ -96,7 +96,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `lyrics_keep_screen`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Keep screen on for the lyrics”
 - **Source:** `xml-v22/ui_lyrics.xml`, `xml/ui_lyrics.xml`
 - **Discussed in:** [Chapter 28](../../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -106,7 +105,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `lyrics_offset`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Applied to synced lyrics in addition to the offset tag” “%d ms”
 - **Range:** −5000 ms to 5000 ms, step 50 ms (labels “-5000” … “0” … “5000”)
 - **Source:** `xml-v22/ui_lyrics.xml`, `xml/ui_lyrics.xml`
 - **Discussed in:** [Chapter 28](../../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md)
@@ -117,7 +115,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `list_zoom_lyrics`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Pinch-to-zoom for zooming”
 - **Options:**
   - Small Font — `-1`
   - Default — `0`
@@ -131,7 +128,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `lyrics_plugin`
 - **Control:** List (`NumberListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “3rd party app to search lyrics when no lyrics found (if installed): %s”
 - **Options:**
   - None — `-1`
   - Browser via custom URL — `6`
@@ -150,7 +146,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `lyrics_custom_url`
 - **Control:** Text field (`EditTextPreference`)
 - **Declared default:** Not declared
-- **APK text:** “For the Browser via custom URL”
 - **Source:** `xml-v22/ui_lyrics.xml`, `xml/ui_lyrics.xml`
 - **Discussed in:** [Chapter 28](../../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -160,7 +155,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Key:** `rescan_lyrics_tags`
 - **Control:** Action (`ProgressPreference`)
 - **Category:** Scanner
-- **APK text:** “Force rescan tracks which may contain lyrics tags, including SYLT”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/ui_lyrics.xml`, `xml/ui_lyrics.xml`
 - **Discussed in:** [Chapter 28](../../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -172,7 +166,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** Not declared
-- **APK text:** “If enabled, Poweramp searches for LRC files in the Music Folders, matching LRC files by their tags, file names, and folders”
 - **Source:** `xml-v22/ui_lyrics.xml`, `xml/ui_lyrics.xml`
 - **Discussed in:** [Chapter 28](../../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -183,7 +176,6 @@ Lyrics access from the Player Screen, display size and offset, external lyrics a
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** Not declared
-- **APK text:** “If disabled, Tag Encoding setting is used for non-Unicode files”
 - **Source:** `xml-v22/ui_lyrics.xml`, `xml/ui_lyrics.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 28](../../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

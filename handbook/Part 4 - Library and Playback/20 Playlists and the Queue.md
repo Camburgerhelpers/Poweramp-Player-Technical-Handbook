@@ -36,15 +36,15 @@ Poweramp distinguishes **playlists**, which are saved lists you build and keep, 
 
 
 - **Import System Library Playlists** and **Export Poweramp Playlists** move playlists between Poweramp and the Android media library or files. The file formats and locations used are not declared. **RUNTIME VERIFICATION REQUIRED.**
-- **Import Ratings:** “Update track ratings from imported playlists (when new playlist is imported) or from playlists opened in file managers”.
+- **Import Ratings:** ratings may be imported from newly imported playlists or from playlists opened in a file manager.
 
 > [!CAUTION]
 > **Import Ratings can overwrite current ratings.**
 > Per its APK text, ratings can be updated from an imported playlist, or simply from a playlist file opened in a file manager. An old playlist can therefore replace newer ratings. If your current ratings matter, turn **Import Ratings** off before importing or opening old playlists, and keep a backup ([Chapter 35](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)). **RUNTIME VERIFICATION REQUIRED:** which playlist formats carry ratings.
 - **Playlist Insert Position:** where tracks added to a playlist go: Insert at start (`1`), Add to end (`0`) or Shuffled (`2`). No default is declared.
 - **Don't Add Duplicates:** “Duplicates won't be added to playlist”.
-- **Remove Playlist Entries On Track Deletion:** “Playlist entries are automatically removed for the deleted tracks. If disabled, non-playable items stay in the playlist and can be resolved to matching tracks later”.
-- **Resolve Playlist Entries:** “Automatically match unresolved playlist entries on Folders/Library auto scan. If disabled, non-playable items may appear in playlists after a storage change, folders renaming/moving, etc. Playlist entries always can be corrected manually by the Rescan menu action from Playlists category”.
+- **Remove Playlist Entries On Track Deletion:** the player can remove deleted tracks from playlists; when disabled, unresolved entries remain for later relinking.
+- **Resolve Playlist Entries:** the player attempts to relink unresolved playlist tracks during scans, while users can request a playlist rescan after moves or renames.
 
 **Playlist encodings.** `.m3u8` playlists are always read as UTF-8. Plain `.m3u` uses UTF-8 too while **Always Use UTF-8 for .m3u** is on (the default), and otherwise uses Tag Encoding ([Chapter 18 — Music Folders, Scanning and Tags](18%20Music%20Folders,%20Scanning%20and%20Tags.md)).
 

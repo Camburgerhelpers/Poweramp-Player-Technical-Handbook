@@ -56,8 +56,8 @@ The per-output options screen ([Chapter 12 — Choosing an Audio Output](../Part
 
 - **Sample Rate** is “The sample rate Poweramp uses for the output”. Its choices are populated at runtime from what the driver and device support.
 - **Follow Track Sample Rate** (global switch; the XML shows no per-output switch with this name) “enables track sample rate matching for the compatible outputs”. Its hints explain the algorithm:
-  - “In Follow Track mode, Poweramp will try to match the track sample rate to a supported by the device rate from the allowed list, or it will upsample to the next higher allowed and supported rate” “This option is intended for devices with broad sample rate support, including USB DACs and Digital Audio Players”.
-  - “Gapless playback and crossfade may be affected when switching between different sample rates” “Sample rates that are not in the allowed list or are not supported by the output device will still be resampled” “Perfect Bit Perfect mode enables the selection of allowed DSD rates as well”.
+  - Follow Track chooses from supported allowed rates and may select the next higher compatible rate the feature targets devices supporting numerous rates, such as USB DACs and dedicated audio players.
+  - “Gapless playback and crossfade may be affected when switching between different sample rates” source rates not allowed or not supported by the output are still resampled “Perfect Bit Perfect mode enables the selection of allowed DSD rates as well”.
 - **Allowed Sample Rates** is a runtime-populated multi-select that limits the rates Follow Track may use.
 - **Base-Rate Synchronous Scaling:** “Prioritize integer multiples of the source frequency (44.1/48 kHz) from the Allowed Sample Rates”.
 
@@ -81,7 +81,7 @@ Even with Poweramp configured perfectly, the platform can impose a rate. The APK
 |---|---|
 | DVC on some devices | “On your device, DVC may force standard definition audio (48 kHz/16 bit)” |
 | System-wide effects | “Global sound effects, like Dolby, may force standard definition audio (48 kHz/16 bit)” |
-| Bluetooth on phones | “On most Android phones, choosing a Bluetooth codec sample rate can cause repeated resampling because the system enforces 48 kHz-based sample rates, even when the codec supports 44.1 kHz-based frequencies. The codec option is intended for DAPs” “The codec parameters may arrive late, requiring reconfiguration during a playback; or in some instances, may never arrive” |
+| Bluetooth on phones | many Android phones use 48-kHz-family Bluetooth rates, so requesting another codec rate can add resampling; this option chiefly targets dedicated audio players codec parameters can arrive too late, cause mid-track reconfiguration, or fail to arrive |
 
 In these cases Poweramp may output 48 kHz, or Android may convert after Poweramp. Use **Audio Info** to see what Poweramp sends. **GENERAL PRINCIPLE:** where the platform forces a fixed rate, it is usually better to let Poweramp's resampler (SoX, if you prefer) do the conversion to that rate than to leave it to a generic system resampler.
 

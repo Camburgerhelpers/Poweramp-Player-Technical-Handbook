@@ -40,6 +40,8 @@ Resampler engine, resampler cutoff ratio, and dither type.
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Resampler Type
 
 - **Key:** `resampler_type`
@@ -66,7 +68,6 @@ Resampler engine, resampler cutoff ratio, and dither type.
 - **Key:** `dither`
 - **Control:** List (`NumberListPreference`)
 - **Declared default:** `0` → None (fastest)†
-- **APK text:** “Output driver can override this setting”
 - **Options:**
   - None (fastest)
   - Rectangular (fast)

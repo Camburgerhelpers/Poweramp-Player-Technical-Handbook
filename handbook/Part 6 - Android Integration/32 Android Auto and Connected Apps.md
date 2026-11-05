@@ -34,7 +34,7 @@ Poweramp publishes its playback state, artwork and library to other devices and 
 *Source: APK build 1031 settings XML — reference: [Miscellaneous Settings](../Appendices/Settings%20Reference/Miscellaneous%20Settings.md).*
 
 
-- **Grid View for Categories:** “If enabled, Albums, Artists, Folders, etc. categories are shown as grid. May require category re-opening for view to apply”.
+- **Grid View for Categories:** Android Auto categories can use grids, and an already open category may need reopening.
 - **Images for Categories** (on by default): “If enabled, album art and other relevant images are shown for categories”.
 - **Album Art for Tracks** (on by default): “If enabled, album art is shown for track entries”.
 - **Buttons** opens the media action buttons. Buttons 3–6 are grouped “Android Auto/Other” ([Chapter 30 — Notifications and Media Buttons](30%20Notifications%20and%20Media%20Buttons.md)).
@@ -48,7 +48,7 @@ Poweramp publishes its playback state, artwork and library to other devices and 
 *Source: APK build 1031 settings XML — reference: [Miscellaneous Settings](../Appendices/Settings%20Reference/Miscellaneous%20Settings.md).*
 
 
-“Enable Now Playing List/Queue for the connected devices (e.g. Wear) and apps (Android Auto). Poweramp activates this option if some device/app requests Now Playing list”. Poweramp turns this on by itself when a device or app requests the list. Turning it off may hide the queue view on a watch or in Android Auto until the next request.
+connected media clients can request a Now Playing list or queue, which Poweramp may enable automatically. Poweramp turns this on by itself when a device or app requests the list. Turning it off may hide the queue view on a watch or in Android Auto until the next request.
 
 ## Artwork for cars, watches and other apps
 
@@ -68,7 +68,7 @@ Poweramp publishes its playback state, artwork and library to other devices and 
 | No covers in Android Auto or third-party apps | API Compatibility (*Experiment*) | “Change if album art is not visible in Android Auto/3rd party apps” |
 | Android Auto covers missing | Lock screen **Album Art** | “This option may also affect Android Auto covers” |
 | Watch loses cover when the phone screen is off | Always Send Album Art | “For smartwatches/other devices which should always receive album art, even when screen is off” |
-| Watch shows nothing for tracks without art | Show Default Image | “Send default placeholder image when no album art exists for the track. Also affects smart watches, other apps utilizing media APIs. Default image is defined by skin” |
+| Watch shows nothing for tracks without art | Show Default Image | a skin-defined placeholder may be sent to watches or Android media clients when a track has no artwork |
 | Low-resolution covers on the lock screen, widgets and other media consumers | Send High Resolution Album Art | “Lock Screen ➔ Blur has priority over this option” |
 
 ## Car head units over Bluetooth

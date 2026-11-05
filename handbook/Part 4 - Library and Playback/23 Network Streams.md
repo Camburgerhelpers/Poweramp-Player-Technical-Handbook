@@ -48,7 +48,7 @@ All three are on **Settings › Misc** under Tweaks.
 *Source: APK build 1031 settings XML — reference: [Library Lists](../Appendices/Settings%20Reference/Library%20Lists.md), [Album Art Settings](../Appendices/Settings%20Reference/Album%20Art%20Settings.md).*
 
 
-- **Stream Name In Title:** “Use "Stream - Track Title" pattern for stream titles, instead of just "Track Title". Applied to the next played stream”.
+- **Stream Name In Title:** the next stream may display both the stream name and current track title.
 - **Prefer Track Cover for Streams:** “Show album art based on stream track title/artist instead of the stream name”, which “Increases traffic usage”. With it off, artwork is chosen by the stream name.
 - **Download Album Art** is Off by default ([Chapter 27 — Album Art and Backgrounds](../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)). **RUNTIME VERIFICATION REQUIRED:** whether stream artwork depends on it. **Download Only On Wi-Fi** is On by default, so when downloading is enabled, covers are not fetched over mobile data.
 

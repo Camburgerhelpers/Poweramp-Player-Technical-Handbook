@@ -73,7 +73,7 @@ The declared default `0` is **Auto** under the inferred † mapping (unverified)
 
 
 - **Keep Notification:** “Notification stays even if Poweramp paused in its UI, when playback auto-ends, etc”.
-- **Keep Inactive Media Notification:** “Player can be resumed via Media Notification suggestion when inactive or unloaded (depending on firmware)”. Its hint: “Media Notification for an inactive player has only the play button” “If enabled, this notification can't be removed by player on pause. When disabled, phone reboot may be needed to apply”.
+- **Keep Inactive Media Notification:** a firmware-dependent media suggestion may permit resuming the player while it is inactive. Its hint: “Media Notification for an inactive player has only the play button” an inactive notification may persist after pausing, and changing the setting may require a restart.
 - **Keep Service:** “Poweramp player service won't be unloaded when in idle” “On Android 8+ this option works reliable only with the active notification”.
 - **Remove Notification on Disconnection:** “Notification is removed on Headset/BT disconnection if player is paused” “This option may temporarily keep Poweramp idle service if required”.
 

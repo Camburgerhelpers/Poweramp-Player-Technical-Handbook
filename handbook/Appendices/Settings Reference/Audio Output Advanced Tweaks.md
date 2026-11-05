@@ -40,12 +40,13 @@ Output-level compatibility workarounds: USB DAC auto-activation, forcing the spe
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Show Poweramp for USB DACs
 
 - **Key:** `usb_activity`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Automatically activate Poweramp when USB DAC is attached. Allows the device to be remembered, so connection dialogs can be skipped in the future”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_outputs_tweaks.xml`, `xml/audio_outputs_tweaks.xml`
 - **Discussed in:** [Chapter 12](../../Part%203%20-%20Outputs%20and%20Devices/12%20Choosing%20an%20Audio%20Output.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -57,7 +58,6 @@ Output-level compatibility workarounds: USB DAC auto-activation, forcing the spe
 - **Key:** `force_no_speaker`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Enable this if speaker doesn't switch off after calls, some notifications, etc.”
 - **Source:** `xml-v22/audio_outputs_tweaks.xml`, `xml/audio_outputs_tweaks.xml`
 - **Discussed in:** [Chapter 12](../../Part%203%20-%20Outputs%20and%20Devices/12%20Choosing%20an%20Audio%20Output.md), [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -67,7 +67,6 @@ Output-level compatibility workarounds: USB DAC auto-activation, forcing the spe
 - **Key:** `use_stream3_player`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Enable this if volume or other media actions don't work for the lock screen or when screen is off”
 - **Source:** `xml-v22/audio_outputs_tweaks.xml`, `xml/audio_outputs_tweaks.xml`
 - **Discussed in:** [Chapter 12](../../Part%203%20-%20Outputs%20and%20Devices/12%20Choosing%20an%20Audio%20Output.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 

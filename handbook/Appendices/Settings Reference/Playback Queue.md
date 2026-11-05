@@ -45,6 +45,8 @@ When the Queue starts and ends, insert positions, clearing behaviour, and shuffl
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Start Playing Queue
 
 - **Key:** `queue_start`
@@ -98,7 +100,6 @@ When the Queue starts and ends, insert positions, clearing behaviour, and shuffl
 - **Key:** `q_next_forces_after_song`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Play Next forces option: After the current Song”
 - **Source:** `xml-v22/library_queue.xml`, `xml/library_queue.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)
 
@@ -107,7 +108,6 @@ When the Queue starts and ends, insert positions, clearing behaviour, and shuffl
 - **Key:** `queue_clear_on_add`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “If enabled, Queue is always cleared on track(s) addition. If disabled, Queue is cleared only after all songs have been played”
 - **Source:** `xml-v22/library_queue.xml`, `xml/library_queue.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)
 
@@ -116,7 +116,6 @@ When the Queue starts and ends, insert positions, clearing behaviour, and shuffl
 - **Key:** `queue_never_clear_on_add`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “If enabled, Queue is never cleared on track(s) addition. Search results playback still clears Queue”
 - **Source:** `xml-v22/library_queue.xml`, `xml/library_queue.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md), [Chapter 22](../../Part%204%20-%20Library%20and%20Playback/22%20Search.md)
 
@@ -125,7 +124,6 @@ When the Queue starts and ends, insert positions, clearing behaviour, and shuffl
 - **Key:** `queue_no_shuffle`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Queue is always played in-order. Also affects Search results Shuffle”
 - **Source:** `xml-v22/library_queue.xml`, `xml/library_queue.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md), [Chapter 21](../../Part%204%20-%20Library%20and%20Playback/21%20Shuffle.md), [Chapter 22](../../Part%204%20-%20Library%20and%20Playback/22%20Search.md)
 

@@ -46,12 +46,13 @@ Graphic equalizer band count and custom band layout.
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Number of Bands
 
 - **Key:** `equ_bands_num`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** 10 (ISO) (`10`)
-- **APK text:** “Predefined number of bands, including ISO recommended bands distribution”
 - **Options:**
   - 5 — `5`
   - 10 (ISO) — `10`
@@ -68,7 +69,6 @@ Graphic equalizer band count and custom band layout.
 
 - **Key:** `_number_of_bands_msg`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “High number of bands may require manual Block Size adjustment for the increased frequency resolution”
 - **Source:** `xml-v22/peq_equ_bands.xml`, `xml/peq_equ_bands.xml`
 
 ### 3. Enable Custom Bands
@@ -98,7 +98,6 @@ Graphic equalizer band count and custom band layout.
 - **Control:** Slider (`SeekbarPreference`)
 - **Category:** Advanced
 - **Declared default:** 20 Hz (`20`)
-- **APK text:** “%.0fHz”
 - **Range:** 5 Hz to 200 Hz, step not declared (labels “5” … “200”)
 - **Depends on:** Enable Custom Bands (`equ_custom_bands`)
 - **Source:** `xml-v22/peq_equ_bands.xml`, `xml/peq_equ_bands.xml`
@@ -110,7 +109,6 @@ Graphic equalizer band count and custom band layout.
 - **Control:** Slider (`SeekbarPreference`)
 - **Category:** Advanced
 - **Declared default:** 16.0 kHz (`16000`)
-- **APK text:** “%.1fkHz”
 - **Range:** 14.0 kHz to 20.0 kHz, step 0.5 kHz (labels “14K” … “20K”)
 - **Depends on:** Enable Custom Bands (`equ_custom_bands`)
 - **Source:** `xml-v22/peq_equ_bands.xml`, `xml/peq_equ_bands.xml`

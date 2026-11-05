@@ -56,7 +56,7 @@ Both are off by default, and each needs the named app to be installed and signed
 
 
 - **Metachanged Intent** (on by default): “For external apps”. **GENERAL PRINCIPLE:** “metachanged” broadcasts are a de facto convention that dates back to the old AOSP Music app. They are not a formal platform API. Scrobblers and automation tools use them to learn the current track.
-- **Send Album Art for old API:** “Send Album Art for old Poweramp v2 API. Updated Poweramp API allows much higher res images, but this may be needed for old API apps”. The text confirms that a Poweramp API exists in an old (v2) and an updated form.
+- **Send Album Art for old API:** the older version-2 API artwork option supports clients not yet using the newer, higher-resolution API. The text confirms that a Poweramp API exists in an old (v2) and an updated form.
 - **Shutdown Intent:** “Listen to this shutdown intent and pauses itself/stores state when the intent is received”. Enter the action name of a broadcast that another app or device sends before power-off. **RUNTIME VERIFICATION REQUIRED:** which head units or tools send such a broadcast. It only helps if the broadcast arrives before power is lost; an abrupt power cut sends nothing.
 
 ## Extensions that Poweramp loads

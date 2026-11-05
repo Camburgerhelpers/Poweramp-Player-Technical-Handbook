@@ -39,6 +39,8 @@ Search categories and how search results are played.
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. (untitled msg)
 
 - **Key:** `msg`
@@ -59,7 +61,6 @@ Search categories and how search results are played.
 - **Key:** `search_play_tracks`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “If some tracks are found, play only the tracks and ignore other found categories. If there are no tracks, found categories will be played”
 - **Source:** `xml-v22/library_search.xml`, `xml/library_search.xml`
 - **Discussed in:** [Chapter 22](../../Part%204%20-%20Library%20and%20Playback/22%20Search.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -69,7 +70,6 @@ Search categories and how search results are played.
 - **Key:** `search_track_titles_only`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “If disabled, track album and artist are also used for the search”
 - **Source:** `xml-v22/library_search.xml`, `xml/library_search.xml`
 - **Discussed in:** [Chapter 22](../../Part%204%20-%20Library%20and%20Playback/22%20Search.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

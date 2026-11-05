@@ -65,13 +65,14 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Resume On Wired Headset
 
 - **Key:** `resume_on_headset`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Connection
 - **Declared default:** Not declared
-- **APK text:** “Resume playing when wired headset is connected”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -82,7 +83,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Connection
 - **Declared default:** Not declared
-- **APK text:** “Resume playing when Bluetooth device is connected”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -93,7 +93,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Connection
 - **Declared default:** Not declared
-- **APK text:** “Pause when wired/Bluetooth headset/USB DAC disconnected”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md), [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -104,7 +103,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Connection
 - **Declared default:** Not declared
-- **APK text:** “Pause when USB DAC connected. This helps prevent loud noise during device initialization on some USB DACs”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md), [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -122,7 +120,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Buttons
 - **Declared default:** Not declared
-- **APK text:** “Enable Headset/Bluetooth controls”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -162,7 +159,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Key:** `long_volume_press`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Buttons
-- **APK text:** “Press here for Volume keys long press option”
 - **Opens:** [Miscellaneous Settings](Miscellaneous%20Settings.md) (`misc#long_volume_controls`)
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 
@@ -172,7 +168,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Buttons
 - **Declared default:** Not declared
-- **APK text:** “Use for headunits/devices generating stray play/pause/stop key press commands, which are interpreted as undesired playback toggle or double press”
 - **Depends on:** Respond To Buttons (`enable_headset_controls`)
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
@@ -184,7 +179,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Slider (`SeekbarPreference`)
 - **Category:** Buttons
 - **Declared default:** Not declared
-- **APK text:** “Ignore all Bluetooth commands for a period of time after a connection” “%d sec”
 - **Range:** 0 sec to 20 sec, step not declared (labels “0” … “20”)
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
@@ -196,7 +190,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Buttons
 - **Declared default:** Not declared
-- **APK text:** “Ignore Bluetooth Repeat and Shuffle commands completely”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md), [Chapter 21](../../Part%204%20-%20Library%20and%20Playback/21%20Shuffle.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -218,7 +211,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Buttons
 - **Declared default:** Not declared
-- **APK text:** “Beep on all commands, such as from notifications or other controls”
 - **Depends on:** Beep (`headset_beep`)
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
@@ -241,7 +233,6 @@ Wired headset, Bluetooth and USB DAC connection behaviour, remote-button handlin
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Buttons
 - **Declared default:** Not declared
-- **APK text:** “Disable long press activated voice search while Poweramp is playing”
 - **Source:** `xml-v22/headset.xml`, `xml/headset.xml`
 - **Discussed in:** [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

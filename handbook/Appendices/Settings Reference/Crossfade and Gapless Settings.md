@@ -47,12 +47,13 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Auto-advance Fading
 
 - **Key:** `crossfade_auto_advance`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** `0` → No fading†
-- **APK text:** “Applied when the song is changed automatically”
 - **Options:**
   - No fading
   - Non-gapless/cue
@@ -67,7 +68,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `fade_manual_advance`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** `1` → Short crossfade†
-- **APK text:** “Applied when the song is changed manually” “Output driver can override this setting”
 - **Options:**
   - No fading
   - Short crossfade
@@ -97,7 +97,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `gapless_preload_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 0 ms (`0`)
-- **APK text:** “Increase (to Normal or more) for slow storages to improve gapless” “%d ms”
 - **Range:** 0 ms to 5000 ms, step 100 ms (labels “None” … “Normal” … “More”)
 - **Source:** `xml-v22/fade.xml`, `xml/fade.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md)
@@ -107,7 +106,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `track_end_silence_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 0 ms (`0`)
-- **APK text:** “Applied to all tracks excluding CUE tracks. Elapsed time may go beyond track duration” “%d ms”
 - **Range:** 0 ms to 5000 ms, step 100 ms
 - **Source:** `xml-v22/fade.xml`, `xml/fade.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md)
@@ -117,7 +115,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `crossfade_length_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 5000 ms (`5000`)
-- **APK text:** “%d ms”
 - **Range:** 100 ms to 15000 ms, step 50 ms
 - **Source:** `xml-v22/fade.xml`, `xml/fade.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md)
@@ -127,7 +124,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `fade_short_xfade_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 400 ms (`400`)
-- **APK text:** “%d ms”
 - **Range:** 10 ms to 1000 ms, step 10 ms
 - **Source:** `xml-v22/fade.xml`, `xml/fade.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md)
@@ -137,7 +133,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `fade_short_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 400 ms (`400`)
-- **APK text:** “%d ms”
 - **Range:** 10 ms to 1000 ms, step not declared
 - **Source:** `xml-v22/fade.xml`, `xml/fade.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md)
@@ -147,7 +142,6 @@ Crossfade, manual-change fading, play/pause/stop and seek fades, gapless preload
 - **Key:** `fade_seek_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 100 ms (`100`)
-- **APK text:** “%d ms”
 - **Range:** 10 ms to 500 ms, step not declared
 - **Source:** `xml-v22/fade.xml`, `xml/fade.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md)

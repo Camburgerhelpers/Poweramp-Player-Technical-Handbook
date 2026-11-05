@@ -64,6 +64,8 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Download
 
 - **Key:** `pref_aa_downloading`
@@ -77,7 +79,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Download
 - **Declared default:** Off
-- **APK text:** “Automatically search and download missing album art”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -87,7 +88,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Download
 - **Declared default:** Off
-- **APK text:** “Includes Album Artists and Composers. If disabled, track album art is used”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -97,7 +97,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Download
 - **Declared default:** Off
-- **APK text:** “Higher downloaded album art resolution, increases storage/connection bandwidth usage”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -107,7 +106,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Download
 - **Declared default:** On
-- **APK text:** “Album art will be downloaded only when wi-fi is connected”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 23](../../Part%204%20-%20Library%20and%20Playback/23%20Network%20Streams.md), [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -116,7 +114,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Key:** `reset_negative_aa_status`
 - **Control:** Action (`Preference`)
 - **Category:** Download
-- **APK text:** “Clear stored "not-found" status for album/artist images”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -127,7 +124,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Key:** `clear_aa_cache`
 - **Control:** Action (`Preference`)
 - **Category:** Download
-- **APK text:** “Poweramp images cache will be deleted”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -139,7 +135,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “Always show default image instead of any album art”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -149,7 +144,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “Higher color resolution for album art. Requires 2x more memory per image”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -159,7 +153,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “High resolution album art is sent to Android lock screen, app widgets, and other media API consumers. Lock Screen ➔ Blur has priority over this option”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md), [Chapter 31](../../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 
@@ -169,7 +162,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “For smartwatches/other devices which should always receive album art, even when screen is off”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 
@@ -179,7 +171,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “Change if album art is not visible in Android Auto/3rd party apps”
 - **Markers:** Experiment
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md), [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
@@ -191,7 +182,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** On
-- **APK text:** “Search for album art even if no tags are found in the track”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -201,7 +191,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “Prefer downloaded album art over in-folder Cover.jpg/AlbumArt.jpg, etc”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 
@@ -225,7 +214,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “Increase image quality for high resolution embedded/in-folder images” “Consumes more RAM. Poweramp may crash due to insufficient memory on the devices with not enough RAM”
 - **Markers:** Experiment
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
@@ -237,7 +225,6 @@ Album art downloading, image cache maintenance, and advanced image handling for 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced Tweaks
 - **Declared default:** Off
-- **APK text:** “Show album art based on stream track title/artist instead of the stream name” “Increases traffic usage”
 - **Source:** `xml-v22/aa.xml`, `xml/aa.xml`
 - **Discussed in:** [Chapter 23](../../Part%204%20-%20Library%20and%20Playback/23%20Network%20Streams.md), [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md)
 

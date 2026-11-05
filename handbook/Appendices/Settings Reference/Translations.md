@@ -35,11 +35,12 @@ A link to the Poweramp translation project on Crowdin.
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Poweramp Crowdin Project
 
 - **Key:** `visit_crowdin`
 - **Control:** Action (`Preference`)
-- **APK text:** “Visit/join Poweramp translation project at Crowdin.net”
 - **Source:** `xml/translations.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
 

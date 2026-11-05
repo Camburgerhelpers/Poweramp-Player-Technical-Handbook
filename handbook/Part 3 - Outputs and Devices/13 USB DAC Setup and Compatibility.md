@@ -42,8 +42,8 @@ An external USB DAC is usually the most capable output Poweramp supports. Depend
 *Source: APK build 1031 settings XML — reference: [Audio Output Advanced Tweaks](../Appendices/Settings%20Reference/Audio%20Output%20Advanced%20Tweaks.md), [Headset and Bluetooth Settings](../Appendices/Settings%20Reference/Headset%20and%20Bluetooth%20Settings.md), [Individual Audio Output Settings](../Appendices/Settings%20Reference/Individual%20Audio%20Output%20Settings.md).*
 
 
-- **Show Poweramp for USB DACs** (Audio Outputs › Advanced Tweaks): “Automatically activate Poweramp when USB DAC is attached. Allows the device to be remembered, so connection dialogs can be skipped in the future”.
-- **Pause On USB DAC connection** (Headset/Bluetooth): “Pause when USB DAC connected. This helps prevent loud noise during device initialization on some USB DACs”.
+- **Show Poweramp for USB DACs** (Audio Outputs › Advanced Tweaks): the app can open on USB DAC connection and remember the device to reduce later connection prompts.
+- **Pause On USB DAC connection** (Headset/Bluetooth): pausing as a USB DAC connects can prevent loud initialization noise.
 - **Pause On Headset Disconnect** also covers USB DACs: “Pause when wired/Bluetooth headset/USB DAC disconnected”.
 - **Release USB DAC while paused** (per output): “Return the USB DAC to Android while Poweramp is paused or stopped so other apps can use it” “This option stresses USB DAC a bit more, and may cause glitches for some DACs”.
 
@@ -58,7 +58,7 @@ An external USB DAC is usually the most capable output Poweramp supports. Depend
 *Source: APK build 1031 settings XML — reference: [Individual Audio Output Settings](../Appendices/Settings%20Reference/Individual%20Audio%20Output%20Settings.md).*
 
 
-The APK's hint is the key fact: “USB DACs typically have an independent on-device volume control that Hardware Volume does not affect” “Software volume is not applied in Perfect Bit Perfect mode”. Many DACs therefore have **two** volume stages: Poweramp's (software or DVC) and the DAC's own (knob or firmware).
+The APK's hint is the key fact: many USB DACs have independent level controls that the phone's hardware-volume control may not affect “Software volume is not applied in Perfect Bit Perfect mode”. Many DACs therefore have **two** volume stages: Poweramp's (software or DVC) and the DAC's own (knob or firmware).
 
 - **DAC with its own volume control that keeps its level.** Set the level on the DAC. Leave **Synchronize Hardware Volume** off, as the hint advises for devices that “preserve their volume level between connections”. Because the phone-side hardware volume may then start at maximum, turn the DAC down before each first connection until you know how your DAC behaves.
 - **DAC without its own control, or one that forgets its level.** Turn **Synchronize Hardware Volume** on, which “restores the previously saved volume”. With it off, the device's current hardware volume “typically defaults to MAXIMUM”.
@@ -84,9 +84,9 @@ USB DACs are the output the Follow Track feature was designed for. The APK says 
 
 **GENERAL PRINCIPLE** background: a USB Audio Class device exposes “alternate settings” (interface configurations for given formats) and accepts a sampling-frequency request. Devices differ in how long they need to lock after a change, and in which order they expect the two requests. The quirk options address these differences:
 
-- **USB DAC Warmup on Startup:** “Apply an additional warm-up on the first playback. Enable this if the device tends to produce distorted audio or silence immediately after connecting”.
-- **USB DAC PCM/DSD Warmups:** “Apply additional PCM/DSD warm-ups for USB DACs that may produce distorted audio after format or sample-rate changes”.
-- **USB DAC Sample Rate Quirk:** “Set the USB sample rate after activating the target alternate setting. Enable this for USB DACs that play silence or distorted audio after a connection”.
+- **USB DAC Warmup on Startup:** extra warm-up at first playback may help DACs that initially output silence or distortion.
+- **USB DAC PCM/DSD Warmups:** additional warm-ups can address PCM/DSD distortion after format or sample-rate changes.
+- **USB DAC Sample Rate Quirk:** this workaround sets the USB rate after selecting the alternative interface setting, potentially fixing silence or distortion.
 - **Force USB 1.1:** “Force slow full speed usb connection for the old USB 1.1 devices”. USB 1.1 full speed limits bandwidth. Use it only for genuinely old devices.
 - **Reconfiguration Delay** adds time between reconfigurations and lengthens track changes.
 - **Buffer Size**: “Tweak if audio skips”.

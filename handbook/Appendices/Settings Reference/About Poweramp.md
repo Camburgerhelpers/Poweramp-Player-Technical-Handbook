@@ -58,11 +58,12 @@ About: version and changelog, update checks (including beta), website, translati
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Feature Packages
 
 - **Key:** `feature_packages`
 - **Control:** Link (`FeaturePackRedirectPref`)
-- **APK text:** “Explore Poweramp Feature Packages”
 - **Opens:** [Feature Packages](Feature%20Packages.md) (`feature_packages`)
 - **Source:** `xml/general.xml`
 - **Discussed in:** [Chapter 37](../../Part%207%20-%20Maintenance%20and%20Support/37%20About,%20Updates%20and%20Support.md)
@@ -94,7 +95,6 @@ About: version and changelog, update checks (including beta), website, translati
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Update
 - **Declared default:** Not declared
-- **APK text:** “Check for updates once a week on startup”
 - **Source:** `xml/general.xml`
 - **Discussed in:** [Chapter 37](../../Part%207%20-%20Maintenance%20and%20Support/37%20About,%20Updates%20and%20Support.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

@@ -27,7 +27,7 @@ Volume in Poweramp can be set inside the player's own processing chain (Direct V
 
 **Enable Direct Volume Control** is a global switch. **APK VERIFIED:** it defaults to On. The APK never defines DVC in a sentence, but the texts around it describe its role consistently:
 
-- The preamp reduction applies “Allows equalization/basses without distortion. Set to 0 dB to match other players’ volume, though this makes equalization less effective” “Applied only when DVC is disabled for any reason”.
+- The preamp reduction applies the reduction provides headroom for bass or EQ boosts; setting 0 dB may match other apps' loudness but reduces this protection “Applied only when DVC is disabled for any reason”.
 - **No Headroom Gain Reduction**: “Don't reduce output gain when DVC is disabled. May cause distortion for high equ/tone gains”.
 - **Smooth Equalizer/Tone Gains** (on by default): “Automatically reduce Equalizer/Tone band gains near maximum volume to avoid overloading”.
 - Per output, **No DVC**: “Disable Direct Volume Control (DVC) for this output/device” “Disabling DVC may be required for Hi-Res and other advanced output options to work”.
@@ -55,9 +55,9 @@ Volume in Poweramp can be set inside the player's own processing chain (Direct V
 
 **GENERAL PRINCIPLE:** with Bluetooth Absolute Volume, the phone's volume control adjusts the headset's own volume instead of scaling the digital signal. If a player also scales the signal digitally (as DVC does), the two controls stack, and the result can be a low ceiling or coarse, unpredictable steps.
 
-**No DVC for Bluetooth Absolute Volume** handles this automatically. Its full text is: “Automatically disable DVC for Bluetooth when Absolute Volume is detected or it's not possible to detect it”. The screen carries two alternative hint rows that show what happens on a given phone:
+**No DVC for Bluetooth Absolute Volume** handles this automatically. Its documented effect is: Poweramp disables DVC when Bluetooth Absolute Volume is detected or cannot be determined. The screen carries two alternative hint rows that show what happens on a given phone:
 
-- When detection is possible: “• to detect Absolute Volume this option may temporarily change volume for a few seconds on Bluetooth connection” “• volume may be constantly changed and probed on this page”.
+- When detection is possible: Bluetooth connection can briefly change the volume while Absolute Volume is being detected “• volume may be constantly changed and probed on this page”.
 - When it is not: “• it's not possible to detect Absolute Volume on your device” “• on you device this option just disables DVC for Bluetooth by default” “• uncheck if you know that Absolute Volume is disabled for your device”.
 
 A status row (`bt_absvol_status`) and a row titled **Disable Bluetooth Absolute Volume** (`dvc_bt_msg`) complete the Bluetooth section. Their text is generated at runtime. **RUNTIME VERIFICATION REQUIRED:** the second row presumably explains how to turn Absolute Volume off in Android's developer options, but its content is not in the XML.
@@ -79,7 +79,7 @@ Practical reading: with the defaults, DVC is **not** used for Bluetooth outputs 
 
 ### Android 15+ low-volume compensation
 
-**Compensate DVC Volume**: “Specifically compensate low volume in DVC mode on some Android 15+ firmwares. Applied only when the issue is detected”. It is a targeted workaround, off by default, and the APK says it acts only when the issue is detected. It is not a loudness boost.
+**Compensate DVC Volume**: the setting addresses detected low DVC volume on certain Android 15-or-newer firmware. It is a targeted workaround, off by default, and the APK says it acts only when the issue is detected. It is not a loudness boost.
 
 ## Per-output volume settings
 
@@ -100,9 +100,9 @@ These live on the options screen for each output category ([Chapter 12 — Choos
 - **Auto/Hardware** — stored value `0`: Hardware volume is used when supported; otherwise, software volume is used, if possible
 - **Software** — stored value `1`: Enable software volume, even when hardware volume is supported
 
-The hint row adds two facts: “USB DACs typically have an independent on-device volume control that Hardware Volume does not affect” “Software volume is not applied in Perfect Bit Perfect mode”. In other words, on a USB DAC with its own volume knob, “Hardware” volume from the phone may not change the DAC's level at all, and Perfect Bit Perfect output receives no software volume regardless of this setting ([Chapter 11 — Bit-Perfect Output](11%20Bit-Perfect%20Output.md)).
+The hint row adds two facts: many USB DACs have independent level controls that the phone's hardware-volume control may not affect “Software volume is not applied in Perfect Bit Perfect mode”. In other words, on a USB DAC with its own volume knob, “Hardware” volume from the phone may not change the DAC's level at all, and Perfect Bit Perfect output receives no software volume regardless of this setting ([Chapter 11 — Bit-Perfect Output](11%20Bit-Perfect%20Output.md)).
 
-**Synchronize Hardware Volume**: “Restores the previously saved volume. If disabled, the device current hardware volume is used, which is typically defaults to MAXIMUM”. The hint recommends: “Enable this option for devices that lack on-device volume controls or do not retain their volume setting. Disable it for devices with the volume controls that preserve their volume level between connections” “Applied on the new connection”.
+**Synchronize Hardware Volume**: the option restores a saved volume; otherwise the device's current hardware level may be used, potentially at maximum. The hint recommends: use synchronization for devices without persistent hardware-volume settings, but not for devices that reliably remember their own level “Applied on the new connection”.
 
 > [!CAUTION]
 > **Unexpected maximum volume**

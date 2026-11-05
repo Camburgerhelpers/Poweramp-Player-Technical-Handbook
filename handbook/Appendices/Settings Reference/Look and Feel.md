@@ -63,11 +63,12 @@ Look and Feel: skin, day/night following, settings theme and font, language, lau
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Skin
 
 - **Key:** `ui_theme`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Change Poweramp visual theme. Set per-skin options like extra Pro Buttons, Static Seekbar”
 - **Opens:** [Theme Settings](Theme%20Settings.md) (`ui_theme`)
 - **Source:** `xml-v22/ui.xml`, `xml/ui.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
@@ -77,7 +78,6 @@ Look and Feel: skin, day/night following, settings theme and font, language, lau
 - **Key:** `follow_night_mode`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Follow system Day/Night Mode if selected skin supports light/dark themes”
 - **Source:** `xml-v22/ui.xml`, `xml/ui.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
 
@@ -179,7 +179,6 @@ Look and Feel: skin, day/night following, settings theme and font, language, lau
 - **Key:** `ui_icon`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Misc
-- **APK text:** “Set launcher icon”
 - **Opens:** [Application Icon](Application%20Icon.md) (`ui_icon`)
 - **Source:** `xml-v22/ui.xml`, `xml/ui.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
@@ -204,7 +203,6 @@ Look and Feel: skin, day/night following, settings theme and font, language, lau
 - **Control:** List (`TagListPreference`)
 - **Category:** Misc
 - **Declared default:** `false` (does not match any declared value)
-- **APK text:** “Disable/enable or change UI animation speed where possible”
 - **Options:**
   - Disabled — `0`
   - Fast — `2`
@@ -221,7 +219,6 @@ Look and Feel: skin, day/night following, settings theme and font, language, lau
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Misc
 - **Declared default:** Off
-- **APK text:** “Changes startup screen. Back action returns from the Player Screen to the current list”
 - **Source:** `xml-v22/ui.xml`, `xml/ui.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
 
@@ -240,7 +237,6 @@ Look and Feel: skin, day/night following, settings theme and font, language, lau
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Misc
 - **Declared default:** Not declared
-- **APK text:** “Always keep screen on in the app”
 - **Source:** `xml-v22/ui.xml`, `xml/ui.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

@@ -65,7 +65,7 @@ All three button-layout options are marked as Feature Pack options ([Chapter 36 
 
 
 - **Chromecast Button:** placement of the Cast button ([Chapter 15 — Chromecast Output](../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md)).
-- **Rating Type:** Disabled, Like/unlike thumbs, 5 stars, or 5 stars (menu/lists only). The declared default `1` maps by position to **Like/unlike thumbs**. For 5-star ratings the screen explains the gestures: “Swipe over stars to select rating. Touch an empty space where star should be placed for immediate rating. Long press to toggle between 5 or 0 stars”.
+- **Rating Type:** Disabled, Like/unlike thumbs, 5 stars, or 5 stars (menu/lists only). The declared default `1` maps by position to **Like/unlike thumbs**. For 5-star ratings the screen explains the gestures: rating gestures include swiping over stars, tapping empty star positions and long-pressing to toggle five versus zero.
 - **Menu Button:** “Menu can be opened by long pressing the cover”. The control is stored inverted: Disabled = `1`, Enabled = `0`. When it is Disabled (`1`), **Menu Button Long Press** is unavailable.
 - **Menu Button Long Press** (Feature Pack) assigns a long-press action to the track-menu button. The choices are Disabled, Delete, Add to Playlist, Info/Tags, Album Art, Artist, Album, Folder, Genre, Share, Like and Unlike.
 - **Lyrics Button:** Disabled, When local lyrics available, or Always ([Chapter 28 — Lyrics](28%20Lyrics.md)).
@@ -93,8 +93,8 @@ The second text line normally shows artist and album. A tap or long press on it 
 *Source: APK build 1031 settings XML — reference: [Player Screen](../Appendices/Settings%20Reference/Player%20Screen.md).*
 
 
-- **<< Button Resets Current Track:** “First press rewinds track, second press changes track. Includes headset/bluetooth button presses, notification button”. With the default (Off), << always goes to the previous track.
-- **-10/+10s Rewind Pro Buttons** (on by default): “Change <<< >>> (category change) pro buttons to -10/+10s rewinding buttons for long tracks. Also applies to Long category” “Requires Pro Buttons skin option enabled”. It requires the skin's Pro Buttons option, which links to the skin settings (`settings/ui_theme#more_buttons`). The track-length threshold is set on the Library screen ([Chapter 18 — Music Folders, Scanning and Tags](../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)).
+- **<< Button Resets Current Track:** a first press can restart the current track and a second press can skip back; this also applies to headset and notification controls. With the default (Off), << always goes to the previous track.
+- **-10/+10s Rewind Pro Buttons** (on by default): the extra category controls become ±10-second seek buttons for long tracks, including long-category playback “Requires Pro Buttons skin option enabled”. It requires the skin's Pro Buttons option, which links to the skin settings (`settings/ui_theme#more_buttons`). The track-length threshold is set on the Library screen ([Chapter 18 — Music Folders, Scanning and Tags](../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)).
 - **Navigate to the Folders:** “Track menu ➔ Folders button navigates to the Folders category instead of the Folders Hierarchy”.
 
 ## Related options on other screens

@@ -45,11 +45,12 @@ Feature Package purchase, Uberpatron badges, the option to move Feature Packages
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. (untitled isPriceReduced)
 
 - **Key:** `isPriceReduced`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “a discounted, minimal price, if you recently purchased Full Version”
 - **Source:** `xml/feature_packages.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 
@@ -65,7 +66,6 @@ Feature Package purchase, Uberpatron badges, the option to move Feature Packages
 - **Key:** `move_fp1_to_about`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Hide Feature Packages from the Settings top”
 - **Source:** `xml/feature_packages.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 

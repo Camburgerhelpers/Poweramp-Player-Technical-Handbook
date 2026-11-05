@@ -58,13 +58,14 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Auto-scan
 
 - **Key:** `auto_scan`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** On
-- **APK text:** “Enable automatic SD card/storages scan. If disabled, only manual Rescan is available”
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -74,7 +75,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** Off
-- **APK text:** “Rescan immediately when something changed on the storage. Tracks appear faster, but this may introduce more rescans when you upload multiple files to the device”
 - **Depends on:** Auto-scan (`auto_scan`)
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -85,7 +85,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** On
-- **APK text:** “Quick scan when Poweramp is started for first time”
 - **Depends on:** Auto-scan (`auto_scan`)
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -96,7 +95,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** Off
-- **APK text:** “Automatically scan 3rd party track provider plugins on startup”
 - **Depends on:** Auto-scan (`auto_scan`)
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
@@ -107,7 +105,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** On
-- **APK text:** “Scan on USB disconnection and/or SD card mount”
 - **Depends on:** Auto-scan (`auto_scan`)
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -118,7 +115,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scanner
 - **Declared default:** On
-- **APK text:** “Scan once Android System/MTP Media Scanner finishes”
 - **Depends on:** Auto-scan (`auto_scan`)
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -129,7 +125,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Tag list (`TagsPreference`)
 - **Category:** Other
 - **Declared default:** Not declared
-- **APK text:** “One or multiple symbols like ; // $”
 - **Range:** Up to 25 entries
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -151,7 +146,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Tag list (`TagsPreference`)
 - **Category:** Other
 - **Declared default:** Not declared
-- **APK text:** “One or multiple symbols like ; // $”
 - **Range:** Up to 25 entries
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -163,7 +157,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Tag list (`TagsPreference`)
 - **Category:** Other
 - **Declared default:** Not declared
-- **APK text:** “One or multiple symbols like ; // $”
 - **Range:** Up to 25 entries
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
@@ -175,7 +168,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** List (`ListPreference`)
 - **Category:** Other
 - **Declared default:** Default (`_default_`)
-- **APK text:** “Encoding for non-Unicode tags and playlists”
 - **Options:**
   - Default — `_default_`
   - Chinese Traditional (Big5) — `Big5`
@@ -204,7 +196,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Other
 - **Declared default:** On
-- **APK text:** “If disabled, Tag Encoding setting is used for .m3u playlists. UTF-8 is always used for .m3u8 playlists”
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -214,7 +205,6 @@ Automatic scanning triggers, multi-value tag splitting, tag encoding for non-Uni
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Other
 - **Declared default:** On
-- **APK text:** “Virtual folders are created for CUE files with multiple tracks”
 - **Source:** `xml-v22/library_scanner.xml`, `xml/library_scanner.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 

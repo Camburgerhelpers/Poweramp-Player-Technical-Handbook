@@ -47,7 +47,7 @@ Poweramp's settings map onto these forms.
 
 - **Short Audio Focus Change / Calls:** “Temporarily pause on short audio focus change (calls/notifications/navigation/etc.)”.
 - **Resume On Focus Gain** (depends on the above): “Resume after getting back the focus. If disabled, player stays paused”.
-- **Duck Volume** (depends on the above): “When possible, allow lowering the volume on short audio focus. This option can be overridden by Audio output settings”.
+- **Duck Volume** (depends on the above): during brief audio-focus interruptions, playback may be lowered unless an output setting overrides ducking.
 
 ## Permanent focus loss
 
@@ -85,7 +85,7 @@ These are set on the options screen of an individual output ([Chapter 12 — Cho
 *Source: APK build 1031 settings XML — reference: [Individual Audio Output Settings](../Appendices/Settings%20Reference/Individual%20Audio%20Output%20Settings.md).*
 
 
-- **No Duck:** “Disable volume ducking for this output, e.g. when notifications cause issues with this output. Temporarily pause player instead”.
+- **No Duck:** this output-specific option pauses briefly rather than ducking when notification volume changes cause trouble.
 - **Ignore Audio Focus:** “Ignore calls/short Audio Focus requests, including notification sounds and ringtones”.
 
 The Audio Focus screen also warns about Chromecast: “Chromecast output may ignore calls and short Audio Focus completely. Press here to configure” ([Chapter 15 — Chromecast Output](15%20Chromecast%20Output.md)).

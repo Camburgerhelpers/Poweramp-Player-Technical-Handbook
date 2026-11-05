@@ -45,6 +45,8 @@ Direct Volume Control (DVC): the global enable switch, Bluetooth Absolute Volume
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Enable Direct Volume Control
 
 - **Key:** `dvc_enabled`
@@ -79,7 +81,6 @@ Direct Volume Control (DVC): the global enable switch, Bluetooth Absolute Volume
 - **Key:** `no_dvc_bt_absvol`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Automatically disable DVC for Bluetooth when Absolute Volume is detected or it's not possible to detect it”
 - **Depends on:** Enable Direct Volume Control (`dvc_enabled`)
 - **Source:** `xml-v22/audio_dvc.xml`, `xml/audio_dvc.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md)
@@ -88,7 +89,6 @@ Direct Volume Control (DVC): the global enable switch, Bluetooth Absolute Volume
 
 - **Key:** `no_dvc_bt_absvol_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “• to detect Absolute Volume this option may temporarily change volume for a few seconds on Bluetooth connection” “• volume may be constantly changed and probed on this page”
 - **Source:** `xml-v22/audio_dvc.xml`, `xml/audio_dvc.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md)
 
@@ -96,7 +96,6 @@ Direct Volume Control (DVC): the global enable switch, Bluetooth Absolute Volume
 
 - **Key:** `no_dvc_bt_absvol_hint_15`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “• it's not possible to detect Absolute Volume on your device” “• on you device this option just disables DVC for Bluetooth by default” “• uncheck if you know that Absolute Volume is disabled for your device”
 - **Source:** `xml-v22/audio_dvc.xml`, `xml/audio_dvc.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md)
 
@@ -113,7 +112,6 @@ Direct Volume Control (DVC): the global enable switch, Bluetooth Absolute Volume
 - **Key:** `no_dvc_gain_mb`
 - **Control:** Knob (`RoundKnobPreference`)
 - **Declared default:** −6.0 dB (`-600`)
-- **APK text:** “Allows equalization/basses without distortion. Set to 0 dB to match other players’ volume, though this makes equalization less effective” “Applied only when DVC is disabled for any reason”
 - **Range:** −10.0 dB to 0.0 dB, step 0.5 dB
 - **Source:** `xml-v22/audio_dvc.xml`, `xml/audio_dvc.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md)
@@ -123,7 +121,6 @@ Direct Volume Control (DVC): the global enable switch, Bluetooth Absolute Volume
 - **Key:** `compensate_dvc_vol`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Specifically compensate low volume in DVC mode on some Android 15+ firmwares. Applied only when the issue is detected”
 - **Source:** `xml-v22/audio_dvc.xml`, `xml/audio_dvc.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 - **Evidence note:** `app:skipSearch="peq"` names specific app editions; interpretation (hidden from settings search in those editions) is inferred.

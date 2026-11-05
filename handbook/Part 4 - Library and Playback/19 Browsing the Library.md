@@ -108,8 +108,8 @@ The library is browsed through categories: Folders, Folders Hierarchy, Albums, A
 *Source: APK build 1031 settings XML — reference: [Library Lists](../Appendices/Settings%20Reference/Library%20Lists.md).*
 
 
-- **No “Play All Categories” For Hier Folders:** “Don't apply Play All Categories mode when Folders Hierarchy playback started with the list header play button”.
-- **Folders Hierarchy Immediate Root:** “If only one root music folder exists, show its contents immediately in top Folders Hierarchy category. This option will go deeper until folder with tracks or multiple subfolders”.
+- **No “Play All Categories” For Hier Folders:** this prevents Play All Categories when folder-hierarchy playback begins from a list-header button.
+- **Folders Hierarchy Immediate Root:** with one root folder, Folder Hierarchy can open its contents and descend until tracks or multiple subfolders appear.
 - **Hierarchy Files Zoom Level:** “Apply Folder Files zoom level for Folders Hierarchy category when a folder contains files only”.
 
 **Navigate to the Folders** (Player Screen settings) decides whether the track menu's Folders button opens Folders or Folders Hierarchy ([Chapter 26 — The Player Screen](../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)).

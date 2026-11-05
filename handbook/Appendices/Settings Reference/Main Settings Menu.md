@@ -68,6 +68,8 @@ The top-level Settings menu: entry points to every major settings area, purchase
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. (untitled manage_app_warn)
 
 - **Key:** `manage_app_warn`
@@ -112,7 +114,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 
 - **Key:** `already_purchased`
 - **Control:** Link (`AlreadyPurchasedRedirectPref`)
-- **APK text:** “Restore Purchase”
 - **Opens:** [Purchase Restoration](Purchase%20Restoration.md) (`already_purchased`)
 - **Source:** `xml/singlepane.xml`
 
@@ -120,7 +121,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 
 - **Key:** `feature_packages`
 - **Control:** Link (`FeaturePackRedirectPref`)
-- **APK text:** “Explore Poweramp Feature Packages”
 - **Opens:** [Feature Packages](Feature%20Packages.md) (`feature_packages`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -130,7 +130,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `ui`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Skin, player interface, language, notifications”
 - **Opens:** [Look and Feel](Look%20and%20Feel.md) (`ui`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -140,7 +139,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `audio`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Crossfade, replay gain, volume, output”
 - **Opens:** [Audio Settings](Audio%20Settings.md) (`audio`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -150,7 +148,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `vis`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Faded controls opacity, preset duration”
 - **Opens:** [Visualization Settings](Visualization%20Settings.md) (`vis`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -160,7 +157,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `aa_bg`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Blur, details, intensity, saturation”
 - **Opens:** [Background Appearance Settings](Background%20Appearance%20Settings.md) (`aa_bg`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -170,7 +166,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `aa`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Download, quality, cache cleanup”
 - **Opens:** [Album Art Settings](Album%20Art%20Settings.md) (`aa`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -180,7 +175,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `folders_library`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Rescan, music folders, list, queue options”
 - **Opens:** [Music Library Settings](Music%20Library%20Settings.md) (`library`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -190,7 +184,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `headset`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Pause/resume on connection, headset buttons”
 - **Opens:** [Headset and Bluetooth Settings](Headset%20and%20Bluetooth%20Settings.md) (`headset`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -200,7 +193,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `lockscreen`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Poweramp lock screen options”
 - **Opens:** [Lock Screen Settings](Lock%20Screen%20Settings.md) (`lockscreen`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -210,7 +202,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `misc`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Scrobbling, Android Auto, other tweaks”
 - **Opens:** [Miscellaneous Settings](Miscellaneous%20Settings.md) (`misc`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -220,7 +211,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `general`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Settings
-- **APK text:** “Version/changelog, translations info”
 - **Opens:** [About Poweramp](About%20Poweramp.md) (`general`)
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md)
@@ -237,7 +227,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Key:** `equalizer_for_spot_ytm_etc`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Other
-- **APK text:** “Free Poweramp Equalizer app with the signature Poweramp sound for the streaming players such as Spotify and YouTube Music”
 - **Opens:** `https://play.google.com/store/apps/details?id=com.maxmpz.equalizer&referrer=utm_source%3Dapp%26utm_medium%3Dapp%26utm_campaign%3Dpa1`
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
@@ -277,7 +266,6 @@ The top-level Settings menu: entry points to every major settings area, purchase
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Other
 - **Declared default:** On
-- **APK text:** “Suggest sending a crash log via email”
 - **Source:** `xml/singlepane.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md), [Chapter 37](../../Part%207%20-%20Maintenance%20and%20Support/37%20About,%20Updates%20and%20Support.md)
 

@@ -31,7 +31,7 @@ Poweramp can render music visualizations on the Player Screen and in the library
 
 
 - **Visualization On Player Screen:** “Visualization can be switched on with Player Screen button” “Visualization is shown when music is playing”.
-- **Visualization in Library:** “Visible when visualization on Player Screen is enabled. Depending on visualization preset used, some UI elements may become poorly visible”.
+- **Visualization in Library:** library visualization requires Player Screen visualization and can obscure controls with some presets.
 - **Equalizer Screen Spectrum:** Disabled, Classic or Rounded. The declared default `2` is Rounded under the inferred † mapping (unverified).
 
 ## Presets
@@ -71,7 +71,7 @@ Poweramp can render music visualizations on the Player Screen and in the library
 - **UI Timeout:** “Time to show UI during active visualization” “%d ms”. The range is 0.5–15 s and the default is 1.5 s.
 - **Ignore Touch:** “Ignore first touch in Fade Controls mode”. The first tap then only reveals the controls.
 - **Visible Album Art** (on by default) keeps the cover visible during visualization.
-- **Scaled Bars For Faded Controls:** “Scale bars visualization to album art area in Fade Controls mode. If disabled, bar visualization is always full-screen”.
+- **Scaled Bars For Faded Controls:** this scales bars to the album-art area when fading controls are used, instead of filling the display.
 - **Hide System Bars For Full Screen** (Feature Pack): “Hide status bar and navigation completely when in Full Screen mode”.
 
 ## Rendering quality and performance

@@ -72,7 +72,7 @@ Report them through the project's GitHub issue tracker: [https://github.com/Camb
 
 ## Third-party text and licence
 
-This handbook quotes Poweramp Player's own setting titles, option labels and descriptions verbatim (in quotation marks, and as **APK text** in the settings reference). That quoted text belongs to its owner and is not the handbook authors' original work. **No licence has been chosen for this alpha yet**; until one is published, no redistribution rights are granted beyond what applicable law allows. A notice that the quoted text belongs to its owner does not by itself grant permission to redistribute it. Both the licence and the treatment of quoted text are **open publication blockers**: this copy is a private preview candidate, not approved for public distribution.
+The independently authored handbook text is licensed under [CC BY 4.0](../LICENSE). The [third-party notice](../THIRD-PARTY-NOTICE.md) clarifies exclusions for Poweramp proprietary material, interface labels and limited necessary quotations. Full application hints have been omitted from the settings-reference pages, and longer quotations in chapters paraphrased. Settings keys, declared values, ranges and dependencies remain documented; consult Poweramp for exact in-app wording.
 
 ## Layout
 

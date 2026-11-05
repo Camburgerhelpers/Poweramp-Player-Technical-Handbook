@@ -33,7 +33,7 @@ Library search finds tracks, albums, artists and other categories. The search se
 
 - **Search Categories** opens a selector for the categories included in search. Its options are not declared in the XML.
 - **Search Track Titles Only:** “If disabled, track album and artist are also used for the search”.
-- **Play Tracks Only:** “If some tracks are found, play only the tracks and ignore other found categories. If there are no tracks, found categories will be played”.
+- **Play Tracks Only:** when track results exist, Play Tracks Only ignores category results; otherwise matching categories are played.
 
 An information row (`msg`) at the top of the screen has runtime text.
 

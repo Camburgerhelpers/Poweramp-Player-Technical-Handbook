@@ -52,12 +52,13 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Resume After Call
 
 - **Key:** `resume_after_call`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Resume playing on hang up (if paused by call)”
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
 
@@ -66,7 +67,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Key:** `resume_on_start`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Resume playing when Poweramp is started”
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
 
@@ -75,7 +75,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Key:** `resume_on_resume`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Also resume when Poweramp is already running and reopened from the launcher”
 - **Depends on:** Resume On Start (`resume_on_start`)
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
@@ -85,7 +84,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Key:** `resume_on_mount`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Wait for a storage (up to 30s.) to mount before resuming on start”
 - **Depends on:** Resume On Start (`resume_on_start`)
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
@@ -94,7 +92,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 
 - **Key:** `cc_af_warning`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Chromecast output may ignore calls and short Audio Focus completely. Press here to configure”
 - **Opens:** [Individual Audio Output Settings](Individual%20Audio%20Output%20Settings.md) (`audio_output_device_opts?uniqName=com.maxmpz.audioplayer/output.cc&device=chromecast#no_af`)
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 15](../../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md), [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
@@ -112,7 +109,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Audio Focus
 - **Declared default:** On
-- **APK text:** “Temporarily pause on short audio focus change (calls/notifications/navigation/etc.)”
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
 
@@ -122,7 +118,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Audio Focus
 - **Declared default:** On
-- **APK text:** “Pause when phone call happens. Poweramp always pauses for call via Bluetooth” “Some firmwares may not support this option”
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
 
@@ -132,7 +127,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Audio Focus
 - **Declared default:** On
-- **APK text:** “Resume after getting back the focus. If disabled, player stays paused”
 - **Depends on:** Short Audio Focus Change / Calls (`af_short`)
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
@@ -143,7 +137,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Audio Focus
 - **Declared default:** On
-- **APK text:** “When possible, allow lowering the volume on short audio focus. This option can be overridden by Audio output settings”
 - **Depends on:** Short Audio Focus Change / Calls (`af_short`)
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
@@ -154,7 +147,6 @@ How Poweramp reacts to Android audio focus: calls, short interruptions (notifica
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Audio Focus
 - **Declared default:** On
-- **APK text:** “Pause on permanent audio focus change (other player/game/etc.)”
 - **Source:** `xml-v22/audio_focus.xml`, `xml/audio_focus.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
 

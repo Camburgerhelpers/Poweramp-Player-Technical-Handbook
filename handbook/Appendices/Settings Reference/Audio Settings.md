@@ -44,11 +44,12 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Audio Info
 
 - **Key:** `audio_info`
 - **Control:** Link (`PreferenceScreen`)
-- **APK text:** “Detailed info about the audio processing. Also available by long press on small meta info on the Main and Equalizer screens”
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
 
@@ -56,7 +57,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `fade`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Crossfade options, fade type and length, gapless”
 - **Opens:** [Crossfade and Gapless Settings](Crossfade%20and%20Gapless%20Settings.md) (`fade`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -65,7 +65,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `rg`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Enable RG, set source, preamp values”
 - **Opens:** [ReplayGain Settings](ReplayGain%20Settings.md) (`rg`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -74,7 +73,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `audio_focus`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Pause/Resume/Duck volume on calls/notifications/start”
 - **Opens:** [Audio Focus](Audio%20Focus.md) (`audio_focus`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -83,7 +81,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `audio_resampler`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Resampling/dither settings”
 - **Opens:** [Resampler Settings](Resampler%20Settings.md) (`audio_resampler`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -92,7 +89,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `audio_dvc`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “DVC options, DVC for Bluetooth”
 - **Opens:** [Direct Volume Control](Direct%20Volume%20Control.md) (`audio_dvc`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -101,7 +97,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `audio_outputs2`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Wired Headset, Bluetooth, USB, Chromecast, and other outputs”
 - **Opens:** [Audio Output Selection](Audio%20Output%20Selection.md) (`audio_outputs2`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -110,7 +105,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `audio_bit_perfect`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “64-bit audio pipeline, Perfect Bit Perfect”
 - **Opens:** [Bit-Perfect and Precision Settings](Bit-Perfect%20and%20Precision%20Settings.md) (`audio_bit_perfect`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)
@@ -119,7 +113,6 @@ The Audio hub. It links to every audio sub-screen and exposes the Audio Info dia
 
 - **Key:** `audio_tweaks`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Volume levels, MusicFX, equalizer/reverb presets reset”
 - **Opens:** [Audio Advanced Tweaks](Audio%20Advanced%20Tweaks.md) (`audio_tweaks`)
 - **Source:** `xml/audio.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md)

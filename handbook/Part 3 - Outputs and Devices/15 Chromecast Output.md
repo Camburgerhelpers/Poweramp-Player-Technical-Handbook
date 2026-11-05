@@ -51,7 +51,7 @@ The Chromecast category on **Settings › Audio › Audio Outputs** opens the pe
 
 
 - **Force Send Album Art:** “Send album art to Chromecast device even if it reports it has no display”. Audio-only Cast devices often report no display. Enable it when the receiver is in fact a screen (or forwards artwork to one) but shows no cover.
-- **Show Meta Information:** “Show additional meta information (track format, category, next track) on the Chromecast devices with a screen”.
+- **Show Meta Information:** Chromecast screens can display track format, category and upcoming-track information.
 
 ## Audio focus and interruptions
 

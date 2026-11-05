@@ -30,7 +30,7 @@ settings_screens:
 *Source: APK build 1031 settings XML — reference: [Bit-Perfect and Precision Settings](../Appendices/Settings%20Reference/Bit-Perfect%20and%20Precision%20Settings.md), [Individual Audio Output Settings](../Appendices/Settings%20Reference/Individual%20Audio%20Output%20Settings.md).*
 
 
-APK description: “Direct decoder-to-output path. Enables DSD output for DSD tracks. No Equalizer, no DSP, no software volume control”.
+APK description, paraphrased: a direct decoder-to-output route can send DSD tracks without EQ, other DSP, or software volume.
 
 The per-output list (Auto/Enable/Disable = 0/1/−1) lets you, for example, run bit-perfect on a USB DAC and keep the equalizer on Bluetooth. No default is declared for either control. Runtime information rows (`perfect_bit_perfect_opts`, `perfect_bit_perfect_static`) report the state.
 

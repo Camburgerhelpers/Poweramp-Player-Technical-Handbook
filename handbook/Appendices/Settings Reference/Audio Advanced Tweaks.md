@@ -51,13 +51,14 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Volume Levels
 
 - **Key:** `volume_levels`
 - **Control:** List (`NumberListPreference`)
 - **Category:** Volume
 - **Declared default:** System Default (`0`)
-- **APK text:** “Number of volume levels: %s”
 - **Options:**
   - System Default — `0`
   - 30 — `30`
@@ -73,7 +74,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Volume
 - **Declared default:** Not declared
-- **APK text:** “Custom volume panel. Shown when volume is adjusted in Poweramp UI”
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -84,7 +84,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Volume
 - **Declared default:** Not declared
-- **APK text:** “Pause when volume is set to 0, resume when volume increased from 0” “This option works when the Poweramp UI or notification is visible”
 - **Markers:** Experiment
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md)
@@ -97,7 +96,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Other
 - **Declared default:** Off
-- **APK text:** “Enable MusicFX Button (Android system audio effects) in Volume tab”
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md), [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md)
 
@@ -107,7 +105,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Other
 - **Declared default:** Not declared
-- **APK text:** “Enable this if audio stops after notifications”
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -118,7 +115,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Control:** Knob (`RoundKnobPreference`)
 - **Category:** Other
 - **Declared default:** Not declared
-- **APK text:** “Extra gain applied to tracker formats, such as .mod, *.s3c, *.xm, *.it”
 - **Range:** −10.0 dB to 10.0 dB, step 1.0 dB
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 24](../../Part%204%20-%20Library%20and%20Playback/24%20Tracker%20Module%20Playback.md)
@@ -141,7 +137,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Key:** `reset_eq_presets`
 - **Control:** Action (`Preference`)
 - **Category:** Other
-- **APK text:** “Built-in and AutoEq equalizer presets will be restored to defaults”
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
 
@@ -150,7 +145,6 @@ Volume step count, the custom volume panel, pause/resume on zero volume, the Mus
 - **Key:** `reset_reverb_presets`
 - **Control:** Action (`Preference`)
 - **Category:** Other
-- **APK text:** “Built-in reverb presets will be restored/set to defaults”
 - **Source:** `xml-v22/audio_tweaks.xml`, `xml/audio_tweaks.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
 

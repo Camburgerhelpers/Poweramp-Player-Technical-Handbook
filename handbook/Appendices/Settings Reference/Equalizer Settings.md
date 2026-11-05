@@ -48,11 +48,12 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Graphic Equalizer Bands
 
 - **Key:** `peq_equ_bands`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Set number of bands, configure frequencies”
 - **Opens:** [Equalizer Band Settings](Equalizer%20Band%20Settings.md) (`peq_equ_bands`)
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 
@@ -60,7 +61,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 
 - **Key:** `peq_equ_tone`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Set Bass/Treble frequencies and Q factors”
 - **Opens:** [Bass and Treble Tone Settings](Bass%20and%20Treble%20Tone%20Settings.md) (`peq_equ_tone`)
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
@@ -98,7 +98,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 - **Key:** `_autosave`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Auto save current preset”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md)
@@ -110,7 +109,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 - **Key:** `dsp_border_gain`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Automatically reduce Equalizer/Tone band gains near maximum volume to avoid overloading”
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md)
 
@@ -119,7 +117,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 - **Key:** `suggest_autoeq`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Show suggestion to assign AutoEq preset for the connected Bluetooth/USB device”
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -128,7 +125,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 
 - **Key:** `_clear_autoeq_known_devices`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “AutoEq preset suggestions will reappear for all devices”
 - **Depends on:** Suggest AutoEq Presets (`suggest_autoeq`)
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -137,7 +133,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 
 - **Key:** `_presets_to_peq`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Export all equalizer presets directly to the Poweramp Equalizer app”
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
 
@@ -145,7 +140,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 
 - **Key:** `_import_autoeq`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Import presets from a zip file”
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md)
 
@@ -153,7 +147,6 @@ Equalizer configuration: band layout, tone parameters, value display, auto-save,
 
 - **Key:** `reset_eq_presets`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Built-in and AutoEq equalizer presets will be restored to defaults”
 - **Source:** `xml-v22/audio_equ.xml`, `xml/audio_equ.xml`
 - **Discussed in:** [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
 

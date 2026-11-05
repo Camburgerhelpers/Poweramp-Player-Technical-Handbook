@@ -80,6 +80,8 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Look and Feel
 
 - **Key:** `pref_look_and_feel`
@@ -92,7 +94,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Key:** `library_list_opts`
 - **Control:** Action (`Preference`)
 - **Category:** Look and Feel
-- **APK text:** “Select top visible Library categories. Also available from Library header menu”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -102,7 +103,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Off
-- **APK text:** “Don't move Navbar away in lists”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -112,7 +112,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Off
-- **APK text:** “Show track seekbar in Navbar. Increases Navbar size”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -122,7 +121,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** On
-- **APK text:** “Show number of songs and some other meta information in headers”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -132,7 +130,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** On
-- **APK text:** “Use alphabetical A-Z scroll in lists”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -142,7 +139,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Off
-- **APK text:** “A-Z scroll includes alphabet for the selected UI language”
 - **Depends on:** A-Z Scroll (`az_scroll`)
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
@@ -153,7 +149,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** List (`TagListPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Not declared
-- **APK text:** “Action buttons shown in the list header”
 - **Options:**
   - Disabled
   - Enabled
@@ -169,7 +164,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** List (`TagListPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Not declared
-- **APK text:** “Action buttons are displayed on the bottom of lists when header is scrolled away or header buttons are disabled”
 - **Options:**
   - Disabled
   - Semi-transparent
@@ -201,7 +195,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Off
-- **APK text:** “Disc tag is shown in the track meta”
 - **Depends on:** Show Track Number (`track_num_type`)
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
@@ -212,7 +205,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Off
-- **APK text:** “Always use track filename instead of tag. Applies to all categories as well”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -222,7 +214,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** Off
-- **APK text:** “If disabled, continue playing the same track, but still change category and re-shuffle if needed”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md), [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md), [Chapter 21](../../Part%204%20-%20Library%20and%20Playback/21%20Shuffle.md)
 
@@ -245,7 +236,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Look and Feel
 - **Declared default:** On
-- **APK text:** “Enable the Delete menu action that deletes song files (after confirmation)”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
 
@@ -255,7 +245,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Albums
 - **Declared default:** On
-- **APK text:** “If disabled, separate albums are shown for tracks without album artist tag”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -265,7 +254,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Albums
 - **Declared default:** Off
-- **APK text:** “Show Album Artist tag (if exists) instead of just Artist tag for tracks”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -275,7 +263,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Albums
 - **Declared default:** Off
-- **APK text:** “Show Album Artist tag (if exists) instead of just Artist tag for Albums. Also changes sorting by Artist”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -285,7 +272,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Albums
 - **Declared default:** On
-- **APK text:** “Show Album Artist tag (if exists) instead of just Artist tag for Album Artists tracks. Also changes sorting by Artist”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -295,7 +281,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Albums
 - **Declared default:** On
-- **APK text:** “No Unknown Album shown in track labels”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -305,7 +290,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Albums
 - **Declared default:** Off
-- **APK text:** “No Unknown Artist shown in track labels when possible. This may hide the 2nd track label completely”
 - **Depends on:** Hide Unknown Album (`hide_unknown_album`)
 - **Markers:** Feature Pack
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
@@ -318,7 +302,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Off
-- **APK text:** “Unsplit combined Artists, Album Artists, Composers are visible in the appropriate categories”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md)
 
@@ -328,7 +311,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Off
-- **APK text:** “Don't apply Play All Categories mode when Folders Hierarchy playback started with the list header play button”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 - **Evidence note:** The XML title is wrapped in quotation marks or contains escaped quotes (Android string escaping); shown here without the escaping.
@@ -339,7 +321,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Off
-- **APK text:** “If only one root music folder exists, show its contents immediately in top Folders Hierarchy category. This option will go deeper until folder with tracks or multiple subfolders”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -349,7 +330,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Off
-- **APK text:** “Apply Folder Files zoom level for Folders Hierarchy category when a folder contains files only”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -359,7 +339,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Off
-- **APK text:** “Don't ignore articles ("the", "a", "an") in the beginning of albums, artists, and composers”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 - **Evidence note:** The XML title is wrapped in quotation marks or contains escaped quotes (Android string escaping); shown here without the escaping.
@@ -370,7 +349,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Off
-- **APK text:** “Big undivided CUE disc image files will be visible in lists”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 18](../../Part%204%20-%20Library%20and%20Playback/18%20Music%20Folders,%20Scanning%20and%20Tags.md), [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md)
 
@@ -380,7 +358,6 @@ Library list appearance and behaviour: navigation bar, headers, A–Z scroll, tr
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Advanced
 - **Declared default:** Not declared
-- **APK text:** “Use "Stream - Track Title" pattern for stream titles, instead of just "Track Title". Applied to the next played stream”
 - **Source:** `xml-v22/library_lists.xml`, `xml/library_lists.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md), [Chapter 23](../../Part%204%20-%20Library%20and%20Playback/23%20Network%20Streams.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

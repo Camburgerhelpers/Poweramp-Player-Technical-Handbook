@@ -42,6 +42,8 @@ Playlist import/export and playlist entry handling (ratings import, insert posit
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Import System Library Playlists
 
 - **Key:** `playlists_import`
@@ -65,7 +67,6 @@ Playlist import/export and playlist entry handling (ratings import, insert posit
 - **Key:** `pl_import_ratings`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Update track ratings from imported playlists (when new playlist is imported) or from playlists opened in file managers”
 - **Source:** `xml-v22/library_playlists.xml`, `xml/library_playlists.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)
 
@@ -87,7 +88,6 @@ Playlist import/export and playlist entry handling (ratings import, insert posit
 - **Key:** `pl_del_entry_w_track`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Playlist entries are automatically removed for the deleted tracks. If disabled, non-playable items stay in the playlist and can be resolved to matching tracks later”
 - **Source:** `xml-v22/library_playlists.xml`, `xml/library_playlists.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
 
@@ -96,7 +96,6 @@ Playlist import/export and playlist entry handling (ratings import, insert posit
 - **Key:** `pl_auto_resolve`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Automatically match unresolved playlist entries on Folders/Library auto scan. If disabled, non-playable items may appear in playlists after a storage change, folders renaming/moving, etc. Playlist entries always can be corrected manually by the Rescan menu action from Playlists category”
 - **Source:** `xml-v22/library_playlists.xml`, `xml/library_playlists.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)
 
@@ -105,7 +104,6 @@ Playlist import/export and playlist entry handling (ratings import, insert posit
 - **Key:** `pl_no_dups`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Duplicates won't be added to playlist”
 - **Source:** `xml-v22/library_playlists.xml`, `xml/library_playlists.xml`
 - **Discussed in:** [Chapter 20](../../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)
 - **Evidence note:** The XML title is wrapped in quotation marks or contains escaped quotes (Android string escaping); shown here without the escaping.

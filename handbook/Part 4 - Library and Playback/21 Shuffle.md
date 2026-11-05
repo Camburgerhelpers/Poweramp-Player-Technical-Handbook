@@ -57,7 +57,7 @@ Its note: “Not applied in Folders Hierarchy”.
 
 ### Folder hierarchy
 
-**Shuffle All Songs In Folder Hierarchy** (on by default): “Shuffle Songs mode shuffles all songs from the whole folder hierarchy. If enabled, header Shuffle button uses this mode as well”.
+**Shuffle All Songs In Folder Hierarchy** (on by default): the mode shuffles throughout a folder hierarchy and can be activated by its header Shuffle button.
 
 ## Related behaviour elsewhere
 

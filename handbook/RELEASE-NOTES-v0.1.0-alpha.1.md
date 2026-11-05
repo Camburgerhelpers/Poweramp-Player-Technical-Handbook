@@ -93,12 +93,11 @@ The version series restarts at `v0.1.0-alpha.1` to reflect alpha maturity. The 1
 
 See “Reporting mistakes” in the [README](README.md). Issues go to the project's GitHub issue tracker ([https://github.com/Camburgerhelpers/Poweramp-Player-Technical-Handbook/issues](https://github.com/Camburgerhelpers/Poweramp-Player-Technical-Handbook/issues)), using the **Documentation correction** or **Runtime observation** template. The repository is currently private, so the tracker is reachable only by invited collaborators until it is made public. Please do not contact the Poweramp developer about errors in this handbook.
 
-## Publication blockers (open)
+## Copyright scope and ongoing limitations
 
-This is a **private preview candidate**. It is **not approved for public distribution**. Two decisions remain open:
+This unofficial, build-1031-specific alpha licenses only its original editorial writing under [CC BY 4.0](../LICENSE). Poweramp's proprietary resources and trademarks are excluded; see the [third-party notice](../THIRD-PARTY-NOTICE.md). Bulk in-app hint quotations were removed from the settings appendices and longer chapter passages paraphrased. Functional labels and limited short excerpts remain where needed for identification; the license does not grant permission to redistribute application resources.
 
-1. **Licence.** No licence has been selected for the handbook's original text. No redistribution rights are granted beyond what applicable law allows.
-2. **Quoted Poweramp text.** The handbook reproduces Poweramp Player's own interface text verbatim (setting titles, option labels, descriptions and hints). Their treatment for public distribution is under review. A copyright or trademark notice does not by itself grant permission to redistribute that material.
+The 59 runtime-verification questions remain open, and no device-dependent behavior is certified by this release.
 
 ## Changes in the public-export candidate
 

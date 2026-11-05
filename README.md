@@ -54,4 +54,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the reporting format. For help using 
 
 ## Copyright and licensing
 
-**Public licensing is under review.** No repository-wide open-content license has been selected. The handbook quotes Poweramp Player's own interface text (setting titles, option labels, descriptions and hints) verbatim; that material belongs to its owner and is not licensed by this project. A notice of ownership does not by itself grant permission to redistribute it. Do not assume that this draft grants permission to redistribute third-party application resources. A publication license and quotation review must be resolved before the repository becomes public.
+The handbook's **original writing** is licensed under [CC BY 4.0](LICENSE). The [third-party notice](THIRD-PARTY-NOTICE.md) explains exclusions for Poweramp proprietary resources, functional labels and necessary short excerpts. Full in-app hints have been removed from settings-reference pages and longer chapter quotations paraphrased. This license does not authorize redistribution of the Poweramp application's own resources.

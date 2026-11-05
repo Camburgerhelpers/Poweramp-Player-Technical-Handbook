@@ -40,6 +40,8 @@ Shuffle randomization, reshuffle behaviour, category shuffle mode, and folder-hi
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Shuffle Randomization
 
 - **Key:** `shuffle_random_factor`
@@ -55,7 +57,6 @@ Shuffle randomization, reshuffle behaviour, category shuffle mode, and folder-hi
 - **Key:** `no_reshuffle`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Don't apply a new shuffle when any track is selected from the current playing list”
 - **Source:** `xml-v22/library_shuffle.xml`, `xml/library_shuffle.xml`
 - **Discussed in:** [Chapter 21](../../Part%204%20-%20Library%20and%20Playback/21%20Shuffle.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -65,7 +66,6 @@ Shuffle randomization, reshuffle behaviour, category shuffle mode, and folder-hi
 - **Key:** `no_reshuffle_for_large_lists`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Don't reset shuffle order when a new track is manually selected from a very large list”
 - **Source:** `xml-v22/library_shuffle.xml`, `xml/library_shuffle.xml`
 - **Discussed in:** [Chapter 21](../../Part%204%20-%20Library%20and%20Playback/21%20Shuffle.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -75,7 +75,6 @@ Shuffle randomization, reshuffle behaviour, category shuffle mode, and folder-hi
 - **Key:** `category_shuffle`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Not applied in Folders Hierarchy”
 - **Options:**
   - Shuffle Songs/Categories — `4` — List header Shuffle button shuffles sub-categories and songs within those categories
   - Shuffle Categories — `3` — List header Shuffle button shuffles sub-categories only, songs are in order
@@ -89,7 +88,6 @@ Shuffle randomization, reshuffle behaviour, category shuffle mode, and folder-hi
 - **Key:** `hier_flat_shf`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Shuffle Songs mode shuffles all songs from the whole folder hierarchy. If enabled, header Shuffle button uses this mode as well”
 - **Source:** `xml-v22/library_shuffle.xml`, `xml/library_shuffle.xml`
 - **Discussed in:** [Chapter 21](../../Part%204%20-%20Library%20and%20Playback/21%20Shuffle.md)
 

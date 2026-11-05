@@ -22,7 +22,7 @@ DSD (Direct Stream Digital) is the 1-bit, very-high-rate format of SACD. It is d
 
 ## Playing DSD files as DSD
 
-The only APK text that promises DSD output for DSD tracks belongs to Perfect Bit Perfect: “Direct decoder-to-output path. Enables DSD output for DSD tracks. No Equalizer, no DSP, no software volume control.” A Follow Track hint adds: “Perfect Bit Perfect mode enables the selection of allowed DSD rates as well”.
+The only APK text that promises DSD output for DSD tracks belongs to Perfect Bit Perfect: a direct decoder-to-output route can send DSD tracks without EQ, other DSP, or software volume A Follow Track hint adds: “Perfect Bit Perfect mode enables the selection of allowed DSD rates as well”.
 
 Two per-output switches control how the DSD stream travels:
 
@@ -60,7 +60,7 @@ Two per-output switches control how the DSD stream travels:
 - The global switch and the per-output list are both described as “Remasters PCM to DSD”. The per-output list offers Auto, Enable and Disable (0, 1, −1). The global switch declares no default.
 - **Target DSD Sample Rate** is populated at runtime. The APK text: “Used in the DSD Remastering mode for the output” “48 kHz-based DSD sample rate variant is used (if supported) for 48 kHz-based tracks”.
 - **Allow 48 kHz-based DSD:** “Use 48 kHz-based DSD sample rates for 48 kHz-based PCM tracks”.
-- The hint row states two rules: “This option overrides Sample Rate and Allowed Sample Rates selection” “Combined with the Perfect Bit Perfect option, DSD Remaster processes PCM tracks only, DSD tracks remain unchanged”.
+- The hint row states two rules: “This option overrides Sample Rate and Allowed Sample Rates selection” with Perfect Bit Perfect enabled, DSD Remaster affects PCM material while native DSD tracks are unchanged.
 
 So with remastering active, the output rate is the DSD target and the PCM rate settings no longer apply. Combined with Perfect Bit Perfect, PCM tracks are remastered and DSD tracks pass through unchanged.
 

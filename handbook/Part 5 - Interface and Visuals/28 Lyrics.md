@@ -76,7 +76,7 @@ There are two separate corrections:
 
 
 - **Rescan Lyrics Tags:** “Force rescan tracks which may contain lyrics tags, including SYLT”. **GENERAL PRINCIPLE:** SYLT is the ID3v2 frame for synchronized lyrics. Unsynchronized lyrics use USLT (ID3) or LYRICS-type comments.
-- **Scan LRC Files:** “If enabled, Poweramp searches for LRC files in the Music Folders, matching LRC files by their tags, file names, and folders”.
+- **Scan LRC Files:** the app searches for matching LRC files using their tags, filenames and folder locations.
 - **Always Use UTF-8:** “If disabled, Tag Encoding setting is used for non-Unicode files”.
 
 ## External lyrics apps

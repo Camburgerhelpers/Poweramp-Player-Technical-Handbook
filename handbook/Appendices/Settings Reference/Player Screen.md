@@ -66,12 +66,13 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Album Art Animation
 
 - **Key:** `aa_anim`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Animate on track advance. Also applies to bottom bar”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 
@@ -80,7 +81,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `anim_long_labels`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Animate long track title and album/artist labels”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 
@@ -89,7 +89,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `anim_long_labels_in_lists`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Animate long track labels also in lists and the miniplayer”
 - **Depends on:** Animate Long Labels (`anim_long_labels`)
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
@@ -110,7 +109,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Player Screen Buttons
 - **Declared default:** Not declared
-- **APK text:** “Minimize gaps between buttons for the centered layout”
 - **Markers:** Feature Pack
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md), [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
@@ -123,7 +121,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Player Screen Buttons
 - **Declared default:** Not declared
-- **APK text:** “Prevents accidental long press started button editing”
 - **Markers:** Feature Pack
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md), [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
@@ -165,7 +162,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `hint_5stars`
 - **Control:** Information (`RawTextPreference`)
 - **Category:** Other Buttons
-- **APK text:** “Swipe over stars to select rating. Touch an empty space where star should be placed for immediate rating. Long press to toggle between 5 or 0 stars”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 
@@ -175,7 +171,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Control:** List (`TagListPreference`)
 - **Category:** Other Buttons
 - **Declared default:** Not declared
-- **APK text:** “Menu can be opened by long pressing the cover”
 - **Options:**
   - Disabled — `1`
   - Enabled — `0`
@@ -189,7 +184,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Control:** List (`TagListPreference`)
 - **Category:** Other Buttons
 - **Declared default:** Not declared
-- **APK text:** “Long press action for the track menu button”
 - **Options:**
   - Disabled
   - Delete
@@ -217,7 +211,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Control:** List (`TagListPreference`)
 - **Category:** Other Buttons
 - **Declared default:** Not declared
-- **APK text:** “Button on the Player Screen/cover”
 - **Options:**
   - Disabled — `0`
   - When local lyrics available — `1`
@@ -231,7 +224,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `line2_click`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Handle press on the 2nd track text line”
 - **Options:**
   - Disabled — `0`
   - Artist — `1`
@@ -249,7 +241,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `line2_long_click`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Handle long press on the 2nd track text line”
 - **Options:**
   - Disabled — `0`
   - Artist — `1`
@@ -267,7 +258,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `show_counter`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Show track number/total tracks counter (if supported by skin)”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 
@@ -275,7 +265,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 
 - **Key:** `_counter_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Track Counter is available via Player Screen Buttons customization”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 
 ### 17. << Button Resets Current Track
@@ -283,7 +272,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `previous_resets`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “First press rewinds track, second press changes track. Includes headset/bluetooth button presses, notification button”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 17](../../Part%203%20-%20Outputs%20and%20Devices/17%20Headphones%20and%20Hardware%20Buttons.md), [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 
@@ -292,7 +280,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `long_skip_rewind`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Change <<< >>> (category change) pro buttons to -10/+10s rewinding buttons for long tracks. Also applies to Long category” “Requires Pro Buttons skin option enabled”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 
@@ -301,7 +288,6 @@ Player Screen behaviour: animations, button layout editing, Chromecast button pl
 - **Key:** `menu_nav_to_folders`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Track menu ➔ Folders button navigates to the Folders category instead of the Folders Hierarchy”
 - **Source:** `xml-v22/ui_player.xml`, `xml/ui_player.xml`
 - **Discussed in:** [Chapter 19](../../Part%204%20-%20Library%20and%20Playback/19%20Browsing%20the%20Library.md), [Chapter 26](../../Part%205%20-%20Interface%20and%20Visuals/26%20The%20Player%20Screen.md)
 

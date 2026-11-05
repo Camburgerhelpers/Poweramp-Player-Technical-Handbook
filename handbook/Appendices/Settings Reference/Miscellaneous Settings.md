@@ -81,13 +81,14 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Scrobble via Official Last.fm app
 
 - **Key:** `scrobble_to_last_fm`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scrobbling
 - **Declared default:** Off
-- **APK text:** “Scrobble via Last.fm app”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
 
@@ -97,7 +98,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Scrobbling
 - **Declared default:** Off
-- **APK text:** “Scrobble to Last.fm/Libre.fm via Simple Scrobbler (previously Simple Last.fm)”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
 
@@ -113,7 +113,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Key:** `buttons`
 - **Control:** Link (`RedirectPreference`)
 - **Category:** Android Auto
-- **APK text:** “Media action buttons”
 - **Opens:** [Media Buttons and Actions](Media%20Buttons%20and%20Actions.md) (`ui_mediaactions`)
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
@@ -124,7 +123,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Auto
 - **Declared default:** Not declared
-- **APK text:** “If enabled, Albums, Artists, Folders, etc. categories are shown as grid. May require category re-opening for view to apply”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -135,7 +133,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Auto
 - **Declared default:** On
-- **APK text:** “If enabled, album art and other relevant images are shown for categories”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 
@@ -145,7 +142,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Auto
 - **Declared default:** On
-- **APK text:** “If enabled, album art is shown for track entries”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 
@@ -155,7 +151,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Android Auto
 - **Declared default:** Not declared
-- **APK text:** “Enable Now Playing List/Queue for the connected devices (e.g. Wear) and apps (Android Auto). Poweramp activates this option if some device/app requests Now Playing list”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 32](../../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -173,7 +168,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Tweaks
 - **Declared default:** On
-- **APK text:** “For external apps”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
 
@@ -183,7 +177,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Tweaks
 - **Declared default:** Not declared
-- **APK text:** “Check this if audio stops when screen is off”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -194,7 +187,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Tweaks
 - **Declared default:** Off
-- **APK text:** “Send Album Art for old Poweramp v2 API. Updated Poweramp API allows much higher res images, but this may be needed for old API apps”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 27](../../Part%205%20-%20Interface%20and%20Visuals/27%20Album%20Art%20and%20Backgrounds.md), [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)
 
@@ -204,7 +196,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Tweaks
 - **Declared default:** Off
-- **APK text:** “For skin developers. Always check skin for a change when app activity goes background”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 25](../../Part%205%20-%20Interface%20and%20Visuals/25%20Look%20and%20Feel.md)
 
@@ -214,7 +205,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Text field (`EditTextPreference`)
 - **Category:** Tweaks
 - **Declared default:** Empty (declared)
-- **APK text:** “Listen to this shutdown intent and pauses itself/stores state when the intent is received”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 
@@ -235,7 +225,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Tweaks
 - **Declared default:** Not declared
-- **APK text:** “Force higher display framerate via non-standard APIs. May be required for some devices/firmwares”
 - **Markers:** Experiment
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
@@ -288,7 +277,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Text field (`EditTextPreference`)
 - **Category:** Tweaks
 - **Declared default:** Not declared
-- **APK text:** “User Agent header value to use for the streaming”
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 23](../../Part%204%20-%20Library%20and%20Playback/23%20Network%20Streams.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -299,7 +287,6 @@ Scrobbling, Android Auto browsing, compatibility tweaks (wakelock, intents, albu
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Tweaks
 - **Declared default:** Off
-- **APK text:** “Try to load custom ffmpeg_neon.so from the path:”
 - **Markers:** Experiment, non-persistent
 - **Source:** `xml-v22/misc.xml`, `xml/misc.xml`
 - **Discussed in:** [Chapter 33](../../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)

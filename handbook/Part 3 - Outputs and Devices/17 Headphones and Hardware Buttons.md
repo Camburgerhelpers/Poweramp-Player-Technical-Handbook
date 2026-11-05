@@ -38,7 +38,7 @@ Headphones and other external controls reach Poweramp in two ways: as **connecti
 | Wired headset connected | Resume On Wired Headset | “Resume playing when wired headset is connected” |
 | Bluetooth device connected | Resume On Bluetooth | “Resume playing when Bluetooth device is connected” |
 | Wired, Bluetooth or USB DAC disconnected | Pause On Headset Disconnect | “Pause when wired/Bluetooth headset/USB DAC disconnected” |
-| USB DAC connected | Pause On USB DAC connection | “Pause when USB DAC connected. This helps prevent loud noise during device initialization on some USB DACs” |
+| USB DAC connected | Pause On USB DAC connection | pausing as a USB DAC connects can prevent loud initialization noise |
 
 **Pause On Headset Disconnect** is your protection against music suddenly playing from the loudspeaker. Keep it on. **RUNTIME VERIFICATION REQUIRED:** whether resume-on-connect fires only after a disconnect-pause or on any connection.
 
@@ -59,12 +59,12 @@ Headphones and other external controls reach Poweramp in two ways: as **connecti
 
 - **Respond To Buttons:** “Enable Headset/Bluetooth controls”. It is the master switch. **Strict Resume/Pause/Stop**, **Beep** and **Vibrate** depend on it.
 - **Wired Headset** and **Bluetooth** each list three behaviours: “Single press”, “Double/triple press for next/prev. track”, and “Long press for next track (when playing)”. **RUNTIME VERIFICATION REQUIRED:** the XML declares no stored values or selection mode, so it is not established whether these are alternatives or independent toggles.
-- **Strict Resume/Pause/Stop:** “Use for headunits/devices generating stray play/pause/stop key press commands, which are interpreted as undesired playback toggle or double press”.
+- **Strict Resume/Pause/Stop:** the control accommodates head units sending stray transport commands interpreted as toggles or double presses.
 - **Ignore Bluetooth Commands:** “Ignore all Bluetooth commands for a period of time after a connection” “%d sec”, adjustable 0 sec to 20 sec, step not declared.
 - **Ignore Repeat/Shuffle:** “Ignore Bluetooth Repeat and Shuffle commands completely”.
 - **Disable Default Long Press:** “Disable long press activated voice search while Poweramp is playing”.
 
-**<< Button Resets Current Track** (Player Screen settings) also applies to hardware buttons: “First press rewinds track, second press changes track. Includes headset/bluetooth button presses, notification button”.
+**<< Button Resets Current Track** (Player Screen settings) also applies to hardware buttons: a first press can restart the current track and a second press can skip back; this also applies to headset and notification controls.
 
 ## Feedback
 

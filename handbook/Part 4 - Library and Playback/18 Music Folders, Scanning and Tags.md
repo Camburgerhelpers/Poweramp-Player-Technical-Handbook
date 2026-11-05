@@ -34,9 +34,9 @@ Poweramp builds its library by scanning the folders you choose and reading each 
 
 
 - **Music Folders** opens the folder selection dialog. The dialog itself is not part of the settings XML.
-- The screen states an Android restriction: “Android may not allow certain folders to be added, such as Download or a storage root. In this case please add their subfolders instead. This restriction is imposed by Google”.
+- The screen states an Android restriction: Android may prohibit selecting Downloads or a storage root as a music folder; select a subfolder instead.
 - **Auto-Find Music Folders:** “Use this option to find music folders automatically”.
-- **File Access Legacy Mode:** “Direct file access mode. Requires extra permission” “This mode makes all storages directly accessible for a selection in the Music Folders dialog. This option is not supported on Android 13+ for the Play app edition”.
+- **File Access Legacy Mode:** “Direct file access mode. Requires extra permission” legacy direct storage access requires extra permission and is unavailable to the Play edition on Android 13 or newer.
 
 **GENERAL PRINCIPLE.** Modern Android grants apps access to folders through the Storage Access Framework (SAF) folder picker. Google blocks some locations, such as the storage root and Download, which is why Poweramp asks you to add their sub-folders instead. Legacy mode uses broad file permissions where the edition and Android version still allow it. Per the APK text, it is not available on Android 13+ for the Play edition.
 
@@ -57,13 +57,13 @@ Poweramp builds its library by scanning the folders you choose and reading each 
 
 
 - **Rescan** scans the library folders again. **RUNTIME VERIFICATION REQUIRED:** whether it re-reads unchanged files (for example after you change split symbols or Tag Encoding) or only new and modified ones.
-- **Full Rescan:** “Clear tag info database and rescan Library/Folders. Use when storage/SD card changed, on major ROM updates, or when folders are moved on storage”. The same action appears on the storage maintenance screen ([Chapter 35 — Backup, Restore and Maintenance](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)).
+- **Full Rescan:** the action clears the tag-information database and rebuilds library and folder records after storage or system changes. The same action appears on the storage maintenance screen ([Chapter 35 — Backup, Restore and Maintenance](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)).
 
 > [!CAUTION]
 > **Full Rescan: treat as high risk until verified.**
 > The APK text says Full Rescan clears the tag info database. Whether ratings, play counts, “last played” data, per-track progress and playlist links survive it has **not been verified**. Before you run it: (1) use **Export Settings/Data** and copy the file off the device, (2) export your playlists with **Export Poweramp Playlists**, and (3) try a normal **Rescan** first. Use Full Rescan only for the situations the APK names, or when a normal Rescan has not helped ([Chapter 35](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)).
 - **Auto-scan** (on by default): “Enable automatic SD card/storages scan. If disabled, only manual Rescan is available”. Its triggers depend on it:
-  - **Rescan Immediately:** “Rescan immediately when something changed on the storage. Tracks appear faster, but this may introduce more rescans when you upload multiple files to the device”.
+  - **Rescan Immediately:** immediate scanning finds tracks sooner but may trigger repeated rescans during large file transfers.
   - **Initial Scan:** “Quick scan when Poweramp is started for first time”.
   - **Scan Providers:** “Automatically scan 3rd party track provider plugins on startup” ([Chapter 33 — Scrobbling and App Integration](../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)).
   - **USB Disconnection/SD Card Mount:** “Scan on USB disconnection and/or SD card mount”.
@@ -111,7 +111,7 @@ After changing separators, run a **Rescan**. If entries still look stale, a **Fu
 
 **Tag Encoding:** “Encoding for non-Unicode tags and playlists”. The list offers the system default plus 17 legacy code pages: Big5, GB2312, GBK, ISO-8859-2, Windows-1250, ISO-8859-7, Windows-1253, ISO-8859-8, Windows-1255, Shift_JIS, ISO-2022-JP, EUC-JP, EUC-KR, Windows-1251, Windows-874 (TIS-620), Windows-1252 and ISO-8859-1. The list labels and their stored values are in the [Music Scanner](../Appendices/Settings%20Reference/Music%20Scanner.md) reference. **GENERAL PRINCIPLE:** this matters for text stored in a legacy, non-Unicode code page, typically ID3v1 tags, ID3v2 frames written in ISO-8859-1 by older taggers, and `.m3u` playlists. Some of these code pages are single-byte (ISO-8859-x, Windows-125x), others are multibyte (Big5, GBK, GB2312, Shift_JIS, EUC-JP, EUC-KR) or stateful (ISO-2022-JP). Text stored as Unicode (UTF-8 or UTF-16) is unaffected. Only one code page can be selected at a time. If titles show as garbled characters, choose the encoding the files were tagged in, then run a **Rescan**; use a **Full Rescan** only if that does not help, after reading the caution above.
 
-- **Always Use UTF-8 for .m3u:** “If disabled, Tag Encoding setting is used for .m3u playlists. UTF-8 is always used for .m3u8 playlists”.
+- **Always Use UTF-8 for .m3u:** when disabled, M3U decoding uses Tag Encoding, whereas M3U8 always uses UTF-8.
 - **Always Use UTF-8** for LRC lyrics files: “If disabled, Tag Encoding setting is used for non-Unicode files” ([Chapter 28 — Lyrics](../Part%205%20-%20Interface%20and%20Visuals/28%20Lyrics.md)).
 
 ## CUE sheets

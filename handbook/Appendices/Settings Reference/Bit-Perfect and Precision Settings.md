@@ -43,12 +43,13 @@ Global switches for the 64-bit pipeline, Follow Track Sample Rate, DSD Remasteri
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. 64-bit Audio Pipeline
 
 - **Key:** `global_pipeline64`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Enables Float 64-bit audio pipeline from decoder to the output”
 - **Source:** `xml-v22/audio_bit_perfect.xml`, `xml/audio_bit_perfect.xml`
 - **Discussed in:** [Chapter 09](../../Part%202%20-%20Sound%20and%20Audio%20Processing/09%2064-bit%20Floating-Point%20Processing.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -66,7 +67,6 @@ Global switches for the 64-bit pipeline, Follow Track Sample Rate, DSD Remasteri
 - **Key:** `global_follow_sr`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Enables track sample rate matching for the compatible outputs”
 - **Source:** `xml-v22/audio_bit_perfect.xml`, `xml/audio_bit_perfect.xml`
 - **Discussed in:** [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -83,7 +83,6 @@ Global switches for the 64-bit pipeline, Follow Track Sample Rate, DSD Remasteri
 - **Key:** `global_dsd_remaster`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Remasters PCM to DSD”
 - **Source:** `xml-v22/audio_bit_perfect.xml`, `xml/audio_bit_perfect.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -100,7 +99,6 @@ Global switches for the 64-bit pipeline, Follow Track Sample Rate, DSD Remasteri
 - **Key:** `global_perfect_bit_perfect`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Direct decoder-to-output path. Enables DSD output for DSD tracks. No Equalizer, no DSP, no software volume control”
 - **Source:** `xml-v22/audio_bit_perfect.xml`, `xml/audio_bit_perfect.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md), [Chapter 11](../../Part%202%20-%20Sound%20and%20Audio%20Processing/11%20Bit-Perfect%20Output.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

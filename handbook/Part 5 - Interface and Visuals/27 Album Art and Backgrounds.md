@@ -92,10 +92,10 @@ Album art appears throughout Poweramp: on the Player Screen, in lists, as blurre
 *Source: APK build 1031 settings XML — reference: [Album Art Settings](../Appendices/Settings%20Reference/Album%20Art%20Settings.md), [Miscellaneous Settings](../Appendices/Settings%20Reference/Miscellaneous%20Settings.md).*
 
 
-- **Send High Resolution Album Art:** “High resolution album art is sent to Android lock screen, app widgets, and other media API consumers. Lock Screen ➔ Blur has priority over this option”.
+- **Send High Resolution Album Art:** high-resolution artwork is sent to lock-screen, widget and media clients, although lock-screen blur can override it.
 - **Always Send Album Art:** “For smartwatches/other devices which should always receive album art, even when screen is off”.
 - **API Compatibility** (*Experiment*): “Change if album art is not visible in Android Auto/3rd party apps”. **RESEARCH SUPPORTED** (from the key name only, not verified): `aa_no_ashmem` suggests Android shared memory (ashmem), so the option may change how images are passed to other processes. **GENERAL PRINCIPLE:** large images passed between apps can hit inter-process size limits, which is one reason covers sometimes fail to appear in other apps.
-- **Send Album Art for old API** (Misc): “Send Album Art for old Poweramp v2 API. Updated Poweramp API allows much higher res images, but this may be needed for old API apps” ([Chapter 33 — Scrobbling and App Integration](../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)).
+- **Send Album Art for old API** (Misc): the older version-2 API artwork option supports clients not yet using the newer, higher-resolution API ([Chapter 33 — Scrobbling and App Integration](../Part%206%20-%20Android%20Integration/33%20Scrobbling%20and%20App%20Integration.md)).
 - **Prefer Track Cover for Streams:** [Chapter 23 — Network Streams](../Part%204%20-%20Library%20and%20Playback/23%20Network%20Streams.md).
 
 The lock-screen options (album art, blur, default image) are in [Chapter 31 — Lock Screen](../Part%206%20-%20Android%20Integration/31%20Lock%20Screen.md). Android Auto image options are in [Chapter 32 — Android Auto and Connected Apps](../Part%206%20-%20Android%20Integration/32%20Android%20Auto%20and%20Connected%20Apps.md). Chromecast art is in [Chapter 15 — Chromecast Output](../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md).

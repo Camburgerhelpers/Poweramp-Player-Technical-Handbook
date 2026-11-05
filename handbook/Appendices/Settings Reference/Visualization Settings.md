@@ -65,12 +65,13 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Visualization On Player Screen
 
 - **Key:** `enable_vis`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Visualization can be switched on with Player Screen button” “Visualization is shown when music is playing”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
@@ -95,7 +96,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_in_lib`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Visible when visualization on Player Screen is enabled. Depending on visualization preset used, some UI elements may become poorly visible”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -104,7 +104,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_preset_change_sec`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 15 s (`15`)
-- **APK text:** “For By Duration and Shuffle modes” “Change each: %d s”
 - **Range:** 3 s to 120 s, step not declared
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
@@ -132,7 +131,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_temp_ui_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 1500 ms (`1500`)
-- **APK text:** “Time to show UI during active visualization” “%d ms”
 - **Range:** 500 ms to 15000 ms, step 100 ms
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
@@ -142,7 +140,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_aa_visible`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Keep album art visible during visualization”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -151,7 +148,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_ignore_touch_faded`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Ignore first touch in Fade Controls mode”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -161,7 +157,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_list_faded_alpha`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 25% (`25`)
-- **APK text:** “Track labels, rating, menu, and album art (if visible) opacity”
 - **Range:** 0% to 100%, step not declared
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
@@ -171,7 +166,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_fs_hide_bars`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Hide status bar and navigation completely when in Full Screen mode”
 - **Markers:** Feature Pack
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md), [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
@@ -182,7 +176,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_use_compact_bars`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Scale bars visualization to album art area in Fade Controls mode. If disabled, bar visualization is always full-screen”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -191,7 +184,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `milk_hd`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Increased visualization resolution, reduces performance”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -200,7 +192,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `milk_crop_aspect`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Crop visualization instead of scaling it, reduces performance for a better visual match”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -209,7 +200,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `milk_30_fps`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Reduce frame rate to 30 frames per second”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -218,7 +208,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `milk_strict`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Slower .milk presets rendering for a bit better visual match”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 
@@ -226,7 +215,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 
 - **Key:** `vis_extra_delay_info`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Extra delay for better audio/visualization/lyrics match is set per each Output/Device type”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
@@ -262,7 +250,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Key:** `vis_full_rescan`
 - **Control:** Action (`ProgressPreference`)
 - **Category:** Presets
-- **APK text:** “Clear scanned presets info and do the full presets rescan”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md), [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -274,7 +261,6 @@ Visualization on the Player Screen, Equalizer spectrum, faded-controls behaviour
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Presets
 - **Declared default:** Off
-- **APK text:** “Unliked presets are completely hidden. Preset list is reloaded when closed”
 - **Source:** `xml-v22/vis.xml`, `xml/vis.xml`
 - **Discussed in:** [Chapter 29](../../Part%205%20-%20Interface%20and%20Visuals/29%20Visualization.md)
 

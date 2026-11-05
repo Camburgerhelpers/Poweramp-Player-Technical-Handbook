@@ -40,11 +40,12 @@ Purchase restoration for each storefront Poweramp supports: Google Play in-app p
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. In-App Purchases on Google Play
 
 - **Key:** `restore_purchase`
 - **Control:** Purchase restore (`RestoreFvPurchasePref`)
-- **APK text:** “Restore Purchases” “• Full Version In-App Purchase” “• Feature Packages” “• Uberpatron Badges”
 - **Source:** `xml/already_purchased.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 
@@ -52,7 +53,6 @@ Purchase restoration for each storefront Poweramp supports: Google Play in-app p
 
 - **Key:** `restore_unlocker`
 - **Control:** Purchase restore (`RestorePlayUnlockerPurchasePref`)
-- **APK text:** “Restore Purchase” “• only applicable if you previously purchased Poweramp Unlocker app”
 - **Source:** `xml/already_purchased.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 
@@ -60,7 +60,6 @@ Purchase restoration for each storefront Poweramp supports: Google Play in-app p
 
 - **Key:** `rustore`
 - **Control:** Purchase restore (`RestoreRustoreFvPurchasePref`)
-- **APK text:** “Restore Purchases” “• Full Version In-App Purchase” “• Uberpatron Badges”
 - **Source:** `xml/already_purchased.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 
@@ -68,7 +67,6 @@ Purchase restoration for each storefront Poweramp supports: Google Play in-app p
 
 - **Key:** `huawei`
 - **Control:** Purchase restore (`RestoreHuaweiFvPurchasePref`)
-- **APK text:** “Restore Purchases” “• Full Version In-App Purchase” “• Uberpatron Badges”
 - **Source:** `xml/already_purchased.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 
@@ -76,7 +74,6 @@ Purchase restoration for each storefront Poweramp supports: Google Play in-app p
 
 - **Key:** `website`
 - **Control:** Purchase restore (`RestoreWebsiteFvPurchasePref`)
-- **APK text:** “Restore Purchase” “• only applicable for prior purchase on website”
 - **Source:** `xml/already_purchased.xml`
 - **Discussed in:** [Chapter 36](../../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)
 

@@ -45,7 +45,7 @@ The predefined counts are 5, 10, 12, 15, 16, 24, 31 and 32. Three are marked ISO
 
 **Custom bands** let you choose the number of bands and the first and last centre frequencies. All three depend on **Enable Custom Bands**, which declares no default. How the intermediate bands are spaced between the end points is not declared. **GENERAL PRINCIPLE:** logarithmic spacing is the norm.
 
-A note on the bands screen warns: “High number of bands may require manual Block Size adjustment for the increased frequency resolution”. It links to `settings/peq_equ#peq_blocksize`, a screen that is not among the inventoried resources. **GENERAL PRINCIPLE:** narrow bands at low frequencies need longer processing blocks (more frequency resolution) in block-based filter designs. This is why a high band count may call for a larger block size. The Block Size setting itself is outside this handbook's evidence.
+A note on the bands screen warns: a large number of EQ bands can require a bigger block size for sufficient frequency resolution. It links to `settings/peq_equ#peq_blocksize`, a screen that is not among the inventoried resources. **GENERAL PRINCIPLE:** narrow bands at low frequencies need longer processing blocks (more frequency resolution) in block-based filter designs. This is why a high band count may call for a larger block size. The Block Size setting itself is outside this handbook's evidence.
 
 ## Tone controls
 
@@ -130,7 +130,7 @@ The Tone screen's purpose is declared as “Set Bass/Treble frequencies and Q fa
 ## System effects and the Poweramp Equalizer app
 
 - **MusicFX** (Off by default): “Enable MusicFX Button (Android system audio effects) in Volume tab”. MusicFX is Android's own effect chain, separate from Poweramp's equalizer.
-- **Equalizer for Spotify and YouTube Music** on the main Settings menu links to the Poweramp Equalizer app on Google Play: “Free Poweramp Equalizer app with the signature Poweramp sound for the streaming players such as Spotify and YouTube Music”. That app processes the output of other players. Its settings are outside this handbook.
+- **Equalizer for Spotify and YouTube Music** on the main Settings menu links to the Poweramp Equalizer app on Google Play: the separate Poweramp Equalizer app is promoted for streaming services including Spotify and YouTube Music. That app processes the output of other players. Its settings are outside this handbook.
 
 ## Gain staging
 

@@ -91,6 +91,8 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. (untitled eq_preset)
 
 - **Key:** `eq_preset`
@@ -155,7 +157,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `sample_rate`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “The sample rate Poweramp uses for the output”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
@@ -174,7 +175,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `follow_sr_hint1`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “In Follow Track mode, Poweramp will try to match the track sample rate to a supported by the device rate from the allowed list, or it will upsample to the next higher allowed and supported rate” “This option is intended for devices with broad sample rate support, including USB DACs and Digital Audio Players”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
 
@@ -182,7 +182,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `codec_sr_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “On most Android phones, choosing a Bluetooth codec sample rate can cause repeated resampling because the system enforces 48 kHz-based sample rates, even when the codec supports 44.1 kHz-based frequencies. The codec option is intended for DAPs” “The codec parameters may arrive late, requiring reconfiguration during a playback; or in some instances, may never arrive”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md), [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md), [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md)
 
@@ -191,7 +190,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `allowed_srs`
 - **Control:** Multi-select list (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “The set of sample rates Poweramp is allowed to use when matching the track sample rate”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
@@ -203,7 +201,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `follow_sr_hint2`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Gapless playback and crossfade may be affected when switching between different sample rates” “Sample rates that are not in the allowed list or are not supported by the output device will still be resampled” “Perfect Bit Perfect mode enables the selection of allowed DSD rates as well”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
 
@@ -212,7 +209,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `set_codec_sr`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “When enabled, Poweramp will attempt to set Bluetooth codec sample rate and other parameters”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md), [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md)
@@ -223,7 +219,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `set_codec_sr_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Introduces a short gap between tracks during codec parameters change” “Depending on the devices/firmware/system settings some sample rates and/or formats won't be accepted and may cause silence, error, or some default parameters” “This can be enabled only when the target Bluetooth device is connected, and the device permission is granted”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md)
 
@@ -232,7 +227,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `prefer_base_rate`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Prioritize integer multiples of the source frequency (44.1/48 kHz) from the Allowed Sample Rates”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
@@ -244,7 +238,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `sample_fmt`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “The sample format Poweramp uses for the output”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 08](../../Part%202%20-%20Sound%20and%20Audio%20Processing/08%20Bit%20Depth,%20Sample%20Format%20and%20Dither.md)
@@ -274,7 +267,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `direct_no_effect`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “On your device, DVC may force standard definition audio (48 kHz/16 bit)”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md), [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
 
@@ -282,7 +274,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `pref_sr_format_effects_override_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Global sound effects, like Dolby, may force standard definition audio (48 kHz/16 bit)”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md), [Chapter 07](../../Part%202%20-%20Sound%20and%20Audio%20Processing/07%20Sample%20Rates%20and%20Resampling.md)
 
@@ -291,7 +282,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `pipeline64`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Enables Float 64-bit audio pipeline from decoder to the output”
 - **Options:**
   - Auto — `0`
   - Enable — `1`
@@ -315,7 +305,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `dsd_remaster`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Remasters PCM to DSD”
 - **Options:**
   - Auto — `0`
   - Enable — `1`
@@ -338,7 +327,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `dsd_remaster_sample_rate`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Used in the DSD Remastering mode for the output” “48 kHz-based DSD sample rate variant is used (if supported) for 48 kHz-based tracks”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md)
@@ -358,7 +346,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `dsd_remaster_allow_48k`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Use 48 kHz-based DSD sample rates for 48 kHz-based PCM tracks”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md)
@@ -369,7 +356,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `dsd_remaster_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “This option overrides Sample Rate and Allowed Sample Rates selection” “Combined with the Perfect Bit Perfect option, DSD Remaster processes PCM tracks only, DSD tracks remain unchanged”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md)
 
@@ -378,7 +364,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `perfect_bit_perfect`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Direct decoder-to-output path. Enables DSD output for DSD tracks. No Equalizer, no DSP, no software volume control”
 - **Options:**
   - Auto — `0`
   - Enable — `1`
@@ -422,7 +407,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `volume_type_hints`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “USB DACs typically have an independent on-device volume control that Hardware Volume does not affect” “Software volume is not applied in Perfect Bit Perfect mode”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
 
@@ -431,7 +415,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `sync_hw_volume`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Restores the previously saved volume. If disabled, the device current hardware volume is used, which is typically defaults to MAXIMUM”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -442,7 +425,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `sync_hw_volume_hint`
 - **Control:** Information (`RawTextPreference`)
-- **APK text:** “Enable this option for devices that lack on-device volume controls or do not retain their volume setting. Disable it for devices with the volume controls that preserve their volume level between connections” “Applied on the new connection”
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md)
 
@@ -461,7 +443,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 
 - **Key:** `buffer_size`
 - **Control:** Action (`Preference`)
-- **APK text:** “Tweak if audio skips”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 12](../../Part%203%20-%20Outputs%20and%20Devices/12%20Choosing%20an%20Audio%20Output.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -472,7 +453,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `reconfig_delay_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** Not declared
-- **APK text:** “An additional delay between output reconfigurations. This is required for devices that fail to reconfigure quickly. Increases track change delay” “%d ms”
 - **Options:**
   - Default delay
 - **Markers:** non-persistent
@@ -487,7 +467,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `vis_latency_ms`
 - **Control:** Slider (`SeekbarPreference`)
 - **Declared default:** 0 ms (`0`)
-- **APK text:** “Extra delay to apply to visualization/lyrics for a better sync: %d ms”
 - **Range:** 0 ms to 2500 ms, step not declared
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
@@ -499,7 +478,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `pause_usb_release`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Return the USB DAC to Android while Poweramp is paused or stopped so other apps can use it” “This option stresses USB DAC a bit more, and may cause glitches for some DACs”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -511,7 +489,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `play_silence_in_background`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Helps keeping player uninterrupted in the background. Increases battery usage” “Prefer allowing Poweramp to work in the background in the system settings as an alternative to this option”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
@@ -523,7 +500,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `allow_dsd_dop`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Allow DSD-Over-PCM protocol for this device”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md)
@@ -535,7 +511,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `prefer_dsd_raw`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Prefer raw DSD formats if available for this device”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md)
@@ -547,7 +522,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `warmup`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Apply an additional warm-up on the first playback. Enable this if the device tends to produce distorted audio or silence immediately after connecting”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -559,7 +533,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `pcm_dsd_extra_warmup`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Apply additional PCM/DSD warm-ups for USB DACs that may produce distorted audio after format or sample-rate changes”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 06](../../Part%202%20-%20Sound%20and%20Audio%20Processing/06%20Track%20Transitions%20and%20Gapless%20Playback.md), [Chapter 10](../../Part%202%20-%20Sound%20and%20Audio%20Processing/10%20DSD%20Playback%20and%20Remastering.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -571,7 +544,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `target_alt_sr_quirk`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Set the USB sample rate after activating the target alternate setting. Enable this for USB DACs that play silence or distorted audio after a connection”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -583,7 +555,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `force_usb_full_speed`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Force slow full speed usb connection for the old USB 1.1 devices”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -595,7 +566,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `cc_force_aa`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Send album art to Chromecast device even if it reports it has no display”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 15](../../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md)
@@ -607,7 +577,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `cc_show_meta`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Show additional meta information (track format, category, next track) on the Chromecast devices with a screen”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 15](../../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md)
@@ -619,7 +588,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `no_dvc`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Disable Direct Volume Control (DVC) for this output/device” “Disabling DVC may be required for Hi-Res and other advanced output options to work”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 02](../../Part%201%20-%20Getting%20Oriented/02%20The%20Poweramp%20Audio%20Path.md), [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 13](../../Part%203%20-%20Outputs%20and%20Devices/13%20USB%20DAC%20Setup%20and%20Compatibility.md)
@@ -638,7 +606,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `no_headroom`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Don't reduce output gain when DVC is disabled. May cause distortion for high equ/tone gains”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 03](../../Part%202%20-%20Sound%20and%20Audio%20Processing/03%20Volume%20Control%20and%20DVC.md), [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md)
@@ -650,7 +617,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `no_equ`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Disable equalizer/tone DSP for this output/device”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 04](../../Part%202%20-%20Sound%20and%20Audio%20Processing/04%20Equalizer%20and%20Tone%20Controls.md)
@@ -662,7 +628,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `no_duck`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Disable volume ducking for this output, e.g. when notifications cause issues with this output. Temporarily pause player instead”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 15](../../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md), [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)
@@ -674,7 +639,6 @@ The per-output (per-device) options screen opened from an output category on Aud
 - **Key:** `no_af`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Ignore calls/short Audio Focus requests, including notification sounds and ringtones”
 - **Markers:** non-persistent
 - **Source:** `xml-v22/audio_output_device_opts.xml`, `xml/audio_output_device_opts.xml`
 - **Discussed in:** [Chapter 01](../../Part%201%20-%20Getting%20Oriented/01%20How%20Poweramp's%20Settings%20Are%20Organized.md), [Chapter 15](../../Part%203%20-%20Outputs%20and%20Devices/15%20Chromecast%20Output.md), [Chapter 16](../../Part%203%20-%20Outputs%20and%20Devices/16%20Calls,%20Notifications%20and%20Interruptions.md)

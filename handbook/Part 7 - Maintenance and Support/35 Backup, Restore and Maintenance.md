@@ -82,7 +82,7 @@ If you consider Restore Defaults when one area is misbehaving, remember that its
 | **Restore Equalizer Presets** | `reset_eq_presets` (two screens) | “Built-in and AutoEq equalizer presets will be restored to defaults” | **high:** customised presets lost |
 | **Restore Reverb Presets** | `reset_reverb_presets` | “Built-in reverb presets will be restored/set to defaults” | medium |
 | **Reset stats** | `reset_stats` | “Reset tracks played times, last played, and related stats” | **high:** history lost |
-| **Full Rescan** | `erase_and_rescan` (two screens) | “Clear tag info database and rescan Library/Folders. Use when storage/SD card changed, on major ROM updates, or when folders are moved on storage” | **high until verified:** long rescan; the effect on ratings, play counts, progress and playlist links is not verified (RV-040). Export settings and playlists first; try a normal Rescan first |
+| **Full Rescan** | `erase_and_rescan` (two screens) | the action clears the tag-information database and rebuilds library and folder records after storage or system changes | **high until verified:** long rescan; the effect on ratings, play counts, progress and playlist links is not verified (RV-040). Export settings and playlists first; try a normal Rescan first |
 | **Delete Cache** | `clear_aa_cache` (two screens) | “Poweramp images cache will be deleted” | low: images regenerated or re-downloaded |
 | **Full Presets Rescan** | `vis_full_rescan` (two screens) | “Clear scanned presets info and do the full presets rescan” | low |
 | **Reset Negative Status** | `reset_negative_aa_status` | “Clear stored "not-found" status for album/artist images” | none |

@@ -56,6 +56,8 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Notification Type
 
 - **Key:** `notification_type`
@@ -75,7 +77,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Key:** `notification_colors`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** `0` → Auto†
-- **APK text:** “Adjust if notification text/icons are not visible due to the non-standard colors”
 - **Options:**
   - Auto
   - Black
@@ -89,7 +90,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Key:** `notify_colorize`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** On
-- **APK text:** “Match notification colors and background to the track album art image”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md)
 
@@ -97,7 +97,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 
 - **Key:** `buttons`
 - **Control:** Link (`RedirectPreference`)
-- **APK text:** “Media action buttons”
 - **Opens:** [Media Buttons and Actions](Media%20Buttons%20and%20Actions.md) (`ui_mediaactions`)
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 
@@ -106,7 +105,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Key:** `status_lib`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “Notification navigates to the current list on touch”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md)
 
@@ -115,7 +113,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Key:** `notify_prefer_nav`
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Declared default:** Off
-- **APK text:** “<< is shown instead of close action (x) in the small notification”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md)
 
@@ -124,7 +121,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Key:** `notify_prio`
 - **Control:** List (`TagListPreference`)
 - **Declared default:** Not declared
-- **APK text:** “Defines Poweramp notification position”
 - **Options:**
   - Max — `2`
   - High — `1`
@@ -148,7 +144,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Notification Keeping
 - **Declared default:** Not declared
-- **APK text:** “Notification stays even if Poweramp paused in its UI, when playback auto-ends, etc.”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -159,7 +154,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Notification Keeping
 - **Declared default:** Not declared
-- **APK text:** “Player can be resumed via Media Notification suggestion when inactive or unloaded (depending on firmware)”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -169,7 +163,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Key:** `_notify_resume_hint`
 - **Control:** Information (`RawTextPreference`)
 - **Category:** Notification Keeping
-- **APK text:** “Media Notification for an inactive player has only the play button” “If enabled, this notification can't be removed by player on pause. When disabled, phone reboot may be needed to apply”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md)
 
@@ -179,7 +172,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Notification Keeping
 - **Declared default:** Not declared
-- **APK text:** “Poweramp player service won't be unloaded when in idle” “On Android 8+ this option works reliable only with the active notification”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md), [Chapter 34](../../Part%206%20-%20Android%20Integration/34%20Background%20Operation%20and%20Compatibility.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.
@@ -190,7 +182,6 @@ Notification style, colours, buttons, priority, and keeping the notification or 
 - **Control:** Switch (`MultilineSwitchPreference`)
 - **Category:** Notification Keeping
 - **Declared default:** Not declared
-- **APK text:** “Notification is removed on Headset/BT disconnection if player is paused” “This option may temporarily keep Poweramp idle service if required”
 - **Source:** `xml-v22/ui_notify.xml`, `xml/ui_notify.xml`
 - **Discussed in:** [Chapter 14](../../Part%203%20-%20Outputs%20and%20Devices/14%20Bluetooth%20Audio.md), [Chapter 30](../../Part%206%20-%20Android%20Integration/30%20Notifications%20and%20Media%20Buttons.md)
 - **Evidence note:** No default is declared in the XML; the effective initial value is set by application code or device state and must be checked at runtime.

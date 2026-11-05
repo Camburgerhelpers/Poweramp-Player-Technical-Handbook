@@ -36,11 +36,12 @@ Storage-related maintenance actions: deleting the image cache, a full library re
 
 ## Entry details
 
+**Copyright note:** The original application's hints and descriptions are omitted here. Read them in Poweramp Player build 1031. Preference keys, types, declared defaults, ranges and dependencies remain documented below.
+
 ### 1. Delete Cache
 
 - **Key:** `clear_aa_cache`
 - **Control:** Action (`Preference`)
-- **APK text:** “Poweramp images cache will be deleted”
 - **Markers:** non-persistent
 - **Source:** `xml/space.xml`
 - **Discussed in:** [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -50,7 +51,6 @@ Storage-related maintenance actions: deleting the image cache, a full library re
 
 - **Key:** `erase_and_rescan`
 - **Control:** Action (`ProgressPreference`)
-- **APK text:** “Clear tag info database and rescan Library/Folders. Use when storage/SD card changed, on major ROM updates, or when folders are moved on storage”
 - **Markers:** non-persistent
 - **Source:** `xml/space.xml`
 - **Discussed in:** [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)
@@ -60,7 +60,6 @@ Storage-related maintenance actions: deleting the image cache, a full library re
 
 - **Key:** `vis_full_rescan`
 - **Control:** Action (`ProgressPreference`)
-- **APK text:** “Clear scanned presets info and do the full presets rescan”
 - **Markers:** non-persistent
 - **Source:** `xml/space.xml`
 - **Discussed in:** [Chapter 35](../../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)

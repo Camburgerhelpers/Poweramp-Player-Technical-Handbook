@@ -78,7 +78,7 @@ The status rows on this screen (`top_output_info`, `top_output_info2`, `output_i
 
 
 - **Buffer Size:** “Tweak if audio skips”. **GENERAL PRINCIPLE:** larger buffers tolerate CPU and scheduling hiccups better, at the cost of more latency (controls respond later, visualization lags). Enlarge it in steps only if you have dropouts.
-- **Reconfiguration Delay:** “An additional delay between output reconfigurations. This is required for devices that fail to reconfigure quickly. Increases track change delay” “%d ms”.
+- **Reconfiguration Delay:** a selectable pause allows slow devices to reconfigure but makes track transitions longer “%d ms”.
 - **Visualization/Lyrics Delay:** “Extra delay to apply to visualization/lyrics for a better sync: %d ms”. It is set per output because each path has its own latency. Bluetooth typically needs the most ([Chapter 14 — Bluetooth Audio](14%20Bluetooth%20Audio.md)).
 
 ## Output Advanced Tweaks
@@ -95,7 +95,7 @@ Reached from Audio Outputs › Advanced Tweaks (screen `audio_outputs_tweaks`).
 *Source: APK build 1031 settings XML — reference: [Audio Output Advanced Tweaks](../Appendices/Settings%20Reference/Audio%20Output%20Advanced%20Tweaks.md).*
 
 
-- **Show Poweramp for USB DACs:** “Automatically activate Poweramp when USB DAC is attached. Allows the device to be remembered, so connection dialogs can be skipped in the future”.
+- **Show Poweramp for USB DACs:** the app can open on USB DAC connection and remember the device to reduce later connection prompts.
 - **Force Speaker Off (for Hi-Res Output):** “Enable this if speaker doesn't switch off after calls, some notifications, etc”.
 - **Emulate Media Stream (for Hi-Res output):** “Enable this if volume or other media actions don't work for the lock screen or when screen is off”. Off by default.
 - **Audio Outputs Detection Log** opens a screen that is not among the inventoried resources. It is the place to look when a device is not recognised or lands in the wrong category, and it is worth attaching to a support request ([Chapter 37 — About, Updates and Support](../Part%207%20-%20Maintenance%20and%20Support/37%20About,%20Updates%20and%20Support.md)).
