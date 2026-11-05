@@ -48,7 +48,7 @@ See [ROADMAP.md](ROADMAP.md) for the planned build-1031 alpha, subsequent accura
 
 ## Found a mistake?
 
-Use [GitHub Issues](../../issues) for specific documentation errors (template: **Documentation correction**) or reproducible runtime observations (template: **Runtime observation**). Include the chapter, setting name/key, app build, Android version, device/output, expected behavior, and what you actually observed. Please **do not post personal data, license details, or copyrighted APK files**.
+Use [GitHub Issues](https://github.com/Camburgerhelpers/Poweramp-Player-Technical-Handbook/issues) for specific documentation errors (template: **Documentation correction**) or reproducible runtime observations (template: **Runtime observation**). Include the chapter, setting name/key, app build, Android version, device/output, expected behavior, and what you actually observed. Please **do not post personal data, license details, or copyrighted APK files**.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the reporting format. For help using the actual app, the official Poweramp community may be a better first stop.
 
