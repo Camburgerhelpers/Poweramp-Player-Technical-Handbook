@@ -51,14 +51,15 @@ Statements carry an evidence label. **APK VERIFIED** means the statement matches
 
 ## 4. Change one thing at a time
 
-Change one setting, replay the same passage at a safe level, and compare Audio Info. Keep the change only if it helped. If an area misbehaves after many changes, that screen's **Restore Defaults** resets it (scope not verified). Importing an export **replaces** your current settings, so export the current state first ([Chapter 35](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)).
+Change one setting, replay the same passage at a safe level, and compare Audio Info. Keep the change only if it helped. If you consider **Restore Defaults** after many changes, its placement on 31 screens is APK verified, but its reset scope is unverified (RV-002); record working settings first. **Import Settings/Data may overwrite existing settings**, so export the current state to a separate file first ([Chapter 35](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md)).
 
 ## 5. Actions to treat with care
 
 | Action | Why |
 |---|---|
 | **Full Rescan** | Clears the tag database. Its effect on ratings, play counts and progress is not verified. Back up first; try a normal Rescan first |
-| **Import Settings/Data** | Replaces current settings |
+| **Import Settings/Data** | May overwrite existing settings; export the current state to a separate file first |
+| **Restore Defaults** | Reset scope is unverified (RV-002); record working settings first |
 | **Import Ratings** (playlists) | Can overwrite current ratings from old playlist files |
 | **Restore Equalizer Presets** | Restores built-in and AutoEq presets to defaults |
 | **Reset stats** | Clears play history |

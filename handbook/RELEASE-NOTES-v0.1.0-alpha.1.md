@@ -46,7 +46,7 @@ The version series restarts at `v0.1.0-alpha.1` to reflect alpha maturity. The 1
 
 **Data preservation**
 - Full Rescan: prominent caution, rated high risk until verified, backup steps and a “try Rescan first” rule (Ch. 18, 35, 38).
-- Export/Import: scope stated as unverified; warning that Import replaces current settings (Ch. 35, 38, About This Edition, Quick Start).
+- Export/Import: export and restore coverage remains unverified; Import may overwrite current settings, so export the current state to a separate file first (Ch. 35, 38, Quick Start). Replacement versus merge and restoration of per-output settings still need device testing (RV-056, Ch. 35). About This Edition also advises exporting first and recording per-output settings because export coverage is unverified.
 - Import Ratings: caution that opening an old playlist can overwrite ratings (Ch. 20).
 
 **Inferred defaults**

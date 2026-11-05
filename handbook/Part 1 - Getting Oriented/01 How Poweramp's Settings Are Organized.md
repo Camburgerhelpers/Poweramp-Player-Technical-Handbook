@@ -108,11 +108,11 @@ Every settings table in this handbook, and every appendix entry, uses the same f
 - **Depends on.** The Android `dependency` attribute. **GENERAL PRINCIPLE:** in standard Android preferences, a dependent entry is disabled (greyed out) while its parent switch is off. Poweramp uses custom preference classes, so the exact presentation is **RUNTIME VERIFICATION REQUIRED**.
 - **Markers.** *Experiment* (six entries carry an “Experiment” badge), *Feature Pack* (nine entries associated with a paid Feature Package, see [Chapter 36 — Purchases and Feature Packages](../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)), and *non-persistent* (73 entries declared `android:persistent="false"`, which mostly act on data such as presets rather than storing a simple preference).
 
-## Restore Defaults works per screen
+## Restore Defaults
 
-Thirty-one screens contain their own **Restore Defaults** action. **APK VERIFIED:** placement. **RUNTIME VERIFICATION REQUIRED:** that each one resets only the settings on its own screen. Three other things are often confused with it, and all three are covered in [Chapter 35 — Backup, Restore and Maintenance](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md):
+Thirty-one screens contain a **Restore Defaults** action. **APK VERIFIED:** placement on those screens. **RUNTIME VERIFICATION REQUIRED:** the actual reset scope, including whether each action resets only the settings on its own screen (RV-002). Three other things are often confused with it, and all three are covered in [Chapter 35 — Backup, Restore and Maintenance](../Part%207%20-%20Maintenance%20and%20Support/35%20Backup,%20Restore%20and%20Maintenance.md):
 
-- **Export/Import Settings/Data** — whole-configuration backup and restore.
+- **Export/Import Settings/Data** — settings backup and restore; export and restore coverage is unverified, including whether it covers the whole configuration. Import may overwrite current settings (RV-056).
 - **Dedicated resets** — equalizer presets, reverb presets, play statistics, the album-art “not found” status, AutoEq suggestions.
 - **Purchase restoration** — re-validates a licence with a storefront and never touches settings ([Chapter 36 — Purchases and Feature Packages](../Part%207%20-%20Maintenance%20and%20Support/36%20Purchases%20and%20Feature%20Packages.md)).
 

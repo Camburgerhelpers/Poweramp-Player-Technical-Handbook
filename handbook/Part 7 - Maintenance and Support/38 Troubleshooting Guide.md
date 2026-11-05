@@ -113,8 +113,8 @@ This guide is organised by **symptom**. Each entry lists the settings to check, 
 
 | Situation | Action | See |
 |---|---|---|
-| One area misbehaves after many changes | that screen's **Restore Defaults** | [Chapter 35](35%20Backup,%20Restore%20and%20Maintenance.md) |
-| Configuration broken everywhere | Export the current state, then **Import Settings/Data** from a known-good export (Import replaces current settings; its scope is not verified) | [Chapter 35](35%20Backup,%20Restore%20and%20Maintenance.md) |
+| One area misbehaves after many changes | Consider **Restore Defaults** (reset scope unverified, RV-002); record working settings first | [Chapter 35](35%20Backup,%20Restore%20and%20Maintenance.md) |
+| Configuration broken everywhere | Export the current state to a separate file, then **Import Settings/Data** from a known-good export (Import may overwrite current settings; its scope is not verified) | [Chapter 35](35%20Backup,%20Restore%20and%20Maintenance.md) |
 | Purchase not recognised | **Already Purchased?** → the row for your store | [Chapter 36](36%20Purchases%20and%20Feature%20Packages.md) |
 | Still unresolved | gather Audio Info, logs and steps; contact support | [Chapter 37](37%20About,%20Updates%20and%20Support.md) |
 

@@ -1,6 +1,6 @@
 # Runtime Verification Register
 
-**Poweramp Player Technical Handbook · APK build 1031 · Edition 1.0.1 · unapproved publication candidate · build date 2026-10-21**
+**Poweramp Player Technical Handbook · APK build 1031 · v0.1.0-alpha.1 · private preview · not approved for public distribution · build date 2026-10-21**
 
 > [!NOTE]
 > **Still maintained for v0.1.0-alpha.1.**

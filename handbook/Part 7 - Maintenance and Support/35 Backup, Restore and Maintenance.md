@@ -26,14 +26,14 @@ settings_screens:
 
 # 35. Backup, Restore and Maintenance
 
-“Restore” means four different things in Poweramp, and mixing them up is the most common way to lose a working configuration. This chapter separates them: **backing up and restoring your configuration**, **resetting a screen to its defaults**, **dedicated resets and destructive maintenance actions**, and **restoring purchases**. The last is a licensing matter and is covered in [Chapter 36 — Purchases and Feature Packages](36%20Purchases%20and%20Feature%20Packages.md). The chapter ends with a maintenance routine and a safe-change protocol.
+“Restore” means four different things in Poweramp, and mixing them up is the most common way to lose a working configuration. This chapter separates them: **backing up and restoring your configuration**, **Restore Defaults (reset scope unverified)**, **dedicated resets and destructive maintenance actions**, and **restoring purchases**. The last is a licensing matter and is covered in [Chapter 36 — Purchases and Feature Packages](36%20Purchases%20and%20Feature%20Packages.md). The chapter ends with a maintenance routine and a safe-change protocol.
 
 ## Four kinds of “restore”
 
 | Operation | What it affects | Where | Reversible? |
 |---|---|---|---|
-| **Export / Import Settings/Data** | your configuration (scope not verified, see below) | Settings › Other | only for whatever the export actually contains; Import replaces current settings |
-| **Restore Defaults** | the settings on one screen (scope not verified) | the bottom of 31 individual screens | only through a prior export that covers those settings, or your own notes |
+| **Export / Import Settings/Data** | your configuration (scope not verified, see below) | Settings › Other | only for whatever the export actually contains; Import may overwrite current settings |
+| **Restore Defaults** | reset scope unverified (RV-002) | the bottom of 31 individual screens (APK-verified placement) | only through a prior export that covers those settings, or your own notes |
 | **Dedicated resets and rescans** | specific data: presets, statistics, caches, the tag database | various screens | mostly no |
 | **Restore purchases** | your licence or entitlement with a storefront | Already Purchased? and Feature Packages | does not touch settings or data |
 
@@ -47,11 +47,11 @@ settings_screens:
 *Source: APK build 1031 settings XML — reference: [Main Settings Menu](../Appendices/Settings%20Reference/Main%20Settings%20Menu.md).*
 
 
-These two actions on the main Settings menu are the only whole-configuration backup declared in build 1031. **RUNTIME VERIFICATION REQUIRED:** the XML declares no description, so the file format, the location, and whether the export includes equalizer presets, the library database, playlists, ratings, play statistics or per-output settings are not established by the evidence. Treat the export as a settings backup until you have confirmed more on your device.
+These two actions on the main Settings menu provide settings export and import in build 1031; whole-configuration coverage is unverified. **RUNTIME VERIFICATION REQUIRED:** the XML declares no description, so the file format, the location, and whether the export includes equalizer presets, the library database, playlists, ratings, play statistics or per-output settings are not established by the evidence. Treat the export as a settings backup until you have confirmed more on your device.
 
 > [!WARNING]
-> **Import replaces, it does not merge.**
-> Importing settings is expected to overwrite your current configuration with the contents of the file (**RUNTIME VERIFICATION REQUIRED:** whether any part is merged). Before importing, export the *current* state to a separate file so you can go back. An export made on a different build may not restore every setting.
+> **Import may overwrite your current settings.**
+> Whether Import Settings/Data replaces or merges the current configuration, and whether it restores per-output settings, still need device testing (**RUNTIME VERIFICATION REQUIRED:** RV-056). Before importing, export the *current* state to a separate file so you can go back. An export made on a different build may not restore every setting.
 
 Recommended practice:
 
@@ -60,9 +60,9 @@ Recommended practice:
 3. Export playlists separately with **Export Poweramp Playlists** ([Chapter 20 — Playlists and the Queue](../Part%204%20-%20Library%20and%20Playback/20%20Playlists%20and%20the%20Queue.md)).
 4. After importing, check a few key settings (output driver, DVC, ReplayGain) before you trust the result.
 
-## Restore Defaults works per screen
+## Restore Defaults
 
-Thirty-one screens have their own **Restore Defaults** action, always the last entry. **APK VERIFIED:** placement. **RUNTIME VERIFICATION REQUIRED:** that each resets only its own screen. That is the natural reading of the placement but is not declared.
+Thirty-one screens have a **Restore Defaults** action, always the last entry. **APK VERIFIED:** placement on those screens. **RUNTIME VERIFICATION REQUIRED:** the actual reset scope, including whether each action resets only its own screen (RV-002).
 
 | Area | Screens with Restore Defaults |
 |---|---|
@@ -73,7 +73,7 @@ Thirty-one screens have their own **Restore Defaults** action, always the last e
 | Interface | [Look and Feel](../Appendices/Settings%20Reference/Look%20and%20Feel.md) · [Player Screen](../Appendices/Settings%20Reference/Player%20Screen.md) · [Lyrics Settings](../Appendices/Settings%20Reference/Lyrics%20Settings.md) · [Notification Settings](../Appendices/Settings%20Reference/Notification%20Settings.md) · [Media Buttons and Actions](../Appendices/Settings%20Reference/Media%20Buttons%20and%20Actions.md) · [Visualization Settings](../Appendices/Settings%20Reference/Visualization%20Settings.md) · [Album Art Settings](../Appendices/Settings%20Reference/Album%20Art%20Settings.md) · [Background Appearance Settings](../Appendices/Settings%20Reference/Background%20Appearance%20Settings.md) |
 | Other | [Headset and Bluetooth Settings](../Appendices/Settings%20Reference/Headset%20and%20Bluetooth%20Settings.md) · [Lock Screen Settings](../Appendices/Settings%20Reference/Lock%20Screen%20Settings.md) · [Miscellaneous Settings](../Appendices/Settings%20Reference/Miscellaneous%20Settings.md) |
 
-Use a screen's Restore Defaults when that one area is misbehaving and you don't know which setting caused it. On the per-output screen, record any working driver, rate and quirk settings first.
+If you consider Restore Defaults when one area is misbehaving, remember that its placement on a screen does not establish its reset scope (RV-002). Record working settings before any reset, including any working per-output driver, rate and quirk settings.
 
 ## Dedicated resets and destructive actions
 
@@ -123,7 +123,7 @@ The `space` screen groups three space-related actions that also exist on their h
 2. **One change:** alter one setting only.
 3. **Test:** use the same track, the same output and a safe volume.
 4. **Keep or revert:** revert immediately if the change didn't help. Don't stack unproven changes.
-5. **Escalate gradually:** individual setting → that screen's Restore Defaults → Import a known-good export (after exporting the current state, because Import replaces it).
+5. **Escalate gradually:** individual setting → consider Restore Defaults (placement verified on 31 screens; reset scope unverified, RV-002; record working settings first) → Import a known-good export (after exporting the current state to a separate file, because Import may overwrite it; replacement versus merge and per-output restoration remain unverified, RV-056).
 
 ## Evidence and limitations
 

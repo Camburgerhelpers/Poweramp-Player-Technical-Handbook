@@ -28,7 +28,7 @@
     "verification_register": 1,
     "changelog": 1,
     "historical_reports": 0,
-    "files_changed_since_export_candidate": 5
+    "files_changed_since_export_candidate": 10
   },
   "validation": {
     "relative_links_checked": 3349,
@@ -70,12 +70,12 @@
     {
       "path": "00 Front Matter/03 Quick Start.md",
       "category": "front-matter",
-      "bytes": 5439,
-      "sha256": "c52611a02c896c88990388c1965a4a6df355e1df157a2145821ec3a2b110f5dd",
+      "bytes": 5678,
+      "sha256": "eef51495ab7179a0322a13e4e062bc83fa03049cf9aca87bab59f1c0cb472fbc",
       "relative_links": 22,
       "broken_links": 0,
-      "words": 567,
-      "changed_since_export_candidate": false
+      "words": 604,
+      "changed_since_export_candidate": true
     },
     {
       "path": "Appendices/Glossary.md",
@@ -591,15 +591,15 @@
     {
       "path": "Part 1 - Getting Oriented/01 How Poweramp's Settings Are Organized.md",
       "category": "chapter",
-      "bytes": 13404,
-      "sha256": "e8d6a603f894111745ac7bf43a2f33085ea394c2a681ddd8a7248a0ad45b65a2",
+      "bytes": 13578,
+      "sha256": "33f0df1ccff97c30a9d5578414aa7f7edb2add0b6959145b74ca00c5373c76e5",
       "chapter": 1,
       "part": 1,
       "title": "How Poweramp's Settings Are Organized",
       "relative_links": 11,
       "broken_links": 0,
-      "words": 1703,
-      "changed_since_export_candidate": false
+      "words": 1728,
+      "changed_since_export_candidate": true
     },
     {
       "path": "Part 1 - Getting Oriented/02 The Poweramp Audio Path.md",
@@ -1033,15 +1033,15 @@
     {
       "path": "Part 7 - Maintenance and Support/35 Backup, Restore and Maintenance.md",
       "category": "chapter",
-      "bytes": 12485,
-      "sha256": "27ea8b3d9e090407c40e4c8e91da863ada9a3a1daa5fc4ed9963bf11ff7af72b",
+      "bytes": 12806,
+      "sha256": "13efa20a545efdf15734f2e840b3496264bbb34143234bb7f045feaf43c61fcf",
       "chapter": 35,
       "part": 7,
       "title": "Backup, Restore and Maintenance",
       "relative_links": 46,
       "broken_links": 0,
-      "words": 1230,
-      "changed_since_export_candidate": false
+      "words": 1265,
+      "changed_since_export_candidate": true
     },
     {
       "path": "Part 7 - Maintenance and Support/36 Purchases and Feature Packages.md",
@@ -1072,15 +1072,15 @@
     {
       "path": "Part 7 - Maintenance and Support/38 Troubleshooting Guide.md",
       "category": "chapter",
-      "bytes": 18184,
-      "sha256": "0a58cb56382aac64d0bcfa752db6e97e0328b02ebc3195397d95d7182dc74f85",
+      "bytes": 18267,
+      "sha256": "6b084bc4dd6c1182f3b48c22a6957aa178abb6cca2f65398edcc7a7793084d00",
       "chapter": 38,
       "part": 7,
       "title": "Troubleshooting Guide",
       "relative_links": 87,
       "broken_links": 0,
-      "words": 1605,
-      "changed_since_export_candidate": false
+      "words": 1617,
+      "changed_since_export_candidate": true
     },
     {
       "path": "README.md",
@@ -1095,22 +1095,22 @@
     {
       "path": "RELEASE-NOTES-v0.1.0-alpha.1.md",
       "category": "release-notes",
-      "bytes": 10059,
-      "sha256": "28a8c2dcb2f73261b8bdc49d0a2a37bf52baf2533d5e9ad094651259f74b341e",
+      "bytes": 10334,
+      "sha256": "eacdb3ad4ee5f6b4e9a61d6c53e7edbcd92210f6cac3f4b0b34758b97833dbfe",
       "relative_links": 3,
       "broken_links": 0,
-      "words": 1423,
+      "words": 1456,
       "changed_since_export_candidate": true
     },
     {
       "path": "RUNTIME-VERIFICATION-REGISTER.md",
       "category": "verification-register",
-      "bytes": 15267,
-      "sha256": "9d017effc81b994fd54feea0bd29842f1bda7a69cc12505858975a66e92fd792",
+      "bytes": 15291,
+      "sha256": "48661e93113aa4d70e8205caf5e7a9aecba6c7eb34e8de8226adabe81793b69f",
       "relative_links": 24,
       "broken_links": 0,
-      "words": 1492,
-      "changed_since_export_candidate": false
+      "words": 1497,
+      "changed_since_export_candidate": true
     }
   ]
 }
