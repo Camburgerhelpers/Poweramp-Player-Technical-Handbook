@@ -16,10 +16,14 @@ For runtime evidence, explain what you changed and what result you observed. If 
 
 ## Evidence labels
 
-- **APK-derived:** directly supported by a specific, inspected build's resources. Not necessarily runtime-verified.
-- **Research-supported:** a reasoned interpretation or documented analysis, not established solely by a settings key.
-- **General principle:** audio/Android behavior not guaranteed to be Poweramp-specific.
-- **Runtime verification required:** dependent on device, Android version, output, or actual tests.
+The handbook uses four labels (defined in [About This Edition](handbook/00%20Front%20Matter/02%20About%20This%20Edition.md)):
+
+- **APK VERIFIED:** matches the settings resources extracted from a specific build (1031 for this alpha). Not necessarily runtime-verified.
+- **RESEARCH SUPPORTED:** a reasoned interpretation that goes beyond the literal declaration, for example the meaning of a key name. Values marked **†** are inferred from option order and are unverified.
+- **GENERAL PRINCIPLE:** audio or Android behavior that is not guaranteed to be Poweramp-specific.
+- **RUNTIME VERIFICATION REQUIRED:** dependent on device, Android version, output, or actual tests.
+
+If your report answers an open question in the [Runtime Verification Register](handbook/RUNTIME-VERIFICATION-REGISTER.md), cite its ID (for example RV-040).
 
 Please do not convert an assumption into a verified claim without new evidence.
 

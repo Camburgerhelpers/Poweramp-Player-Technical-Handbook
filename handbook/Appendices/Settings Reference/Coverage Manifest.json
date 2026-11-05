@@ -1,0 +1,7628 @@
+{
+ "application": "Poweramp Player",
+ "apk_build": 1031,
+ "edition": "v0.1.0-alpha.1",
+ "content_build_date": "2026-10-21",
+ "release_prep_date": "2026-11-04",
+ "publication_status": "Unofficial community alpha — technical verification ongoing",
+ "affiliation": "Unofficial; not affiliated with or endorsed by the Poweramp developer",
+ "evidence_note": "Generated from settings resources extracted from APK build 1031 during research. Those resources are not distributed with the handbook. Positional (†) values are unverified inferences.",
+ "screens": {
+  "aa": {
+   "reference_page": "Album Art Settings.md",
+   "entries": [
+    {
+     "key": "pref_aa_downloading",
+     "title": "Download",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "download_album_art",
+     "title": "Download Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "download_artist_art",
+     "title": "Download Artist Images",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_download_hd",
+     "title": "High Resolution",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "download_aa_wifi_only",
+     "title": "Download Only On Wi-Fi",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      23,
+      27
+     ]
+    },
+    {
+     "key": "reset_negative_aa_status",
+     "title": "Reset Negative Status",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27,
+      35
+     ]
+    },
+    {
+     "key": "clear_aa_cache",
+     "title": "Delete Cache",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27,
+      35
+     ]
+    },
+    {
+     "key": "aa_force_default",
+     "title": "Force Default Image",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_8888",
+     "title": "Use 24-bit RGB",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_hi_res_for_apis",
+     "title": "Send High Resolution Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27,
+      31,
+      32
+     ]
+    },
+    {
+     "key": "aa_always",
+     "title": "Always Send Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27,
+      32
+     ]
+    },
+    {
+     "key": "aa_no_ashmem",
+     "title": "API Compatibility",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27,
+      32
+     ]
+    },
+    {
+     "key": "download_if_no_tags",
+     "title": "Also Search By Title/Filename",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "prefer_downloaded_aa",
+     "title": "Prefer Downloaded Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_aspect",
+     "title": "Aspect Ratio",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_higher_res",
+     "title": "Increase Resolution",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_per_stream_track",
+     "title": "Prefer Track Cover for Streams",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": [
+      23,
+      27
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa.xml",
+      "xml/aa.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "aa_bg": {
+   "reference_page": "Background Appearance Settings.md",
+   "entries": [
+    {
+     "key": "aa_blur_enabled",
+     "title": "Enable Blurred Backgrounds",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "list_aa_blur_enabled",
+     "title": "List Background",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "aa_blur_enabled",
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "lyrics_aa_blur_enabled",
+     "title": "Lyrics Background",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "aa_blur_enabled",
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27,
+      28
+     ]
+    },
+    {
+     "key": "aa_bg_gradient",
+     "title": "Background Gradient",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_bg_gradient_color",
+     "title": "Background Gradient Color",
+     "type": "ColorPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_bg_gradient_for_list",
+     "title": "Background Gradient For Lists",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_blur",
+     "title": "Background Blur",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "5",
+     "dependency": "aa_blur_enabled",
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_blur_scale",
+     "title": "Background Details",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "5",
+     "dependency": "aa_blur_enabled",
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_blur_intensity",
+     "title": "Background Intensity",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "100",
+     "dependency": "aa_blur_enabled",
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "aa_blur_saturation",
+     "title": "Background Saturation",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "150",
+     "dependency": "aa_blur_enabled",
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": [
+      27
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/aa_bg.xml",
+      "xml/aa_bg.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "already_purchased": {
+   "reference_page": "Purchase Restoration.md",
+   "entries": [
+    {
+     "key": "restore_purchase",
+     "title": "In-App Purchases on Google Play",
+     "type": "RestoreFvPurchasePref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/already_purchased.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "restore_unlocker",
+     "title": "Unlocker Purchase on Google Play",
+     "type": "RestorePlayUnlockerPurchasePref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/already_purchased.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "rustore",
+     "title": "RuStore",
+     "type": "RestoreRustoreFvPurchasePref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/already_purchased.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "huawei",
+     "title": "Huawei AppGallery",
+     "type": "RestoreHuaweiFvPurchasePref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/already_purchased.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "website",
+     "title": "Website",
+     "type": "RestoreWebsiteFvPurchasePref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/already_purchased.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "get_support",
+     "title": "Purchase FAQ",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/already_purchased.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    }
+   ]
+  },
+  "audio": {
+   "reference_page": "Audio Settings.md",
+   "entries": [
+    {
+     "key": "audio_info",
+     "title": "Audio Info",
+     "type": "PreferenceScreen",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "fade",
+     "title": "Crossfade, Fade, and Gapless",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "rg",
+     "title": "Replay Gain (RG)",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "audio_focus",
+     "title": "Audio Focus",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "audio_resampler",
+     "title": "Resampler",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "audio_dvc",
+     "title": "Direct Volume Control (DVC)",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "audio_outputs2",
+     "title": "Audio Outputs",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "audio_bit_perfect",
+     "title": "Bit Perfect",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    },
+    {
+     "key": "audio_tweaks",
+     "title": "Advanced Tweaks",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/audio.xml"
+     ],
+     "chapters": [
+      2
+     ]
+    }
+   ]
+  },
+  "audio_bit_perfect": {
+   "reference_page": "Bit-Perfect and Precision Settings.md",
+   "entries": [
+    {
+     "key": "global_pipeline64",
+     "title": "64-bit Audio Pipeline",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": [
+      9
+     ]
+    },
+    {
+     "key": "pipeline64_opts",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": [
+      9
+     ]
+    },
+    {
+     "key": "global_follow_sr",
+     "title": "Follow Track Sample Rate",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "follow_sr_opts",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "global_dsd_remaster",
+     "title": "DSD Remastering",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "dsd_remaster_opts",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "global_perfect_bit_perfect",
+     "title": "Perfect Bit Perfect",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": [
+      2,
+      11
+     ]
+    },
+    {
+     "key": "perfect_bit_perfect_opts",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": [
+      11
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_bit_perfect.xml",
+      "xml/audio_bit_perfect.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_dvc": {
+   "reference_page": "Direct Volume Control.md",
+   "entries": [
+    {
+     "key": "dvc_enabled",
+     "title": "Enable Direct Volume Control",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      1,
+      3,
+      14
+     ]
+    },
+    {
+     "key": "dvc_devices",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "bluetooth_headset",
+     "title": "Bluetooth",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "bt_absvol_status",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "no_dvc_bt_absvol",
+     "title": "No DVC for Bluetooth Absolute Volume",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "dvc_enabled",
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      3,
+      14
+     ]
+    },
+    {
+     "key": "no_dvc_bt_absvol_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "no_dvc_bt_absvol_hint_15",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "dvc_bt_msg",
+     "title": "Disable Bluetooth Absolute Volume",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "no_dvc_gain_mb",
+     "title": "No DVC - Preamp Reduction",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": "-600",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      1,
+      3
+     ]
+    },
+    {
+     "key": "compensate_dvc_vol",
+     "title": "Compensate DVC Volume",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": [
+      1,
+      3,
+      34
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_dvc.xml",
+      "xml/audio_dvc.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_equ": {
+   "reference_page": "Equalizer Settings.md",
+   "entries": [
+    {
+     "key": "peq_equ_bands",
+     "title": "Graphic Equalizer Bands",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "peq_equ_tone",
+     "title": "Tone",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "eq_labels",
+     "title": "Equalizer Values",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "1",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "tone_labels",
+     "title": "Tone Values",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "2",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "_autosave",
+     "title": "Auto Save",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "dsp_border_gain",
+     "title": "Smooth Equalizer/Tone Gains",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      3,
+      4
+     ]
+    },
+    {
+     "key": "suggest_autoeq",
+     "title": "Suggest AutoEq Presets",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4,
+      14
+     ]
+    },
+    {
+     "key": "_clear_autoeq_known_devices",
+     "title": "Reset the Disabled AutoEq Suggestions",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": "suggest_autoeq",
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4,
+      35
+     ]
+    },
+    {
+     "key": "_presets_to_peq",
+     "title": "Export Presets to the Poweramp Equalizer app",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      1,
+      4,
+      33
+     ]
+    },
+    {
+     "key": "_import_autoeq",
+     "title": "Import AutoEq Presets",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "reset_eq_presets",
+     "title": "Restore Equalizer Presets",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": [
+      4,
+      35
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_equ.xml",
+      "xml/audio_equ.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_focus": {
+   "reference_page": "Audio Focus.md",
+   "entries": [
+    {
+     "key": "resume_after_call",
+     "title": "Resume After Call",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "resume_on_start",
+     "title": "Resume On Start",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "resume_on_resume",
+     "title": "Resume On Reopen",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "resume_on_start",
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "resume_on_mount",
+     "title": "Wait For Storage",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "resume_on_start",
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "cc_af_warning",
+     "title": "",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      15,
+      16
+     ]
+    },
+    {
+     "key": "audio_focus_cat",
+     "title": "Audio Focus",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "af_short",
+     "title": "Short Audio Focus Change / Calls",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "pause_in_call",
+     "title": "Pause In Call",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      14,
+      16
+     ]
+    },
+    {
+     "key": "resume_on_focus",
+     "title": "Resume On Focus Gain",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "af_short",
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "af_short_duck",
+     "title": "Duck Volume",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "af_short",
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      1,
+      16
+     ]
+    },
+    {
+     "key": "af_permanent",
+     "title": "Permanent Audio Focus Change",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": [
+      16
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_focus.xml",
+      "xml/audio_focus.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_output_device_opts": {
+   "reference_page": "Individual Audio Output Settings.md",
+   "entries": [
+    {
+     "key": "eq_preset",
+     "title": "",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "output_api",
+     "title": "Output Driver",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "bg_warn",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "top_output_info",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "top_output_info2",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_info",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "sample_rate",
+     "title": "Sample Rate",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "sample_rate_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "follow_sr_hint1",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "codec_sr_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      2,
+      7,
+      14
+     ]
+    },
+    {
+     "key": "allowed_srs",
+     "title": "Allowed Sample Rates",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "follow_sr_hint2",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "set_codec_sr",
+     "title": "Set BT Codec Parameters",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      6,
+      14
+     ]
+    },
+    {
+     "key": "set_codec_sr_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      14
+     ]
+    },
+    {
+     "key": "prefer_base_rate",
+     "title": "Base-Rate Synchronous Scaling",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "sample_fmt",
+     "title": "Sample Format",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      8
+     ]
+    },
+    {
+     "key": "sample_bits_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      8
+     ]
+    },
+    {
+     "key": "sr_and_format_warnings",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "direct_no_effect",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      2,
+      3,
+      7
+     ]
+    },
+    {
+     "key": "pref_sr_format_effects_override_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      2,
+      7
+     ]
+    },
+    {
+     "key": "pipeline64",
+     "title": "64-bit Audio Pipeline",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      9
+     ]
+    },
+    {
+     "key": "pipeline64_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      9
+     ]
+    },
+    {
+     "key": "dsd_remaster",
+     "title": "DSD Remastering",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "dsd_remaster_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "dsd_remaster_sample_rate",
+     "title": "Target DSD Sample Rate",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "dsd_remaster_sample_rate_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "dsd_remaster_allow_48k",
+     "title": "Allow 48 kHz-based DSD",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "dsd_remaster_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "perfect_bit_perfect",
+     "title": "Perfect Bit Perfect",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      11
+     ]
+    },
+    {
+     "key": "perfect_bit_perfect_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      11
+     ]
+    },
+    {
+     "key": "volume_type",
+     "title": "Volume Type",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      3,
+      13
+     ]
+    },
+    {
+     "key": "volume_type_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "volume_type_hints",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      3,
+      13
+     ]
+    },
+    {
+     "key": "sync_hw_volume",
+     "title": "Synchronize Hardware Volume",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      3,
+      13
+     ]
+    },
+    {
+     "key": "sync_hw_volume_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "float",
+     "title": "Float32 Sample Format",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      8
+     ]
+    },
+    {
+     "key": "buffer_size",
+     "title": "Buffer Size",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12,
+      13
+     ]
+    },
+    {
+     "key": "reconfig_delay_ms",
+     "title": "Reconfiguration Delay",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      6,
+      7,
+      10,
+      12,
+      13
+     ]
+    },
+    {
+     "key": "vis_latency_ms",
+     "title": "Visualization/Lyrics Delay",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      12,
+      14,
+      28
+     ]
+    },
+    {
+     "key": "pause_usb_release",
+     "title": "Release USB DAC while paused",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      13
+     ]
+    },
+    {
+     "key": "play_silence_in_background",
+     "title": "Play silence in background",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "allow_dsd_dop",
+     "title": "Allow DSD DOP",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "prefer_dsd_raw",
+     "title": "Prefer DSD Raw",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10
+     ]
+    },
+    {
+     "key": "warmup",
+     "title": "USB DAC Warmup on Startup",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      10,
+      13
+     ]
+    },
+    {
+     "key": "pcm_dsd_extra_warmup",
+     "title": "USB DAC PCM/DSD Warmups",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      6,
+      10,
+      13
+     ]
+    },
+    {
+     "key": "target_alt_sr_quirk",
+     "title": "USB DAC Sample Rate Quirk",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      13
+     ]
+    },
+    {
+     "key": "force_usb_full_speed",
+     "title": "Force USB 1.1",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      13
+     ]
+    },
+    {
+     "key": "cc_force_aa",
+     "title": "Force Send Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      15
+     ]
+    },
+    {
+     "key": "cc_show_meta",
+     "title": "Show Meta Information",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      15
+     ]
+    },
+    {
+     "key": "no_dvc",
+     "title": "No DVC",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      1,
+      2,
+      3,
+      13
+     ]
+    },
+    {
+     "key": "no_dvc_static",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "no_headroom",
+     "title": "No Headroom Gain Reduction",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      3,
+      4
+     ]
+    },
+    {
+     "key": "no_equ",
+     "title": "No Equ/Tone",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      1,
+      4
+     ]
+    },
+    {
+     "key": "no_duck",
+     "title": "No Duck",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      1,
+      15,
+      16
+     ]
+    },
+    {
+     "key": "no_af",
+     "title": "Ignore Audio Focus",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": [
+      1,
+      15,
+      16
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_output_device_opts.xml",
+      "xml/audio_output_device_opts.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_outputs2": {
+   "reference_page": "Audio Output Selection.md",
+   "entries": [
+    {
+     "key": "output_headset",
+     "title": "Wired Headset/AUX",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_speaker",
+     "title": "Speaker",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_bt",
+     "title": "Bluetooth",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_usb",
+     "title": "USB DAC",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_chromecast",
+     "title": "Chromecast",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "output_other",
+     "title": "Other Output Devices",
+     "type": "ButtonPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": [
+      12
+     ]
+    },
+    {
+     "key": "audio_outputs_tweaks",
+     "title": "Advanced Tweaks",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs2.xml",
+      "xml/audio_outputs2.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_outputs_tweaks": {
+   "reference_page": "Audio Output Advanced Tweaks.md",
+   "entries": [
+    {
+     "key": "usb_activity",
+     "title": "Show Poweramp for USB DACs",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs_tweaks.xml",
+      "xml/audio_outputs_tweaks.xml"
+     ],
+     "chapters": [
+      12,
+      13
+     ]
+    },
+    {
+     "key": "force_no_speaker",
+     "title": "Force Speaker Off (for Hi-Res Output)",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs_tweaks.xml",
+      "xml/audio_outputs_tweaks.xml"
+     ],
+     "chapters": [
+      12,
+      16
+     ]
+    },
+    {
+     "key": "use_stream3_player",
+     "title": "Emulate Media Stream (for Hi-Res output)",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs_tweaks.xml",
+      "xml/audio_outputs_tweaks.xml"
+     ],
+     "chapters": [
+      12,
+      34
+     ]
+    },
+    {
+     "key": "audio_platform_log",
+     "title": "Audio Outputs Detection Log",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs_tweaks.xml",
+      "xml/audio_outputs_tweaks.xml"
+     ],
+     "chapters": [
+      1,
+      12
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_outputs_tweaks.xml",
+      "xml/audio_outputs_tweaks.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_resampler": {
+   "reference_page": "Resampler Settings.md",
+   "entries": [
+    {
+     "key": "resampler_type",
+     "title": "Resampler Type",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_resampler.xml",
+      "xml/audio_resampler.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "resampler_cutoff",
+     "title": "Resampler Cutoff Frequency Ratio",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": "970",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_resampler.xml",
+      "xml/audio_resampler.xml"
+     ],
+     "chapters": [
+      7
+     ]
+    },
+    {
+     "key": "dither",
+     "title": "Dither",
+     "type": "NumberListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_resampler.xml",
+      "xml/audio_resampler.xml"
+     ],
+     "chapters": [
+      2,
+      8
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_resampler.xml",
+      "xml/audio_resampler.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "audio_tweaks": {
+   "reference_page": "Audio Advanced Tweaks.md",
+   "entries": [
+    {
+     "key": "volume_levels",
+     "title": "Volume Levels",
+     "type": "NumberListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "volume_popup",
+     "title": "Volume Panel",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "pause_on_volume",
+     "title": "Pause/Resume on Volume",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      3
+     ]
+    },
+    {
+     "key": "allow_platform_fx",
+     "title": "MusicFX",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      2,
+      4
+     ]
+    },
+    {
+     "key": "force_audio_on_focus",
+     "title": "Force Audio On Audio Focus Change",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      16,
+      34
+     ]
+    },
+    {
+     "key": "mod_gain_mb",
+     "title": "Tracker Decoder Extra Gain",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      24
+     ]
+    },
+    {
+     "key": "mod_separation",
+     "title": "Tracker Decoder Stereo Separation",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      24
+     ]
+    },
+    {
+     "key": "reset_eq_presets",
+     "title": "Restore Equalizer Presets",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      4,
+      35
+     ]
+    },
+    {
+     "key": "reset_reverb_presets",
+     "title": "Restore Reverb Presets",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": [
+      4,
+      35
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/audio_tweaks.xml",
+      "xml/audio_tweaks.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "buy_methods": {
+   "reference_page": "Purchase Methods.md",
+   "entries": [
+    {
+     "key": "buy_play_fv",
+     "title": "",
+     "type": "BuyPlayFvPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/buy_methods.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "buy_rustore_fv",
+     "title": "",
+     "type": "BuyRustoreFvPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/buy_methods.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "buy_from_website",
+     "title": "",
+     "type": "BuyWebsiteFvPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/buy_methods.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "already_purchased",
+     "title": "Already Purchased?",
+     "type": "AlreadyPurchasedRedirectPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/buy_methods.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "get_support",
+     "title": "Purchase FAQ",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/buy_methods.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    }
+   ]
+  },
+  "fade": {
+   "reference_page": "Crossfade and Gapless Settings.md",
+   "entries": [
+    {
+     "key": "crossfade_auto_advance",
+     "title": "Auto-advance Fading",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6,
+      21
+     ]
+    },
+    {
+     "key": "fade_manual_advance",
+     "title": "Manual Track Change Fading",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "1",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "fade_play_pause",
+     "title": "Fade Play/Pause/Stop",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "fade_seek",
+     "title": "Fade on Seek",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "gapless_preload_ms",
+     "title": "Preload Gapless Tracks",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "track_end_silence_ms",
+     "title": "Silence Between Tracks",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "crossfade_length_ms",
+     "title": "Crossfade Length",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "5000",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "fade_short_xfade_ms",
+     "title": "Short Manual Crossfade Length",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "400",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "fade_short_ms",
+     "title": "Play/Pause/Stop Fade Length",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "400",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "fade_seek_ms",
+     "title": "Seek Fade Length",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "100",
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": [
+      6
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/fade.xml",
+      "xml/fade.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "feature_packages": {
+   "reference_page": "Feature Packages.md",
+   "entries": [
+    {
+     "key": "isPriceReduced",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/feature_packages.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "fp1",
+     "title": "",
+     "type": "FeaturePackPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/feature_packages.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "move_fp1_to_about",
+     "title": "",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml/feature_packages.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "buy_uber_badges",
+     "title": "Buy Uberpatron Badges",
+     "type": "BuyUberPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/feature_packages.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "uber_level",
+     "title": "",
+     "type": "UberLevelPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/feature_packages.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "restore_purchase",
+     "title": "Restore Purchases",
+     "type": "RestoreFeaturePackPurchasePref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/feature_packages.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    }
+   ]
+  },
+  "general": {
+   "reference_page": "About Poweramp.md",
+   "entries": [
+    {
+     "key": "feature_packages",
+     "title": "Feature Packages",
+     "type": "FeaturePackRedirectPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "about_version",
+     "title": "Version/Changelog",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "uber_level",
+     "title": "",
+     "type": "UberLevelPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "updates",
+     "title": "Update",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "check_updates",
+     "title": "Check For Updates",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "check_beta_updates",
+     "title": "Check For Beta Versions",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "check_updates",
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "check_update",
+     "title": "Check Now",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "other",
+     "title": "Other",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "visit_site_about",
+     "title": "Visit Website",
+     "type": "PreferenceScreen",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      1,
+      37
+     ]
+    },
+    {
+     "key": "translations",
+     "title": "Translations",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "oss",
+     "title": "Open Source Licenses",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "privacy",
+     "title": "Privacy Policy",
+     "type": "PreferenceScreen",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "addons",
+     "title": "Addons",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/general.xml"
+     ],
+     "chapters": [
+      33,
+      37
+     ]
+    }
+   ]
+  },
+  "headset": {
+   "reference_page": "Headset and Bluetooth Settings.md",
+   "entries": [
+    {
+     "key": "resume_on_headset",
+     "title": "Resume On Wired Headset",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "resume_on_bt",
+     "title": "Resume On Bluetooth",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      14,
+      17
+     ]
+    },
+    {
+     "key": "pause_on_headset",
+     "title": "Pause On Headset Disconnect",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      13,
+      14,
+      17
+     ]
+    },
+    {
+     "key": "pause_on_usb_connection",
+     "title": "Pause On USB DAC connection",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      13,
+      17
+     ]
+    },
+    {
+     "key": "headset_buttons",
+     "title": "Buttons",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "enable_headset_controls",
+     "title": "Respond To Buttons",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "headset_controls",
+     "title": "Wired Headset",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "avrcp_controls",
+     "title": "Bluetooth",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      14,
+      17
+     ]
+    },
+    {
+     "key": "long_volume_press",
+     "title": "",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "follow_pl_exact",
+     "title": "Strict Resume/Pause/Stop",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "enable_headset_controls",
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      14,
+      17,
+      32
+     ]
+    },
+    {
+     "key": "ignore_bt_sec",
+     "title": "Ignore Bluetooth Commands",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      14,
+      17,
+      32
+     ]
+    },
+    {
+     "key": "bt_ignore_repeat_shuffle",
+     "title": "Ignore Repeat/Shuffle",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      14,
+      17,
+      21,
+      32
+     ]
+    },
+    {
+     "key": "headset_beep",
+     "title": "Beep",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "enable_headset_controls",
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "beep_more",
+     "title": "Beep More",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "headset_beep",
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "headset_vibrate",
+     "title": "Vibrate",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": "enable_headset_controls",
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "no_android_long_press",
+     "title": "Disable Default Long Press",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "commands_history",
+     "title": "Last Processed Commands",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": [
+      1,
+      17
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/headset.xml",
+      "xml/headset.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library": {
+   "reference_page": "Music Library Settings.md",
+   "entries": [
+    {
+     "key": "rescan_folders",
+     "title": "Rescan",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "erase_and_rescan",
+     "title": "Full Rescan",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18,
+      35
+     ]
+    },
+    {
+     "key": "music_folders_button",
+     "title": "Music Folders",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "some_saf_folders_unavailable",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "file_access_legacy",
+     "title": "File Access Legacy Mode",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18,
+      34
+     ]
+    },
+    {
+     "key": "_legacy_access_warning",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "scan_min_track_duration",
+     "title": "Ignore Short Tracks (Notifications, etc.)",
+     "type": "NumberListPreference",
+     "classification": "adjustable",
+     "declared_default": "6",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "skip_video",
+     "title": "Ignore Video Tracks",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "auto_find_button",
+     "title": "Auto-Find Music Folders",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "restore_pos",
+     "title": "Store/Restore Per Track Progress",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "long_skip_rewind",
+     "title": "-10/+10s Rewind Pro Buttons",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "restore_pos_min_dur",
+     "title": "Track Duration For Per Track Progress and -10/+10s Buttons",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "45",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "played_dur",
+     "title": "Count As Played",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "50",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18,
+      33
+     ]
+    },
+    {
+     "key": "library_lists",
+     "title": "Lists",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "library_search",
+     "title": "Search",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "library_queue",
+     "title": "Queue",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "library_playlists",
+     "title": "Playlists",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "library_shuffle",
+     "title": "Shuffle",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "library_scanner",
+     "title": "Scanner",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "reset_stats",
+     "title": "Reset stats",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": [
+      18,
+      35
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library.xml",
+      "xml/library.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library_lists": {
+   "reference_page": "Library Lists.md",
+   "entries": [
+    {
+     "key": "pref_look_and_feel",
+     "title": "Look and Feel",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "library_list_opts",
+     "title": "Library List Options",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      1,
+      19
+     ]
+    },
+    {
+     "key": "static_navbar",
+     "title": "Static Navbar",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "navbar_seekbar",
+     "title": "Seekbar in Navbar",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "headers_meta",
+     "title": "Headers With Meta",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "az_scroll",
+     "title": "A-Z Scroll",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "localized_az",
+     "title": "Localized A-Z Scroll",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "az_scroll",
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "list_header_buttons",
+     "title": "Header Buttons",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "list_bottom_toolbar",
+     "title": "Bottom Buttons",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "track_num_type",
+     "title": "Show Track Number",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "track_disc_meta",
+     "title": "Show Disc",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "track_num_type",
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "title_filename",
+     "title": "Filename As Title",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "list_action_resets",
+     "title": "Click Restarts Track",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      6,
+      19,
+      21
+     ]
+    },
+    {
+     "key": "list_item_action",
+     "title": "List Item Action",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "1",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "enable_deletion",
+     "title": "Delete Action",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19,
+      35
+     ]
+    },
+    {
+     "key": "join_albums",
+     "title": "Join Albums",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "use_albumartist",
+     "title": "Album Artist Label for Tracks",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "use_albumartist_albums",
+     "title": "Album Artist Label for Albums",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "use_albumartist_albumartists",
+     "title": "Album Artist Label for Album Artist Tracks",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "hide_unknown_album",
+     "title": "Hide Unknown Album",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "hide_unknown_artist",
+     "title": "Hide Unknown Artist",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "hide_unknown_album",
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19,
+      36
+     ]
+    },
+    {
+     "key": "show_unsplit_cats",
+     "title": "Show Unsplit Combined Categories",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "hier_no_advance",
+     "title": "No \"Play All Categories\" For Hier Folders",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "root_hier_immediate",
+     "title": "Folders Hierarchy Immediate Root",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "hier_files_zoom",
+     "title": "Hierarchy Files Zoom Level",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "no_sort_field",
+     "title": "Don't Ignore Articles For Sort",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19
+     ]
+    },
+    {
+     "key": "show_cue_source",
+     "title": "Show CUE Disc Image Files",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      18,
+      19
+     ]
+    },
+    {
+     "key": "stream_name_in_title",
+     "title": "Stream Name In Title",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": [
+      19,
+      23
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_lists.xml",
+      "xml/library_lists.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library_playlists": {
+   "reference_page": "Playlist Settings.md",
+   "entries": [
+    {
+     "key": "playlists_import",
+     "title": "Import System Library Playlists",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "playlists_export",
+     "title": "Export Poweramp Playlists",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "pl_import_ratings",
+     "title": "Import Ratings",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "playlist_insert_pos",
+     "title": "Playlist Insert Position",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "pl_del_entry_w_track",
+     "title": "Remove Playlist Entries On Track Deletion",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20,
+      35
+     ]
+    },
+    {
+     "key": "pl_auto_resolve",
+     "title": "Resolve Playlist Entries",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "pl_no_dups",
+     "title": "Don't Add Duplicates",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_playlists.xml",
+      "xml/library_playlists.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library_queue": {
+   "reference_page": "Playback Queue.md",
+   "entries": [
+    {
+     "key": "queue_start",
+     "title": "Start Playing Queue",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "2",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "queue_end",
+     "title": "On Queue End",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "1",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "queue_insert_pos",
+     "title": "Queue Insert Position",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "play_next_insert_pos",
+     "title": "Play Next Insert Position",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "q_next_forces_after_song",
+     "title": "Play Next: Start Queue",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "queue_clear_on_add",
+     "title": "Always Clear On Add",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20
+     ]
+    },
+    {
+     "key": "queue_never_clear_on_add",
+     "title": "Never Clear On Add",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20,
+      22
+     ]
+    },
+    {
+     "key": "queue_no_shuffle",
+     "title": "Ignore Shuffle",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": [
+      20,
+      21,
+      22
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_queue.xml",
+      "xml/library_queue.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library_scanner": {
+   "reference_page": "Music Scanner.md",
+   "entries": [
+    {
+     "key": "auto_scan",
+     "title": "Auto-scan",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "scan_no_wait",
+     "title": "Rescan Immediately",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "auto_scan",
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "initial_scan",
+     "title": "Initial Scan",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "auto_scan",
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "scan_providers",
+     "title": "Scan Providers",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "auto_scan",
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18,
+      33
+     ]
+    },
+    {
+     "key": "scan_post_usb_mount",
+     "title": "USB Disconnection/SD Card Mount",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "auto_scan",
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "scan_post_system",
+     "title": "System Media Scanner/MTP",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "auto_scan",
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "artists_split_chars",
+     "title": "Symbols to Split Multiple Artists",
+     "type": "TagsPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "artists_split_ignore",
+     "title": "Unsplit Artists",
+     "type": "TagsPreference",
+     "classification": "other",
+     "declared_default": "AC/DC | +/-",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "composers_split_chars",
+     "title": "Symbols to Split Multiple Composers",
+     "type": "TagsPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "genres_split_chars",
+     "title": "Symbols to Split Multiple Genres",
+     "type": "TagsPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "tag_encoding",
+     "title": "Tag Encoding",
+     "type": "ListPreference",
+     "classification": "adjustable",
+     "declared_default": "_default_",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "m3u_utf8",
+     "title": "Always Use UTF-8 for .m3u",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "process_cues",
+     "title": "Parse CUE Files",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": [
+      18
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_scanner.xml",
+      "xml/library_scanner.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library_search": {
+   "reference_page": "Search Settings.md",
+   "entries": [
+    {
+     "key": "msg",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_search.xml",
+      "xml/library_search.xml"
+     ],
+     "chapters": [
+      22
+     ]
+    },
+    {
+     "key": "list_opts",
+     "title": "Search Categories",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_search.xml",
+      "xml/library_search.xml"
+     ],
+     "chapters": [
+      22
+     ]
+    },
+    {
+     "key": "search_play_tracks",
+     "title": "Play Tracks Only",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_search.xml",
+      "xml/library_search.xml"
+     ],
+     "chapters": [
+      22
+     ]
+    },
+    {
+     "key": "search_track_titles_only",
+     "title": "Search Track Titles Only",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_search.xml",
+      "xml/library_search.xml"
+     ],
+     "chapters": [
+      22
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_search.xml",
+      "xml/library_search.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "library_shuffle": {
+   "reference_page": "Shuffle Settings.md",
+   "entries": [
+    {
+     "key": "shuffle_random_factor",
+     "title": "Shuffle Randomization",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_shuffle.xml",
+      "xml/library_shuffle.xml"
+     ],
+     "chapters": [
+      21
+     ]
+    },
+    {
+     "key": "no_reshuffle",
+     "title": "No Reshuffle",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_shuffle.xml",
+      "xml/library_shuffle.xml"
+     ],
+     "chapters": [
+      21
+     ]
+    },
+    {
+     "key": "no_reshuffle_for_large_lists",
+     "title": "No Reshuffle For Large Lists",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_shuffle.xml",
+      "xml/library_shuffle.xml"
+     ],
+     "chapters": [
+      21
+     ]
+    },
+    {
+     "key": "category_shuffle",
+     "title": "Category Items Shuffle",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_shuffle.xml",
+      "xml/library_shuffle.xml"
+     ],
+     "chapters": [
+      21
+     ]
+    },
+    {
+     "key": "hier_flat_shf",
+     "title": "Shuffle All Songs In Folder Hierarchy",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_shuffle.xml",
+      "xml/library_shuffle.xml"
+     ],
+     "chapters": [
+      21
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/library_shuffle.xml",
+      "xml/library_shuffle.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "lockscreen": {
+   "reference_page": "Lock Screen Settings.md",
+   "entries": [
+    {
+     "key": "ics_ls_cat",
+     "title": "Android Lock Screen",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "ics_ls_aa",
+     "title": "Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31,
+      32
+     ]
+    },
+    {
+     "key": "ls_aa_blur",
+     "title": "Blur",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "ics_ls_aa",
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "ls_default_aa",
+     "title": "Show Default Image",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31,
+      32
+     ]
+    },
+    {
+     "key": "buttons",
+     "title": "Buttons",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "pref_poweramp_ls",
+     "title": "Poweramp Lock Screen",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "ls_enable",
+     "title": "Show On Lock Screen",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "ls_force_timeout",
+     "title": "Shorter Timeout",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "ls_enable",
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "ls_app_settings",
+     "title": "Open App Settings",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": "ls_enable",
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "ls_enable_land",
+     "title": "Landscape Layout",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "ls_enable",
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "direct_unlock",
+     "title": "Direct Unlock",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": "ls_enable",
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": [
+      31
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/lockscreen.xml",
+      "xml/lockscreen.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "misc": {
+   "reference_page": "Miscellaneous Settings.md",
+   "entries": [
+    {
+     "key": "scrobble_to_last_fm",
+     "title": "Scrobble via Official Last.fm app",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      33
+     ]
+    },
+    {
+     "key": "scrobble_to_simple_last_fm",
+     "title": "Scrobble via Simple Scrobbler",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      33
+     ]
+    },
+    {
+     "key": "android_auto",
+     "title": "Android Auto",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "buttons",
+     "title": "Buttons",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      32
+     ]
+    },
+    {
+     "key": "mb_a_grid",
+     "title": "Grid View for Categories",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      32
+     ]
+    },
+    {
+     "key": "mb_a_aa_cats",
+     "title": "Images for Categories",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      32
+     ]
+    },
+    {
+     "key": "mb_a_aa_tracks",
+     "title": "Album Art for Tracks",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      32
+     ]
+    },
+    {
+     "key": "send_mediasession_q",
+     "title": "Now Playing List For Connected Devices/Apps",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      32
+     ]
+    },
+    {
+     "key": "tweaks",
+     "title": "Tweaks",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "send_metachanged",
+     "title": "Metachanged Intent",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      33
+     ]
+    },
+    {
+     "key": "use_wakelock",
+     "title": "Use Wakelock",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "send_old_api_aa",
+     "title": "Send Album Art for old API",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      27,
+      33
+     ]
+    },
+    {
+     "key": "check_for_skin_reload",
+     "title": "Always Reload Skin",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "shutdown_intent",
+     "title": "Shutdown Intent",
+     "type": "EditTextPreference",
+     "classification": "adjustable",
+     "declared_default": "",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      33,
+      34
+     ]
+    },
+    {
+     "key": "pause_on_screen_off",
+     "title": "Pause on Screen Off",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "op_framerate",
+     "title": "Apply OP High Framerate",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "migrate_data_29",
+     "title": "Migrate Data to Android 10",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "stream_timeout_ms",
+     "title": "Network Stream Timeout",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "30000",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      23
+     ]
+    },
+    {
+     "key": "stream_buffer_bytes",
+     "title": "Network Stream Buffer",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "1048576",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      23
+     ]
+    },
+    {
+     "key": "user_agent",
+     "title": "User Agent",
+     "type": "EditTextPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      23
+     ]
+    },
+    {
+     "key": "load_user_so",
+     "title": "Load custom .so library",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      33,
+      34
+     ]
+    },
+    {
+     "key": "override_region",
+     "title": "Override Region",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "volume_keys_long_press_cat",
+     "title": "Volume Keys Long Press",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "volume_keys_long_press_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      17
+     ]
+    },
+    {
+     "key": "long_volume_controls",
+     "title": "Change Tracks By Long Volume Keys Press",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": [
+      3,
+      17
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/misc.xml",
+      "xml/misc.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "peq_equ_bands": {
+   "reference_page": "Equalizer Band Settings.md",
+   "entries": [
+    {
+     "key": "equ_bands_num",
+     "title": "Number of Bands",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "10",
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "_number_of_bands_msg",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "equ_custom_bands",
+     "title": "Enable Custom Bands",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "equ_custom_bands_num",
+     "title": "Custom Number of Bands",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "10",
+     "dependency": "equ_custom_bands",
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "equ_custom_bands_first_fr",
+     "title": "First Frequency",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "20",
+     "dependency": "equ_custom_bands",
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "equ_custom_bands_last_fr",
+     "title": "Last Frequency",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "16000",
+     "dependency": "equ_custom_bands",
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_bands.xml",
+      "xml/peq_equ_bands.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "peq_equ_tone": {
+   "reference_page": "Bass and Treble Tone Settings.md",
+   "entries": [
+    {
+     "key": "_bassFreq",
+     "title": "",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_tone.xml",
+      "xml/peq_equ_tone.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "_bassQ",
+     "title": "",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_tone.xml",
+      "xml/peq_equ_tone.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "_trebleFreq",
+     "title": "",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_tone.xml",
+      "xml/peq_equ_tone.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "_trebleQ",
+     "title": "",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_tone.xml",
+      "xml/peq_equ_tone.xml"
+     ],
+     "chapters": [
+      4
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/peq_equ_tone.xml",
+      "xml/peq_equ_tone.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "rg": {
+   "reference_page": "ReplayGain Settings.md",
+   "entries": [
+    {
+     "key": "rg_type",
+     "title": "Replay Gain",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/rg.xml",
+      "xml/rg.xml"
+     ],
+     "chapters": [
+      5
+     ]
+    },
+    {
+     "key": "rg_source",
+     "title": "Source",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/rg.xml",
+      "xml/rg.xml"
+     ],
+     "chapters": [
+      5
+     ]
+    },
+    {
+     "key": "rg_preamp_mb",
+     "title": "RG preamp",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/rg.xml",
+      "xml/rg.xml"
+     ],
+     "chapters": [
+      5
+     ]
+    },
+    {
+     "key": "rg_default_mb",
+     "title": "Preamp for songs without RG info",
+     "type": "RoundKnobPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/rg.xml",
+      "xml/rg.xml"
+     ],
+     "chapters": [
+      5
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/rg.xml",
+      "xml/rg.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "singlepane": {
+   "reference_page": "Main Settings Menu.md",
+   "entries": [
+    {
+     "key": "manage_app_warn",
+     "title": "",
+     "type": "ManageAppWarnPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "perm_warn",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      34
+     ]
+    },
+    {
+     "key": "buy_play_fv",
+     "title": "",
+     "type": "BuyPlayFvPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "buy_rustore_fv",
+     "title": "",
+     "type": "BuyRustoreFvPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "buy_huawei_fv",
+     "title": "",
+     "type": "BuyHuaweiFvPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      36
+     ]
+    },
+    {
+     "key": "fp1",
+     "title": "",
+     "type": "FeaturePackPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "already_purchased",
+     "title": "Already Purchased?",
+     "type": "AlreadyPurchasedRedirectPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "feature_packages",
+     "title": "Feature Packages",
+     "type": "FeaturePackRedirectPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "ui",
+     "title": "Look and Feel",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "audio",
+     "title": "Audio",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "vis",
+     "title": "Visualization",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "aa_bg",
+     "title": "Background",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "aa",
+     "title": "Album Art",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "folders_library",
+     "title": "Library",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "headset",
+     "title": "Headset/Bluetooth",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "lockscreen",
+     "title": "Lock Screen",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "misc",
+     "title": "Misc",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "general",
+     "title": "About",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "other",
+     "title": "Other",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "equalizer_for_spot_ytm_etc",
+     "title": "Equalizer for Spotify and YouTube Music",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1,
+      4,
+      33
+     ]
+    },
+    {
+     "key": "get_support",
+     "title": "Get Support",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1
+     ]
+    },
+    {
+     "key": "settings_export",
+     "title": "Export Settings/Data",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1,
+      2,
+      35
+     ]
+    },
+    {
+     "key": "settings_import",
+     "title": "Import Settings/Data",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1,
+      35
+     ]
+    },
+    {
+     "key": "send_errors",
+     "title": "Send Errors To Developer",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml/singlepane.xml"
+     ],
+     "chapters": [
+      1,
+      34,
+      37
+     ]
+    }
+   ]
+  },
+  "space": {
+   "reference_page": "Storage and Maintenance.md",
+   "entries": [
+    {
+     "key": "clear_aa_cache",
+     "title": "Delete Cache",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/space.xml"
+     ],
+     "chapters": [
+      35
+     ]
+    },
+    {
+     "key": "erase_and_rescan",
+     "title": "Full Rescan",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/space.xml"
+     ],
+     "chapters": [
+      35
+     ]
+    },
+    {
+     "key": "vis_full_rescan",
+     "title": "Full Presets Rescan",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/space.xml"
+     ],
+     "chapters": [
+      35
+     ]
+    }
+   ]
+  },
+  "support": {
+   "reference_page": "Support.md",
+   "entries": [
+    {
+     "key": "faq",
+     "title": "FAQ",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/support.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    },
+    {
+     "key": "purchase_faq",
+     "title": "Purchase FAQ",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/support.xml"
+     ],
+     "chapters": [
+      36,
+      37
+     ]
+    },
+    {
+     "key": "poweramp_forum",
+     "title": "Forum",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/support.xml"
+     ],
+     "chapters": [
+      1,
+      37
+     ]
+    },
+    {
+     "key": "send_log",
+     "title": "Send Log",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/support.xml"
+     ],
+     "chapters": [
+      37
+     ]
+    }
+   ]
+  },
+  "translations": {
+   "reference_page": "Translations.md",
+   "entries": [
+    {
+     "key": "visit_crowdin",
+     "title": "Poweramp Crowdin Project",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/translations.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    }
+   ]
+  },
+  "ui": {
+   "reference_page": "Look and Feel.md",
+   "entries": [
+    {
+     "key": "ui_theme",
+     "title": "Skin",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "follow_night_mode",
+     "title": "Follow Day/Night Mode",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "settings_theme",
+     "title": "Settings Theme",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "settings_font",
+     "title": "Settings Font",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "2",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "ui_player",
+     "title": "Player Screen",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "ui_lyrics",
+     "title": "Lyrics",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "ui_notify",
+     "title": "Notifications",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "lang",
+     "title": "Language",
+     "type": "ListPreference",
+     "classification": "adjustable",
+     "declared_default": "",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "ui_icon",
+     "title": "Icon",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "orientation",
+     "title": "Screen Orientation",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "anim_speed",
+     "title": "Animations",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25,
+      36
+     ]
+    },
+    {
+     "key": "start_at_lib",
+     "title": "Start at Library",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "hide_status_bar",
+     "title": "Hide Status Bar",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "keep_screen_on",
+     "title": "Keep Screen On",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "num_settings_tags",
+     "title": "Settings Shortcuts in Main Menu",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": [
+      1,
+      25
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui.xml",
+      "xml/ui.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "ui_icon": {
+   "reference_page": "Application Icon.md",
+   "entries": [
+    {
+     "key": "icon_list",
+     "title": "Icons",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/ui_icon.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "ui_lyrics": {
+   "reference_page": "Lyrics Settings.md",
+   "entries": [
+    {
+     "key": "main_lyrics_swipe",
+     "title": "Lyrics Swipe Up",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "main_lyrics_button",
+     "title": "Lyrics Button",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "lyrics_in_menu",
+     "title": "Lyrics Item In The Track Menu",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28,
+      33
+     ]
+    },
+    {
+     "key": "lyrics_keep_screen",
+     "title": "Keep Screen On",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "lyrics_offset",
+     "title": "Lyrics Time Offset",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "list_zoom_lyrics",
+     "title": "Lyrics Size",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "lyrics_plugin",
+     "title": "Preferred Lyrics App",
+     "type": "NumberListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28,
+      33
+     ]
+    },
+    {
+     "key": "lyrics_custom_url",
+     "title": "Custom URL",
+     "type": "EditTextPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "rescan_lyrics_tags",
+     "title": "Rescan Lyrics Tags",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28,
+      35
+     ]
+    },
+    {
+     "key": "lrc_scan",
+     "title": "Scan LRC Files",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      28
+     ]
+    },
+    {
+     "key": "lrc_utf8",
+     "title": "Always Use UTF-8",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": [
+      18,
+      28
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_lyrics.xml",
+      "xml/ui_lyrics.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "ui_mediaactions": {
+   "reference_page": "Media Buttons and Actions.md",
+   "entries": [
+    {
+     "key": "notify_action1",
+     "title": "Button 1",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_action2",
+     "title": "Button 2",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_action3",
+     "title": "Button 3",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_action4",
+     "title": "Button 4",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_action5",
+     "title": "Button 5",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_action6",
+     "title": "Button 6",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_mediaactions.xml",
+      "xml/ui_mediaactions.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "ui_notify": {
+   "reference_page": "Notification Settings.md",
+   "entries": [
+    {
+     "key": "notification_type",
+     "title": "Notification Type",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notification_colors",
+     "title": "Notification Colors",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "0",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_colorize",
+     "title": "Colorize Notification",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "buttons",
+     "title": "Buttons",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "status_lib",
+     "title": "Navigate to the List",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_prefer_nav",
+     "title": "Show Previous Track Action (<<)",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notify_prio",
+     "title": "Notification Priority",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "notification_keeping",
+     "title": "Notification Keeping",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "keep_notification",
+     "title": "Keep Notification",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30,
+      34
+     ]
+    },
+    {
+     "key": "notify_resume",
+     "title": "Keep Inactive Media Notification",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30,
+      34
+     ]
+    },
+    {
+     "key": "_notify_resume_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30
+     ]
+    },
+    {
+     "key": "keep_service",
+     "title": "Keep Service",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      30,
+      34
+     ]
+    },
+    {
+     "key": "no_keep_notif_on_dscn",
+     "title": "Remove Notification on Disconnection",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": [
+      14,
+      30
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_notify.xml",
+      "xml/ui_notify.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "ui_player": {
+   "reference_page": "Player Screen.md",
+   "entries": [
+    {
+     "key": "aa_anim",
+     "title": "Album Art Animation",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "anim_long_labels",
+     "title": "Animate Long Labels",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "anim_long_labels_in_lists",
+     "title": "Animate Long Labels Everywhere",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": "anim_long_labels",
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "edit_player_screen_buttons",
+     "title": "Edit Player Screen Buttons",
+     "type": "EditButtonsRedirPref",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26,
+      36
+     ]
+    },
+    {
+     "key": "sub_aa_buttons_no_gap",
+     "title": "Prefer No Gap",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26,
+      36
+     ]
+    },
+    {
+     "key": "sub_aa_buttons_no_lp_edit",
+     "title": "Do Not Edit On Long Press",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26,
+      36
+     ]
+    },
+    {
+     "key": "cc_button",
+     "title": "Chromecast Button",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "1",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      15,
+      26
+     ]
+    },
+    {
+     "key": "rating_type",
+     "title": "Rating Type",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "1",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "hint_5stars",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "hide_menu",
+     "title": "Menu Button",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "menu_button_long_press",
+     "title": "Menu Button Long Press",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": "hide_menu",
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26,
+      36
+     ]
+    },
+    {
+     "key": "main_lyrics_button",
+     "title": "Lyrics Button",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "line2_click",
+     "title": "Line2 Press",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26,
+      36
+     ]
+    },
+    {
+     "key": "line2_long_click",
+     "title": "Line2 Long Press",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26,
+      36
+     ]
+    },
+    {
+     "key": "show_counter",
+     "title": "Track Counter",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "_counter_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "previous_resets",
+     "title": "<< Button Resets Current Track",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      17,
+      26
+     ]
+    },
+    {
+     "key": "long_skip_rewind",
+     "title": "-10/+10s Rewind Pro Buttons",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      26
+     ]
+    },
+    {
+     "key": "menu_nav_to_folders",
+     "title": "Navigate to the Folders",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": [
+      19,
+      26
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/ui_player.xml",
+      "xml/ui_player.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  },
+  "ui_theme": {
+   "reference_page": "Theme Settings.md",
+   "entries": [
+    {
+     "key": "theme_list",
+     "title": "Built-in Skins",
+     "type": "BuiltinSkinsPreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/ui_theme.xml"
+     ],
+     "chapters": [
+      25
+     ]
+    },
+    {
+     "key": "theme_list_3rdparty",
+     "title": "3rd Party Skins",
+     "type": "ThirdPartySkinsPreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml/ui_theme.xml"
+     ],
+     "chapters": [
+      25,
+      33
+     ]
+    }
+   ]
+  },
+  "vis": {
+   "reference_page": "Visualization Settings.md",
+   "entries": [
+    {
+     "key": "enable_vis",
+     "title": "Visualization On Player Screen",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_frs_type",
+     "title": "Equalizer Screen Spectrum",
+     "type": "TagListPreference",
+     "classification": "adjustable",
+     "declared_default": "2",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_in_lib",
+     "title": "Visualization in Library",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_preset_change_sec",
+     "title": "Preset Duration",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "15",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_panel_faded_alpha",
+     "title": "Top Visualization Panel Opacity",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "60",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_controls_faded_alpha",
+     "title": "Faded Controls Opacity",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "50",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_temp_ui_ms",
+     "title": "UI Timeout",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "1500",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_aa_visible",
+     "title": "Visible Album Art",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_ignore_touch_faded",
+     "title": "Ignore Touch",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_list_faded_alpha",
+     "title": "Track Opacity",
+     "type": "SeekbarPreference",
+     "classification": "adjustable",
+     "declared_default": "25",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_fs_hide_bars",
+     "title": "Hide System Bars For Full Screen",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29,
+      36
+     ]
+    },
+    {
+     "key": "vis_use_compact_bars",
+     "title": "Scaled Bars For Faded Controls",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "true",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "milk_hd",
+     "title": "HD",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "milk_crop_aspect",
+     "title": "Crop Aspect",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "milk_30_fps",
+     "title": "Force 30 FPS",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "milk_strict",
+     "title": "Strict",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_extra_delay_info",
+     "title": "Visualization Delay",
+     "type": "RedirectPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      1,
+      29
+     ]
+    },
+    {
+     "key": "list",
+     "title": "Presets",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "vis_rescan",
+     "title": "Rescan Presets",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "vis_rescan_hint",
+     "title": "",
+     "type": "RawTextPreference",
+     "classification": "informational_or_dynamic",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": []
+    },
+    {
+     "key": "vis_full_rescan",
+     "title": "Full Presets Rescan",
+     "type": "ProgressPreference",
+     "classification": "other",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29,
+      35
+     ]
+    },
+    {
+     "key": "milk_hide_unliked",
+     "title": "Hide Unliked Presets",
+     "type": "MultilineSwitchPreference",
+     "classification": "toggle",
+     "declared_default": "false",
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      29
+     ]
+    },
+    {
+     "key": "list_3rdparty",
+     "title": "3rd Party Presets",
+     "type": "PreferenceCategory",
+     "classification": "category",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": [
+      33
+     ]
+    },
+    {
+     "key": "restore_defaults",
+     "title": "Restore Defaults",
+     "type": "Preference",
+     "classification": "action_or_navigation",
+     "declared_default": null,
+     "dependency": null,
+     "sources": [
+      "xml-v22/vis.xml",
+      "xml/vis.xml"
+     ],
+     "chapters": []
+    }
+   ]
+  }
+ }
+}
