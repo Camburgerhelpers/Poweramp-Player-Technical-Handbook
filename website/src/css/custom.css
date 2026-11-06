@@ -1,0 +1,33 @@
+/**
+ * Custom CSS for Poweramp Player Technical Handbook Docusaurus site.
+ */
+
+:root {
+  --ifm-color-primary: #1d72b8;
+  --ifm-color-primary-dark: #1a67a6;
+  --ifm-color-primary-darker: #19619c;
+  --ifm-color-primary-darkest: #145081;
+  --ifm-color-primary-light: #227dc9;
+  --ifm-color-primary-lighter: #2683d2;
+  --ifm-color-primary-lightest: #3e93dc;
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4da3ff;
+  --ifm-color-primary-dark: #3394ff;
+  --ifm-color-primary-darker: #268cff;
+  --ifm-color-primary-darkest: #0074f0;
+  --ifm-color-primary-light: #66b2ff;
+  --ifm-color-primary-lighter: #73b9ff;
+  --ifm-color-primary-lightest: #99ceff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure wide tables (e.g. Preference Key Index) scroll smoothly */
+.theme-doc-markdown table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
