@@ -20,3 +20,9 @@
 Thumbs.db
 
 # Keep audit source material outside the public repository unless reviewed.
+
+# Website and dependencies
+node_modules/
+website/build/
+website/.docusaurus/
+.docusaurus/

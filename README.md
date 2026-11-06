@@ -24,6 +24,34 @@ Topics include:
 
 The manuscript lives in [`handbook/`](handbook/README.md).
 
+## Website and local development
+
+The handbook is published as a Docusaurus 3 site via GitHub Pages.
+
+### Prerequisites
+
+- **Node.js:** version 20 or higher (Node 22 LTS recommended)
+- **npm:** version 10 or higher
+
+### Workflow options
+
+1. **Live editing mode (`npm start`):**
+   ```bash
+   cd website
+   npm ci
+   npm start
+   ```
+   Starts an in-memory dev server at `http://localhost:3000/Poweramp-Player-Technical-Handbook/` with instant live reload as you edit Markdown files. Note: the static search index is not generated during in-memory dev mode.
+
+2. **Full production build & search preview (`npm run build && npm run serve`):**
+   ```bash
+   cd website
+   npm ci
+   npm run build
+   npm run serve
+   ```
+   Compiles the complete static site to `website/build/`, generates the Lunr search index, enforces zero broken links, and serves the static production site at `http://localhost:3000/Poweramp-Player-Technical-Handbook/`.
+
 | Start here | |
 |---|---|
 | [Quick Start](handbook/00%20Front%20Matter/03%20Quick%20Start.md) | a short, safe path for new readers |

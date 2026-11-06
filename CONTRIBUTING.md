@@ -2,6 +2,38 @@
 
 Thanks for helping improve this unofficial handbook. Corrections with specific evidence are especially valuable.
 
+## Running the site locally
+
+The website is built with Docusaurus 3 and requires Node.js 20+ (Node 22 LTS recommended).
+
+Depending on what you are doing, choose one of two workflows:
+
+### 1. Live editing mode (`npm start`)
+
+Use this when actively writing or editing Markdown files:
+
+```bash
+cd website
+npm ci
+npm start
+```
+
+- **What it does:** Starts an in-memory dev server at `http://localhost:3000/Poweramp-Player-Technical-Handbook/` with instant hot reloading as you save files.
+- **Search note:** The search index is generated from compiled static HTML, so search is intentionally not active in in-memory dev mode (`npm start`). To test search, use the production preview below.
+
+### 2. Full production build & search preview (`npm run build && npm run serve`)
+
+Use this before opening a pull request or to test search and link integrity:
+
+```bash
+cd website
+npm ci
+npm run build
+npm run serve
+```
+
+- **What it does:** Compiles the complete static site to `website/build/`, generates the Lunr search index, enforces zero broken links, and serves the exact production output at `http://localhost:3000/Poweramp-Player-Technical-Handbook/`.
+
 ## Report a documentation problem
 
 Open an issue and include:
