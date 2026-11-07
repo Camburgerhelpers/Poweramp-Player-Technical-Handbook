@@ -2,6 +2,11 @@
 
 This file will track **published documentation releases**, not changes in Poweramp itself.
 
+## Unreleased (development)
+
+- **Website publication:** added Docusaurus 3 website under `website/` with clean URL slugs, remark alert/link transformation, offline client-side search (`@easyops-cn/docusaurus-search-local`), and GitHub Actions CI (`build-check.yml`), GitHub Pages deployment (`deploy.yml`), and Dependabot version monitoring.
+- **Developer workflow:** added local preview, build, and serve instructions for developing the handbook site locally.
+
 ## v0.1.0-alpha.1 — initial community alpha
 
 - Community publication scaffolding drafted.

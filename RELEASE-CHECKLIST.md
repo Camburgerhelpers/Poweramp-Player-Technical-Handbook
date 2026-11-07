@@ -23,6 +23,7 @@ Keep the repository **private** until every release blocker is explicitly resolv
 ## Quality
 - [ ] 38 chapters, seven parts, settings references and indexes verified.
 - [ ] Relative links, YAML, headings, tables and code fences validated.
+- [ ] Docusaurus site builds cleanly with zero broken links (`cd website && npm run build`).
 - [ ] GitHub Markdown preview checked, especially alerts and nested lists.
 - [ ] README navigation points to files that really exist in the release.
 - [ ] Release archive/hash independently verified.
